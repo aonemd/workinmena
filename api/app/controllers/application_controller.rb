@@ -6,8 +6,6 @@ class ApplicationController < ActionController::API
     case e
     when ActiveRecord::RecordInvalid
       render status: :bad_request, json: { errors: e.record.errors.full_messages }
-    when ActionController::RoutingError
-      render status: :not_found, json: { errors: [e.message] }
     else
       render status: :bad_request, json: { errors: [e.message] }
     end
