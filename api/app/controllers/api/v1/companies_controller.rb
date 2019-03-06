@@ -5,12 +5,8 @@ class Api::V1::CompaniesController < ApplicationController
 
   def create
     company = Company.new(company_params)
-
-    if company.save
-      render json: { company: CompanyDecorator.new(company).decorate }
-    else
-      render json: { errors: company.errors.full_messages }, status: :bad_request
-    end
+    company.save!
+    render json: { company: CompanyDecorator.new(company).decorate }
   end
 
   private
