@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_08_110713) do
+ActiveRecord::Schema.define(version: 2019_03_08_111733) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,7 +35,10 @@ ActiveRecord::Schema.define(version: 2019_03_08_110713) do
     t.string "website"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "tool_category_id"
     t.index ["name"], name: "index_tools_on_name"
+    t.index ["tool_category_id"], name: "index_tools_on_tool_category_id"
   end
 
+  add_foreign_key "tools", "tool_categories"
 end
