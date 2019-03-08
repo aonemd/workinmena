@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :tool do
     name { Faker::Name.name }
     description { Faker::Lorem.sentence }
-    website { 'https://language.com' }
+    website { Faker::Internet.url }
   end
 end
 
