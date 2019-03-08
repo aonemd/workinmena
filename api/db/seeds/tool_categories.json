@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Language"
+  },
+  {
+    "name": "Framework"
+  },
+  {
+    "name": "Database"
+  },
+  {
+    "name": "Infrastructure"
+  },
+  {
+    "name": "Service"
+  }
+]
