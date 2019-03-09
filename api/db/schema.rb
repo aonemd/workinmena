@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_08_113923) do
+ActiveRecord::Schema.define(version: 2019_03_09_155454) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 2019_03_08_113923) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name"], name: "index_companies_on_name"
+  end
+
+  create_table "stacks", force: :cascade do |t|
+    t.bigint "company_id"
+    t.bigint "tool_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["company_id", "tool_id"], name: "index_stacks_on_company_and_tool", unique: true
+    t.index ["company_id"], name: "index_stacks_on_company_id"
+    t.index ["tool_id"], name: "index_stacks_on_tool_id"
   end
 
   create_table "tool_categories", force: :cascade do |t|
@@ -40,5 +50,7 @@ ActiveRecord::Schema.define(version: 2019_03_08_113923) do
     t.index ["tool_category_id"], name: "index_tools_on_tool_category_id"
   end
 
+  add_foreign_key "stacks", "companies"
+  add_foreign_key "stacks", "tools"
   add_foreign_key "tools", "tool_categories"
 end
