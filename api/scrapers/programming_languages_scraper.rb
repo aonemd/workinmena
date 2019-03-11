@@ -1,8 +1,9 @@
 require 'nokogiri'
 require 'open-uri'
+require 'json'
 
-BASE_URL  = 'https://en.wikipedia.org'.freeze
-file      = File.open('programming_languages.json', "a")
+BASE_URL = 'https://en.wikipedia.org'.freeze
+file     = File.open('./scrapers/programming_languages.json', "w")
 
 def get_languages(row_number)
   languages = []
@@ -16,7 +17,20 @@ def get_languages(row_number)
 
     next if name =~ /\[[0-9]+\]/
 
-    language = { name: name, website: '', description: '' }
+    language_page      = Nokogiri::HTML(open("#{BASE_URL}#{wiki_url}"))
+    description        = language_page.css('.infobox')[0].next_element.content
+      .gsub(/\(.*?\)/, '')
+      .gsub(/\[.*?\]/, '')
+      .gsub('  ', ' ')
+      .chomp('.')
+    website_th_element = language_page.at('th:contains("Website")')
+    website            = if website_th_element
+                           website_th_element.next_element.css('a').text
+                         else
+                           ""
+                         end
+
+    language = { name: name, website: website, description: description }
     languages.append(language)
   end
 
@@ -27,3 +41,5 @@ languages = []
 (1..14).map do |i|
   languages.append(get_languages(i))
 end
+
+file.puts JSON.pretty_generate(languages.flatten.uniq)
