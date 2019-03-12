@@ -93,5 +93,45 @@
     "name": "Swift",
     "website": "swift.org",
     "description": "Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, Linux and z/OS. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C code written for Apple products. It is built with the open source LLVM compiler framework and has been included in Xcode since version 6, released in 2014. On Apple platforms[11], it uses the Objective-C runtime library which allows C, Objective-C, C++ and Swift code to run within one program"
+  },
+  {
+    "name": "Elixir",
+    "website": "elixir-lang.org",
+    "description": "Elixir is a functional, concurrent, general-purpose programming language that runs on the Erlang virtual machine (BEAM). Elixir builds on top of Erlang and shares the same abstractions for building distributed, fault-tolerant applications. Elixir also provides a productive tooling and an extensible design. The latter is supported by compile-time metaprogramming with macros and polymorphism via protocols"
+  },
+  {
+    "name": "Crystal",
+    "website": "crystal-lang.org",
+    "description": "Crystal is a general-purpose, object-oriented programming language, designed and developed by Ary Borenszweig, Juan Wajnerman, Brian Cardiff and more than 300 contributors. With syntax inspired by the language Ruby, it is a compiled language with static type-checking, but specifying the types of variables or method arguments is generally unneeded. Types are resolved by an advanced global type inference algorithm. Crystal is in active development. It is released as free and open-source software under the Apache License version 2.0"
+  },
+  {
+    "name": "Rust",
+    "website": "rust-lang.org",
+    "description": "Rust is a multi-paradigm systems programming language focused on safety, especially safe concurrency. Rust is syntactically similar to C++, but is designed to provide better memory safety while maintaining high performance"
+  },
+  {
+    "name": "Elm",
+    "website": "elm-lang.org",
+    "description": "Elm is a domain-specific programming language for declaratively creating web browser-based graphical user interfaces. Elm is purely functional, and is developed with emphasis on usability, performance, and robustness. It advertises \"no runtime exceptions in practice\", made possible by the Elm compiler's static type checking"
+  },
+  {
+    "name": "Closure",
+    "website": "clojure.org",
+    "description": "Clojure is a modern, dynamic, and functional dialect of the Lisp programming language on the Java platform. Like other Lisps, Clojure treats code as data and has a Lisp macro system. The current development process is community-driven, overseen by Rich Hickey as its benevolent dictator for life (BDFL)"
+  },
+  {
+    "name": "Groovy",
+    "website": "groovy-lang.org",
+    "description": "Apache Groovy is a Java-syntax-compatible object-oriented programming language for the Java platform. It is both a static and dynamic language with features similar to those of Python, Ruby, Perl, and Smalltalk. It can be used as both a programming language and a scripting language for the Java Platform, is compiled to Java virtual machine (JVM) bytecode, and interoperates seamlessly with other Java code and libraries. Groovy uses a curly-bracket syntax similar to Java's. Groovy supports closures, multiline strings, and expressions embedded in strings. Much of Groovy's power lies in its AST transformations, triggered through annotations"
+  },
+  {
+    "name": "R",
+    "website": "www.r-project.org",
+    "description": "R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, data mining surveys, and studies of scholarly literature databases show substantial increases in popularity in recent years. as of March 2019, R ranks 14th in the TIOBE index, a measure of popularity of programming languages"
+  },
+  {
+    "name": "Julia",
+    "website": "JuliaLang.org",
+    "description": "Julia is a high-level general-purpose dynamic programming language whose designers intend it to address the needs of high-performance numerical analysis and computational science, without the need of separate compilation to be fast. It is also useful for low-level systems programming, as a specification language, with work being done on client and server web use"
   }
 ]
