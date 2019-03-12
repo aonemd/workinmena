@@ -30,3 +30,21 @@ framework_tools.each do |framework|
               description: framework['description'],
               category: framework_category)
 end
+
+infrastructure_tools    = ActiveSupport::JSON.decode(File.read('db/seeds/infrastructure.json'))
+infrastructure_category = Tool::Category.where(name: 'Infrastructure').first
+infrastructure_tools.each do |infrastructure|
+  Tool.create(name: infrastructure['name'],
+              website: infrastructure['website'],
+              description: infrastructure['description'],
+              category: infrastructure_category)
+end
+
+service_tools    = ActiveSupport::JSON.decode(File.read('db/seeds/services.json'))
+service_category = Tool::Category.where(name: 'Service').first
+service_tools.each do |service|
+  Tool.create(name: service['name'],
+              website: service['website'],
+              description: service['description'],
+              category: service_category)
+end

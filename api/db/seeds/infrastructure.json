@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Git",
+    "website": "git-scm.com",
+    "description": "Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows"
+  },
+  {
+    "name": "Docker",
+    "website": "docker.com",
+    "description": "Docker is a computer program that performs operating-system-level virtualization. It was first released in 2013 and is developed by Docker, Inc."
+  },
+  {
+    "name": "Jenkins",
+    "website": "jenkins.io",
+    "description": "Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery"
+  }
+]
