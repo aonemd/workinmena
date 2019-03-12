@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Bigtable",
+    "website": "cloud.google.com/bigtable/",
+    "description": "Bigtable is a compressed, high performance, proprietary data storage system built on Google File System, Chubby Lock Service, SSTable and a few other Google technologies. On May 6, 2015, a public version of Bigtable was made available as a service. Bigtable also underlies Google Cloud Datastore, which is available as a part of the Google Cloud Platform"
+  },
+  {
+    "name": "MariaDB",
+    "website": "mariadb.commariadb.org",
+    "description": "MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system, intended to remain free and open-source software under the GNU GPL. Development is led by some of the original developers of MySQL, who forked it due to concerns over its acquisition by Oracle Corporation"
+  },
+  {
+    "name": "MySQL",
+    "website": "www.mysql.com",
+    "description": "MySQL is an open source relational database management system . Its name is a combination of \"My\", the name of co-founder Michael Widenius's daughter, and \"SQL\", the abbreviation for Structured Query Language"
+  },
+  {
+    "name": "HBase",
+    "website": "hbase.apache.org",
+    "description": "HBase is an open-source, non-relational, distributed database modeled after Google's Bigtable and written in Java. It is developed as part of Apache Software Foundation's Apache Hadoop project and runs on top of HDFS , providing Bigtable-like capabilities for Hadoop. That is, it provides a fault-tolerant way of storing large quantities of sparse data"
+  },
+  {
+    "name": "Cassandra",
+    "website": "cassandra.apache.org",
+    "description": "Apache Cassandra is a free and open-source, distributed, wide column store, NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra offers robust support for clusters spanning multiple datacenters, with asynchronous masterless replication allowing low latency operations for all clients"
+  },
+  {
+    "name": "PostgreSQL",
+    "website": "postgresql.org",
+    "description": "PostgreSQL LicenseDFSG compatibleYesFSF approvedYesOSI approvedYesGPL compatibleYesCopyleftNoLinking from code with a different licenseYesWebsitepostgresql.org/about/licence"
+  },
+  {
+    "name": "MongoDB",
+    "website": "www.mongodb.com",
+    "description": "MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemata. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License"
+  },
+  {
+    "name": "Oracle Database",
+    "website": "oracle.com/database",
+    "description": "Oracle Database is a multi-model database management system produced and marketed by Oracle Corporation"
+  },
+  {
+    "name": "Microsoft SQL Server",
+    "website": "www.microsoft.com/en-us/sql-server",
+    "description": "Microsoft SQL Server is a relational database management system developed by Microsoft. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications—which may run either on the same computer or on another computer across a network"
+  },
+  {
+    "name": "Voldemort",
+    "website": "www.project-voldemort.com",
+    "description": "Voldemort is a distributed data store that was designed as a key-value store used by LinkedIn for highly-scalability storage. It is named after the fictional Harry Potter villain Lord Voldemort"
+  },
+  {
+    "name": "Redis",
+    "website": "redis.io",
+    "description": "Redis is an open source in-memory data structure project implementing a distributed, in-memory key-value database with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, hyperloglogs, bitmaps, streams and spatial indexes. The project is mainly developed by Salvatore Sanfilippo and is currently sponsored by Redis Labs"
+  }
+]
