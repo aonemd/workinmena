@@ -21,3 +21,12 @@ database_tools.each do |database|
               description: database['description'],
               category: database_category)
 end
+
+framework_tools    = ActiveSupport::JSON.decode(File.read('db/seeds/frameworks.json'))
+framework_category = Tool::Category.where(name: 'Framework').first
+framework_tools.each do |framework|
+  Tool.create(name: framework['name'],
+              website: framework['website'],
+              description: framework['description'],
+              category: framework_category)
+end

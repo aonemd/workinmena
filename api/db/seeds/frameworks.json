@@ -1,0 +1,942 @@
+[
+  {
+    "name": "AngularJS",
+    "website": "http://angularjs.org/",
+    "description": "AngularJS lets you write client-side web applications as if you had a smarter browser"
+  },
+  {
+    "name": "React",
+    "website": "https://facebook.github.io/react/",
+    "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces"
+  },
+  {
+    "name": "Ruby on Rails",
+    "website": "http://rubyonrails.org",
+    "description": "Web development that doesn't hurt"
+  },
+  {
+    "name": "ASP.NET MVC",
+    "website": "http://www.asp.net/mvc",
+    "description": "ASP.NET MVC is a free and fully supported framework for building web applications that use the model-view-controller pattern"
+  },
+  {
+    "name": "Angular",
+    "website": "https://angular.io/",
+    "description": "One framework. Mobile & desktop"
+  },
+  {
+    "name": "Django",
+    "website": "http://www.djangoproject.com/",
+    "description": "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design"
+  },
+  {
+    "name": "Laravel",
+    "website": "http://laravel.com",
+    "description": "Laravel is a clean and classy framework for PHP web development"
+  },
+  {
+    "name": "Vue.js",
+    "website": "https://vuejs.org/",
+    "description": "Simple yet powerful library for building modern web interfaces"
+  },
+  {
+    "name": "ASP.NET",
+    "website": "http://www.asp.net",
+    "description": "Web Development with Power, Productivity and Speed"
+  },
+  {
+    "name": "Spring",
+    "website": "http://www.springsource.org/",
+    "description": "Spring is a layered Java/J2EE application platform, based on code published in Expert One-on-One J2EE Design and Development by Rod Johnson"
+  },
+  {
+    "name": "Express",
+    "website": "http://expressjs.com/",
+    "description": "Insanely fast (and small) server-side JavaScript web development framework built on node.js and the V8 JavaScript engine"
+  },
+  {
+    "name": "Meteor",
+    "website": "https://www.meteor.com/",
+    "description": "Meteor is an open-source platform for building top-quality web apps in a fraction of the time, whether you're an expert developer or just getting started"
+  },
+  {
+    "name": "Symfony",
+    "website": "http://symfony.com",
+    "description": "Symfony is a full-stack framework, a library of cohesive classes written in PHP"
+  },
+  {
+    "name": "Flask",
+    "website": "http://flask.pocoo.org",
+    "description": "Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions"
+  },
+  {
+    "name": "CodeIgniter",
+    "website": "http://ellislab.com/codeigniter",
+    "description": "CodeIgniter is a powerful PHP framework with a very small footprint, built for PHP coders who need a simple and elegant toolkit to create full-featured web applications"
+  },
+  {
+    "name": "Ember.js",
+    "website": "http://emberjs.com/",
+    "description": "A framework for creating ambitious web applications"
+  },
+  {
+    "name": "JSF",
+    "website": "https://javaserverfaces.java.net/",
+    "description": "JavaServer(TM) Faces technology simplifies building user interfaces for JavaServer applications"
+  },
+  {
+    "name": "Flex",
+    "website": "http://www.adobe.com/products/flex.html",
+    "description": "Flex is a highly productive, free open source framework for building and maintaining expressive web applications that deploy consistently on all major browsers, desktops, and operating systems"
+  },
+  {
+    "name": "CakePHP",
+    "website": "http://cakephp.org/",
+    "description": "CakePHP enables PHP users at all levels to rapidly develop robust web applications. "
+  },
+  {
+    "name": "Google Web Toolkit",
+    "website": "http://www.gwtproject.org/",
+    "description": "Google Web Toolkit (GWT) is a development toolkit for building and optimizing complex browser-based applications"
+  },
+  {
+    "name": "Polymer",
+    "website": "https://www.polymer-project.org/",
+    "description": "Polymer lets you build encapsulated, reusable elements that work just like standard HTML elements, to use in building web applications"
+  },
+  {
+    "name": "Play",
+    "website": "https://github.com/playframework/playframework",
+    "description": ""
+  },
+  {
+    "name": "Sails.js",
+    "website": "http://sailsjs.org/",
+    "description": "Sails.js make it easy to build custom, enterprise-grade Node.js apps"
+  },
+  {
+    "name": "Zend",
+    "website": "http://framework.zend.com",
+    "description": "Extending the art & spirit of PHP, Zend Framework is based on simplicity, object-oriented best practices, corporate friendly licensing, and a rigorously tested agile codebase"
+  },
+  {
+    "name": "Yii",
+    "website": "http://www.yiiframework.com/",
+    "description": "Yes, it is Yii -- a high-performance component-based PHP framework best for developing large-scale Web applications"
+  },
+  {
+    "name": "Grails",
+    "website": "http://www.grails.org/",
+    "description": "A powerful web application framework based on the Groovy language"
+  },
+  {
+    "name": "Tornado",
+    "website": "http://www.tornadoweb.org/",
+    "description": "Tornado is an open source version of the scalable, non-blocking web server and tools that power FriendFeed"
+  },
+  {
+    "name": "Sinatra",
+    "website": "http://www.sinatrarb.com",
+    "description": "Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort"
+  },
+  {
+    "name": "Phoenix",
+    "website": "http://www.phoenixframework.org/",
+    "description": "A productive web framework that does not compromise speed and maintainability"
+  },
+  {
+    "name": "Blade",
+    "website": "https://github.com/lets-blade/blade",
+    "description": "Lightning fast and elegant mvc framework for Java8"
+  },
+  {
+    "name": "Aurelia",
+    "website": "http://aurelia.io/",
+    "description": "Aurelia is a JavaScript client framework for mobile, desktop and web leveraging simple conventions and empowering creativity"
+  },
+  {
+    "name": "Slim",
+    "website": "https://www.slimframework.com/",
+    "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs"
+  },
+  {
+    "name": "Koa",
+    "website": "http://koajs.com/",
+    "description": "next generation web framework for node.js"
+  },
+  {
+    "name": "Phalcon",
+    "website": "https://phalconphp.com",
+    "description": "A full-stack PHP framework delivered as a C-extension"
+  },
+  {
+    "name": "Dropwizard",
+    "website": "http://www.dropwizard.io/",
+    "description": "Dropwizard is a Java framework for developing ops-friendly, high-performance, RESTful web services"
+  },
+  {
+    "name": "Vert.x",
+    "website": "http://vertx.io/",
+    "description": "Vert.x is a tool-kit for building reactive applications on the JVM"
+  },
+  {
+    "name": "Dojo",
+    "website": "https://github.com/dojo/dojo",
+    "description": ""
+  },
+  {
+    "name": "OpenUI5",
+    "website": "http://openui5.org/",
+    "description": "OpenUI5 lets you build enterprise-ready web applications, responsive to all devices, running on almost any browser of your choice"
+  },
+  {
+    "name": "Struts",
+    "website": "http://struts.apache.org/",
+    "description": "Apache Struts is a free open-source framework for creating Java web applications"
+  },
+  {
+    "name": "Elm",
+    "website": "http://elm-lang.org/",
+    "description": "A delightful language for reliable webapps"
+  },
+  {
+    "name": "Bottle",
+    "website": "http://bottlepy.org",
+    "description": "Bottle is a fast, simple and lightweight WSGI micro web-framework for Python"
+  },
+  {
+    "name": "Vapor",
+    "website": "http://qutheory.io/",
+    "description": "A web framework and server for Swift that works on OS X and Ubuntu"
+  },
+  {
+    "name": "Gin",
+    "website": "https://gin-gonic.github.io/gin/",
+    "description": "Gin is a web framework written in Golang. It features a Martini-like API with much better performance -- up to 40 times faster"
+  },
+  {
+    "name": "Nancy",
+    "website": "http://nancyfx.org/",
+    "description": "Lightweight, low-ceremony, framework for building HTTP based services on .Net and Mono"
+  },
+  {
+    "name": "Wicket",
+    "website": "https://github.com//",
+    "description": ""
+  },
+  {
+    "name": "Feathers",
+    "website": "http://feathersjs.com/",
+    "description": "A minimalist real-time framework for tomorrow's apps"
+  },
+  {
+    "name": "Pyramid",
+    "website": "https://github.com/Pylons/pyramid",
+    "description": ""
+  },
+  {
+    "name": "Vaadin",
+    "website": "http://vaadin.com",
+    "description": "Vaadin is a Java framework for building modern web applications that look great, perform well and make you and your users happy"
+  },
+  {
+    "name": "web.py",
+    "website": "http://webpy.org/",
+    "description": "Think about the ideal way to write a web app. Write the code to make it happen"
+  },
+  {
+    "name": "beego",
+    "website": "http://beego.me/",
+    "description": "An open source framework to build and develop your applications in the Go way"
+  },
+  {
+    "name": "AIOHTTP",
+    "website": "https://docs.aiohttp.org/",
+    "description": "Asynchronous HTTP Client/Server for asyncio and Python"
+  },
+  {
+    "name": "web2py",
+    "website": "https://github.com/web2py/web2py",
+    "description": ""
+  },
+  {
+    "name": "Kohana",
+    "website": "http://kohanaframework.org/",
+    "description": "Kohana is a PHP 5 framework that uses the Model View Controller architectural pattern. It aims to be secure, lightweight, and easy to use"
+  },
+  {
+    "name": "Durandal",
+    "website": "http://durandaljs.com/",
+    "description": "A cross-device, cross-platform client framework written in JavaScript and designed to make building Single Page Applications (SPAs) easy to create and maintain"
+  },
+  {
+    "name": "Mithril",
+    "website": "http://mithril.js.org/",
+    "description": "Mithril is a client-side MVC framework - a tool to organize code in a way that is easy to think about and to maintain"
+  },
+  {
+    "name": "Revel",
+    "website": "http://revel.github.io/",
+    "description": "A high-productivity web framework for the Go language"
+  },
+  {
+    "name": "Riot.js",
+    "website": "http://riotjs.com/",
+    "description": "Simple and elegant component-based UI library"
+  },
+  {
+    "name": "Yesod",
+    "website": "http://www.yesodweb.com/",
+    "description": "Yesod is a Haskell web framework for productive development of type-safe, RESTful, high performance web applications"
+  },
+  {
+    "name": "Perfect",
+    "website": "https://www.perfect.org/",
+    "description": "Perfect is a web server and toolkit for developers using the Swift programming language to build applications and other REST services"
+  },
+  {
+    "name": "Compojure",
+    "website": "https://github.com/weavejester/compojure",
+    "description": "Compojure is a small, open source web framework for the Clojure programming language"
+  },
+  {
+    "name": "Ring",
+    "website": "https://github.com/ring-clojure/ring",
+    "description": "Clojure web application library: abstracts HTTP to allow modular and concise webapps"
+  },
+  {
+    "name": "Sailor",
+    "website": "http://www.sailorproject.org/",
+    "description": "We bring a powerful and light programming language to its full potential as the foundation of a fast and simple to use web development framework"
+  },
+  {
+    "name": "CherryPy",
+    "website": "http://cherrypy.org/",
+    "description": "CherryPy is a pythonic, object-oriented HTTP framework"
+  },
+  {
+    "name": "Mojolicious",
+    "website": "http://mojolicio.us/",
+    "description": "A next generation web framework for the Perl programming language"
+  },
+  {
+    "name": "SilverStripe Sapphire",
+    "website": "http://www.silverstripe.org/framework-introduction/",
+    "description": "Sapphire is an object-oriented PHP5 web framework designed to let you focus on your data and business logic"
+  },
+  {
+    "name": "(fab)",
+    "website": "https://github.com/jed/fab",
+    "description": "(fab) is a lightweight (~2KB minified and gzipped) toolkit that makes it easy to build asynchronous web apps"
+  },
+  {
+    "name": "Falcon",
+    "website": "http://falconframework.org/",
+    "description": "Falcon is a bare-metal Python web API framework for building high-performance microservices, app backends, and higher-level frameworks"
+  },
+  {
+    "name": "Sanic",
+    "website": "https://sanicframework.org/",
+    "description": "Async Python 3.5+ web server that's written to go fast"
+  },
+  {
+    "name": "FuelPHP",
+    "website": "http://fuelphp.com/",
+    "description": "FuelPHP is a simple, flexible, community driven PHP 5.3+ framework, based on the best ideas of other frameworks, with a fresh start!"
+  },
+  {
+    "name": "PHP Fat-Free Framework",
+    "website": "http://fatfreeframework.com/",
+    "description": "Fat-Free is a single-file PHP 5.3+ Web development framework with a fast template engine, HTML forms processor and an easy-to-use SQL handler for databases"
+  },
+  {
+    "name": "Restlet",
+    "website": "http://www.restlet.org/",
+    "description": "The leading RESTful Web framework for Java"
+  },
+  {
+    "name": "Martini",
+    "website": "http://martini.codegangsta.io/",
+    "description": "Classy web development in Go"
+  },
+  {
+    "name": "SproutCore",
+    "website": "https://github.com/sproutcore/sproutcore",
+    "description": ""
+  },
+  {
+    "name": "Scalatra",
+    "website": "https://github.com/scalatra/scalatra",
+    "description": ""
+  },
+  {
+    "name": "Tapestry",
+    "website": "https://github.com//",
+    "description": ""
+  },
+  {
+    "name": "Lift",
+    "website": "http://liftweb.net/",
+    "description": "Lift is the most powerful, most secure web framework available today"
+  },
+  {
+    "name": "Ktor",
+    "website": "http://ktor.io/",
+    "description": "Ktor is a framework for quickly creating web applications in Kotlin with minimal effort"
+  },
+  {
+    "name": "Iris",
+    "website": "https://github.com/kataras/iris",
+    "description": "The fastest backend community-driven web framework on (THIS) Earth. HTTP/2, MVC and more"
+  },
+  {
+    "name": "Marko",
+    "website": "http://markojs.com/",
+    "description": "A friendly (and fast!) UI library from eBay that makes building web apps fun"
+  },
+  {
+    "name": "Hanami",
+    "website": "http://hanamirb.org/",
+    "description": "The web, with simplicity"
+  },
+  {
+    "name": "Ninja",
+    "website": "http://www.ninjaframework.org/",
+    "description": "Ninja is a full stack web framework for Java. Rock solid, fast, and super productive"
+  },
+  {
+    "name": "Cappuccino",
+    "website": "http://www.cappuccino-project.org",
+    "description": "Cappuccino is an open source framework that makes it easy to build desktop-caliber applications that run in a web browser. "
+  },
+  {
+    "name": "Lithium",
+    "website": "http://li3.me/",
+    "description": "Lithium is a light, fast, and highly configurable framework for PHP 5.3+"
+  },
+  {
+    "name": "Dancer2",
+    "website": "https://github.com/PerlDancer/Dancer2",
+    "description": "Lightweight yet powerful web application framework"
+  },
+  {
+    "name": "Inferno",
+    "website": "https://infernojs.org/",
+    "description": "An extremely fast, React-like JavaScript library for building modern user interfaces"
+  },
+  {
+    "name": "ZK",
+    "website": "http://www.zkoss.org/product/zk.dsp",
+    "description": "ZK is the most proven Ajax + Mobile framework available, designed to maximize an enterpriseâs operational efficiency and minimize development time and cost"
+  },
+  {
+    "name": "Flight",
+    "website": "http://twitter.github.io/flight/",
+    "description": "An event-driven web framework, from Twitter"
+  },
+  {
+    "name": "CompoundJS",
+    "website": "http://compoundjs.com/",
+    "description": "Create NodeJS web apps faster with more energy, using RailwayJS"
+  },
+  {
+    "name": "Wt",
+    "website": "https://www.webtoolkit.eu/",
+    "description": "Wt is a C++ library for developing web applications"
+  },
+  {
+    "name": "Ratpack",
+    "website": "http://www.ratpack.io/",
+    "description": "A toolkit for JVM web applications"
+  },
+  {
+    "name": "servant",
+    "website": "https://github.com/haskell-servant/servant",
+    "description": "servant is a set of packages for declaring web APIs at the type-level and then using those API specifications"
+  },
+  {
+    "name": "Catalyst",
+    "website": "http://www.catalystframework.org/",
+    "description": "Catalyst will make web development something you had never expected it to be: Fun, rewarding and quick. "
+  },
+  {
+    "name": "Grok",
+    "website": "http://grok.zope.org",
+    "description": "Grok is a web application framework for Python developers"
+  },
+  {
+    "name": "Zope",
+    "website": "https://github.com/zopefoundation/Zope",
+    "description": ""
+  },
+  {
+    "name": "Buffalo",
+    "website": "https://gobuffalo.io/",
+    "description": "A Go web development eco-system, designed to make the life of a Go web developer easier"
+  },
+  {
+    "name": "Flatiron",
+    "website": "http://flatironjs.org",
+    "description": "Flatiron is an adaptable framework for building modern web applications"
+  },
+  {
+    "name": "Noir",
+    "website": "http://webnoir.org",
+    "description": "Noir is a micro-framework that allows you to rapidly develop websites in Clojure"
+  },
+  {
+    "name": "Snap",
+    "website": "http://snapframework.com/",
+    "description": "Snap is a simple web development framework for unix systems, written in the Haskell programming language"
+  },
+  {
+    "name": "Nitrogen",
+    "website": "https://github.com/nitrogen/nitrogen",
+    "description": ""
+  },
+  {
+    "name": "Mojarra",
+    "website": "https://javaserverfaces.github.io/",
+    "description": "Oracle's implementation of the JavaServer Faces specification"
+  },
+  {
+    "name": "Stripes",
+    "website": "https://github.com/StripesFramework/stripes",
+    "description": ""
+  },
+  {
+    "name": "TurboGears",
+    "website": "https://github.com/TurboGears/tg2",
+    "description": ""
+  },
+  {
+    "name": "Camping",
+    "website": "http://camping.rubyforge.org/files/README.html",
+    "description": "Camping is a web framework which consistently stays at less than 4kb of code"
+  },
+  {
+    "name": "seaside",
+    "website": "https://github.com//",
+    "description": ""
+  },
+  {
+    "name": "Orbit",
+    "website": "http://keplerproject.github.com/orbit",
+    "description": "MVC for Lua Web Development"
+  },
+  {
+    "name": "Rapidoid",
+    "website": "http://www.rapidoid.org/",
+    "description": "Extremely Fast, Simple and Powerful Java Web Framework and HTTP Server!"
+  },
+  {
+    "name": "Zotonic",
+    "website": "http://zotonic.com",
+    "description": "Zotonic is a CMS and a framework"
+  },
+  {
+    "name": "Merb",
+    "website": "http://merbivore.com",
+    "description": "Merb is an MVC framework that is ORM-agnostic, JavaScript library agnostic, and template language agnostic, preferring plugins that add in support for a particular feature rather than trying to produce a monolithic library with everything in the core"
+  },
+  {
+    "name": "PureMVC",
+    "website": "https://github.com/PureMVC/puremvc-as3-standard-framework",
+    "description": ""
+  },
+  {
+    "name": "Horde",
+    "website": "http://www.horde.org/",
+    "description": "The Horde Application Framework is a general-purpose web application framework in PHP, providing classes for dealing with preferences, compression, browser detection, connection tracking, MIME handling, and mor"
+  },
+  {
+    "name": "Ramaze",
+    "website": "https://github.com/manveru/ramaze",
+    "description": ""
+  },
+  {
+    "name": "kotlinx.html",
+    "website": "https://github.com/kotlin/kotlinx.html",
+    "description": "Kotlin DSL for HTML"
+  },
+  {
+    "name": "Aura",
+    "website": "http://auraphp.com/",
+    "description": "If you like clean code, fully decoupled libraries, and truly independent packages, then the Aura project is for you"
+  },
+  {
+    "name": "Happstack",
+    "website": "http://happstack.com/",
+    "description": "Happstack is a Haskell web framework. Happstack is designed so that developers can prototype quickly, deploy painlessly, scale massively, operate reliably, and change easily. "
+  },
+  {
+    "name": "Cairngorm",
+    "website": "http://opensource.adobe.com/wiki/display/cairngorm/Cairngorm",
+    "description": "Cairngorm is the lightweight micro-architecture for Rich Internet Applications built in Flex or AIR"
+  },
+  {
+    "name": "Tipfy",
+    "website": "http://www.tipfy.org",
+    "description": "tipfy is a small but powerful framework made specifically for Google App Engine"
+  },
+  {
+    "name": "Mason",
+    "website": "http://www.masonhq.com",
+    "description": "Mason is a powerful Perl-based web site development and delivery engine. With Mason you can embed Perl code in your HTML and construct pages from shared, reusable components"
+  },
+  {
+    "name": "Swiz",
+    "website": "https://github.com/swiz/swiz-framework",
+    "description": ""
+  },
+  {
+    "name": "Mate",
+    "website": "https://github.com/viatropos/mate",
+    "description": ""
+  },
+  {
+    "name": "Prado",
+    "website": "http://www.pradosoft.com",
+    "description": "PRADOTM is a component-based and event-driven programming framework for developing Web applications in PHP 5"
+  },
+  {
+    "name": "Cocoon",
+    "website": "http://cocoon.apache.org/",
+    "description": "Apache Cocoon is a Spring-based framework built around the concepts of separation of concerns and component-based development"
+  },
+  {
+    "name": "Picard",
+    "website": "https://github.com/dantebronto/picard",
+    "description": ""
+  },
+  {
+    "name": "JavaScriptMVC",
+    "website": "http://javascriptmvc.com/",
+    "description": "JavaScriptMVC is an open-source framework containing the best ideas in enterprise JavaScript development"
+  },
+  {
+    "name": "Vanilla",
+    "website": "http://idevz.github.io/vanilla/",
+    "description": "Vanilla is An OpenResty Lua MVC Web Framework"
+  },
+  {
+    "name": "Qcodo",
+    "website": "http://www.qcodo.com/",
+    "description": "The Qcodo Development Framework is an open-source PHP framework that focuses on freeing developers from unnecessary tedious, mundane coding"
+  },
+  {
+    "name": "Erlang Web",
+    "website": "https://github.com/esl/erlang-web",
+    "description": "The Erlang Web is an open source framework for applications based on HTTP protocols, giving the developer better control of content management"
+  },
+  {
+    "name": "UKI",
+    "website": "https://github.com/voloko/uki",
+    "description": "Uki is a fast and simple JavaScript user interface toolkit for desktop-like web applications"
+  },
+  {
+    "name": "Rum",
+    "website": "https://github.com/chneukirchen/rum",
+    "description": ""
+  },
+  {
+    "name": "QCubed",
+    "website": "http://qcu.be/",
+    "description": "QCubed is a rapid prototyping PHP5 Framework that helps developers save time around mundane, repeatable tasks"
+  },
+  {
+    "name": "Solar",
+    "website": "http://solarphp.com/",
+    "description": "Solar is a PHP 5 framework for web application development"
+  },
+  {
+    "name": "Cutelyst",
+    "website": "http://www.cutelyst.org/",
+    "description": "A Web Framework built on top of Qt, using the simple and elegant approach of Catalyst (Perl) framework"
+  },
+  {
+    "name": "Sin",
+    "website": "https://github.com/raggi/sin",
+    "description": ""
+  },
+  {
+    "name": "Xitrum",
+    "website": "http://ngocdaothanh.github.com/xitrum/",
+    "description": "Xitrum is an async and clustered Scala web framework and HTTP(S) server"
+  },
+  {
+    "name": "Swiftlet",
+    "website": "http://swiftlet.org/",
+    "description": "It provides you with the bare essentials to build a powerful and secure website in PHP"
+  },
+  {
+    "name": "RestfulX",
+    "website": "https://github.com/dima/restfulx_framework",
+    "description": ""
+  },
+  {
+    "name": "Conjure",
+    "website": "https://github.com/macourtney/Conjure",
+    "description": "Conjure is a Rails like framework for the Clojure programming language"
+  },
+  {
+    "name": "Moustache",
+    "website": "https://github.com/cgrand/moustache",
+    "description": "Moustache is a micro web framework/internal DSL  to wire Ring handlers and middlewares"
+  },
+  {
+    "name": "Apache Click",
+    "website": "http://click.apache.org/",
+    "description": "Apache Click is a modern JEE web application framework, providing a natural rich client style programming model"
+  },
+  {
+    "name": "Eliom",
+    "website": "http://ocsigen.org",
+    "description": "The Ocsigen project is aimed at proposing clean and safe tools for developing and running Web applications"
+  },
+  {
+    "name": "echo",
+    "website": "http://echo.nextapp.com/site/",
+    "description": "Echo is an open-source framework for developing rich web applications"
+  },
+  {
+    "name": "simplex",
+    "website": "https://github.com/mshakhan/simplex",
+    "description": ""
+  },
+  {
+    "name": "Hyperstack",
+    "website": "https://hyperstack.org/",
+    "description": "Hyperstack is a Ruby-based DSL and modern web toolkit for building spectacular, interactive web applications fast!"
+  },
+  {
+    "name": "Circumflex",
+    "website": "http://circumflex.ru",
+    "description": "Circumflex is a set of software components for quick and robust application development using the Scala programming language"
+  },
+  {
+    "name": "node-router",
+    "website": "https://github.com/creationix/node-router",
+    "description": ""
+  },
+  {
+    "name": "ErlyWeb",
+    "website": "https://github.com/yariv/erlyweb",
+    "description": "ErlyWeb is a component-oriented web development framework written in Erlang and designed to work with Yaws, a high-performance Erlang web server"
+  },
+  {
+    "name": "Grain",
+    "website": "http://sysgears.com/grain/",
+    "description": "Static Web Site Building Framework For Groovy"
+  },
+  {
+    "name": "MFlow",
+    "website": "http://http://mflowdemo.herokuapp.com/",
+    "description": "Web application server with stateful, type safe user interactions and widget combinators"
+  },
+  {
+    "name": "KumbiaPHP",
+    "website": "http://www.kumbiaphp.com",
+    "description": "FÃ¡cil, rÃ¡pido y en espaÃ±ol"
+  },
+  {
+    "name": "Nerve",
+    "website": "https://github.com/gjritter/nerve",
+    "description": ""
+  },
+  {
+    "name": "Wee",
+    "website": "https://github.com/mneumann/wee",
+    "description": ""
+  },
+  {
+    "name": "Hemlock",
+    "website": "http://hemlock-kills.com/",
+    "description": "Hemlock is a new web development framework, focused on allowing easy development of real-time, many-to-many apps"
+  },
+  {
+    "name": "Lemmachine",
+    "website": "https://github.com/larrytheliquid/Lemmachine",
+    "description": "A proof of concept of compositonal web app testing (described below) can be shown satisfactorily using this branch"
+  },
+  {
+    "name": "Konstrukt",
+    "website": "http://konstrukt.dk/",
+    "description": "A HTTP-friendly framework of controllers for PHP5"
+  },
+  {
+    "name": "Nitro",
+    "website": "https://github.com/gmosx/nitro",
+    "description": ""
+  },
+  {
+    "name": "nodemachine",
+    "website": "https://github.com/tautologistics/nodemachine",
+    "description": ""
+  },
+  {
+    "name": "Halcyon",
+    "website": "http://halcyon.rubyforge.org/",
+    "description": "A JSON Web Application Framework for developing lightweight applications interfaced via JSON-encoded HTTP requests"
+  },
+  {
+    "name": "Atomik",
+    "website": "http://www.atomikframework.com",
+    "description": "Atomik is built for small web applications that do not need heavy frameworks but still want powerful features"
+  },
+  {
+    "name": "Akelos",
+    "website": "http://www.akelos.org",
+    "description": "The pragmatic way to get Productive on PHP"
+  },
+  {
+    "name": "Vroom",
+    "website": "https://github.com/raycmorgan/vroom",
+    "description": ""
+  },
+  {
+    "name": "mangoo I/O",
+    "website": "https://github.com/svenkubiak/mangooio",
+    "description": "An Intuitive, Lightweight, High Performance Full Stack Java Web Framework"
+  },
+  {
+    "name": "Squatting",
+    "website": "https://github.com/beppu/squatting",
+    "description": ""
+  },
+  {
+    "name": "Mack",
+    "website": "https://github.com/markbates/mack",
+    "description": "Mack is a Ruby web application framework. It takes the best ideas from several frameworks, including Rails, Merb, and  Ramaze, and tries to improve upon those ideas"
+  },
+  {
+    "name": "PHP For Applications",
+    "website": "http://p4a.sourceforge.net/",
+    "description": "P4A (PHP For Applications) is probably the best PHP5 RAD and object oriented PHP framework for building event-driven stateful web applications"
+  },
+  {
+    "name": "Jifty",
+    "website": "http://jifty.org/",
+    "description": "Jifty is a way to build web applications"
+  },
+  {
+    "name": "Webjure",
+    "website": "https://github.com/tatut/Webjure",
+    "description": "Webjure is a simple web framework for Clojure"
+  },
+  {
+    "name": "Waves",
+    "website": "https://github.com/waves/edge",
+    "description": ""
+  },
+  {
+    "name": "Salvia",
+    "website": "https://github.com/sebastiaanvisser/salvia",
+    "description": "Modular Haskell HTTP server"
+  },
+  {
+    "name": "CGI::Prototype",
+    "website": "http://search.cpan.org/dist/CGI-Prototype/",
+    "description": "Create a CGI application by prototyped subclasssing"
+  },
+  {
+    "name": "Agavi",
+    "website": "http://www.agavi.org/",
+    "description": "Agavi is a powerful, scalable PHP5 application framework that follows the MVC paradigm"
+  },
+  {
+    "name": "LiquidLava",
+    "website": "http://www.lava-framework.com/",
+    "description": "LiquidLava is a framework for building user interfaces, which scale from simple interactive elements on page to complex feature-rich applications"
+  },
+  {
+    "name": "HydraMVC",
+    "website": "https://github.com/lukesh/hydraframework_core",
+    "description": "HydraMVC is the result of a total rewrite of the PureMVC API exclusively for Flex, allowing Flex developers to take advantage of the PureMVC paradigm while leveraging native Flex features"
+  },
+  {
+    "name": "Roma",
+    "website": "http://www.romaframework.org",
+    "description": "Roma allows you to develop enterprise level Java applications with low effort following a real Domain Driven Design approach"
+  },
+  {
+    "name": "miku",
+    "website": "https://github.com/nfjinjing/miku",
+    "description": "A tiny web dev DSL"
+  },
+  {
+    "name": "WebGUI",
+    "website": "https://github.com/plainback/webgui",
+    "description": ""
+  },
+  {
+    "name": "Gantry",
+    "website": "http://www.usegantry.org/",
+    "description": "A web application framework for Perl. Object-oriented design allows for a pragmatic, modular approach to URL dispatching. "
+  },
+  {
+    "name": "Maveric",
+    "website": "https://github.com/scytrin/maveric",
+    "description": ""
+  },
+  {
+    "name": "Cyclone3",
+    "website": "http://www.cyclone3.org/",
+    "description": "Cyclone3 is an Open-Source Web 2.0 & Application Framework based primary on Perl and XUL"
+  },
+  {
+    "name": "Quixote",
+    "website": "http://quixote.ca/",
+    "description": "Quixote is a framework for writing Web-based applications using Python"
+  },
+  {
+    "name": "Xyster",
+    "website": "http://xyster.libreworks.net",
+    "description": "The Xyster Framework leverages and extends several parts of the Zend Framework providing a massive collection of useful and hardened tools for PHP applications"
+  },
+  {
+    "name": "Vork",
+    "website": "http://www.vork.us/",
+    "description": "Vork is an open-source PHP framework designed for rapid development of performance-oriented scalable applications"
+  },
+  {
+    "name": "Brutos",
+    "website": "http://www.brutosframework.com.br/",
+    "description": "The Brutos Application Framework is a MVC controller developed in Java. Designed to reduce the complexity of web development with configurable mapping, vision resolution and support for uploading and downloading files"
+  },
+  {
+    "name": "ClearPress",
+    "website": "http://search.cpan.org/dist/ClearPress/",
+    "description": "Simple, fresh & fruity MVC framework"
+  },
+  {
+    "name": "AgilePHP",
+    "website": "http://makeabyte.com/products_agilephp.html",
+    "description": " AgilePHP is a very lightweight, extensible PHP5 Rapid Application Development framework, which encourages the use of industry standards and best practices while developing PHP5 web applications"
+  },
+  {
+    "name": "Seagull",
+    "website": "http://seagullproject.org/",
+    "description": "Seagull is a mature OOP framework for building web, command line and GUI applications"
+  },
+  {
+    "name": "HybridJava",
+    "website": "http://hybridserverpages.com/",
+    "description": "HybridJava is a Java-based component-oriented MVC technology for programming dynamic web content"
+  },
+  {
+    "name": "Flutter",
+    "website": "flutter.dev",
+    "description": "Flutter is an open-source mobile application development framework created by Google. It is used to develop applications for Android and iOS, as well as being the primary method of creating applications for Google Fuchsia"
+  },
+  {
+    "name": "NativeScript",
+    "website": "www.nativescript.org",
+    "description": "NativeScript is an open-source framework to develop apps on the Apple iOS and Android platforms. It was originally conceived and developed by Progress. NativeScript apps are built using JavaScript, or by using any language that transpiles to JavaScript, such as TypeScript. NativeScript supports the Angular and Vue JavaScript frameworks. Mobile applications built with NativeScript result in fully native apps, which use the same APIs as if they were developed in Xcode or Android Studio. Additionally, software developers can re-purpose third-party libraries from CocoaPods, Android Arsenal, Maven, and npm.js in their mobile applications without the need for wrappers"
+  },
+  {
+    "name": "React Native",
+    "website": "facebook.github.io/react-native/",
+    "description": "Build native mobile apps using JavaScript and React"
+  }
+]
