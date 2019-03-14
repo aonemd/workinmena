@@ -133,5 +133,10 @@
     "name": "Julia",
     "website": "JuliaLang.org",
     "description": "Julia is a high-level general-purpose dynamic programming language whose designers intend it to address the needs of high-performance numerical analysis and computational science, without the need of separate compilation to be fast. It is also useful for low-level systems programming, as a specification language, with work being done on client and server web use"
+  },
+  {
+    "name": "Node.js",
+    "website": "nodejs.org/en/",
+    "description": "Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser"
   }
 ]
