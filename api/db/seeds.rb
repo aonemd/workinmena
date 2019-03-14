@@ -55,6 +55,6 @@ companies.each do |company|
   co = Company.create(name: company['name'], website: company['website'])
   company['tools'].each do |tool_name|
     tool = Tool.find_by_name(tool_name)
-    co.stack.create tool: tool
+    co.stack.create(tool: tool) if tool
   end
 end
