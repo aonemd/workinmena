@@ -48,3 +48,13 @@ service_tools.each do |service|
               description: service['description'],
               category: service_category)
 end
+
+# seeding companies
+companies = ActiveSupport::JSON.decode(File.read('db/seeds/companies.json'))
+companies.each do |company|
+  co = Company.create(name: company['name'], website: company['website'])
+  company['tools'].each do |tool_name|
+    tool = Tool.find_by_name(tool_name)
+    co.stack.create tool: tool
+  end
+end
