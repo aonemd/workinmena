@@ -138,5 +138,10 @@
     "name": "Node.js",
     "website": "nodejs.org/en/",
     "description": "Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser"
+  },
+  {
+    "name": "Lua",
+    "website": "lua.org",
+    "description": "Lua is a lightweight, multi-paradigm programming language designed primarily for embedded use in applications"
   }
 ]

@@ -13,5 +13,50 @@
     "name": "Jenkins",
     "website": "jenkins.io",
     "description": "Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery"
+  },
+  {
+    "name": "Ubuntu",
+    "website": "ubuntu.com",
+    "description": "Ubuntu is a free and open-source Linux distribution based on Debian"
+  },
+  {
+    "name": "Nginx",
+    "website": "nginx.org",
+    "description": "Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache"
+  },
+  {
+    "name": "CloudFlare",
+    "website": "cloudflare.com",
+    "description": "Cloudflare, Inc. is a U.S. company that provides content delivery network services, DDoS mitigation, Internet security and distributed domain name server services"
+  },
+  {
+    "name": "Apache",
+    "website": "httpd.apache.org",
+    "description": "The Apache HTTP Server, colloquially called Apache, is free and open-source cross-platform web server software"
+  },
+  {
+    "name": "RackCache",
+    "website": "http://rtomayko.github.io/rack-cache/",
+    "description": "Real HTTP Caching for Ruby Web Apps"
+  },
+  {
+    "name": "Windows Server",
+    "website": "windowsserver.com",
+    "description": "Windows Server is a brand name for a group of server operating systems released by Microsoft"
+  },
+  {
+    "name": "Windows Server",
+    "website": "windowsserver.com",
+    "description": "Windows Server is a brand name for a group of server operating systems released by Microsoft"
+  },
+  {
+    "name": "Amazon Web Services",
+    "website": "aws.amazon.com",
+    "description": "Amazon Web Services (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms to individuals, companies and governments, on a metered pay-as-you-go basis. In aggregate, these cloud computing web services provide a set of primitive, abstract technical infrastructure and distributed computing building blocks and tools"
+  },
+  {
+    "name": "OpenResty",
+    "website": "https://openresty.org/en/",
+    "description": "Scalable Web Platform by Extending NGINX with Lua"
   }
 ]
