@@ -13,5 +13,6 @@ COPY Gemfile* /app/
 RUN bundle install --jobs `expr $(cat /proc/cpuinfo | grep -c "cpu cores") - 1` --retry 3
 
 COPY . /app
+COPY config/database.yml.docker /app/config/database.yml
 
 EXPOSE 3000
