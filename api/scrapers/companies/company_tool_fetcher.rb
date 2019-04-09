@@ -18,7 +18,7 @@ data = JSON.parse(file.read)
 
 companies = []
 data.each do |row|
-  tools   = fetch_tools(row['website']).fetch('tools', []).uniq
+  tools   = fetch_tools(row['website']).fetch('tools', []).uniq rescue next
   company = { name: row['name'], website: row['website'], tools: tools }
   companies.append(company)
 end
