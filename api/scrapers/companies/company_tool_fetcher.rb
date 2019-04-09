@@ -25,3 +25,5 @@ end
 
 file.puts(JSON.pretty_generate(companies))
 file.close
+
+puts "Processed #{companies.count}"
