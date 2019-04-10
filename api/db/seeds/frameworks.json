@@ -867,7 +867,7 @@
   {
     "name": "WebGUI",
     "website": "https://github.com/plainback/webgui",
-    "description": ""
+    "description": "WebGUI is an open-source content management system written in Perl"
   },
   {
     "name": "Gantry",
@@ -960,6 +960,16 @@
     "description": "WooCommerce is an open-source e-commerce plugin for WordPress"
   },
   {
+    "name": "Joomla",
+    "website": "www.joomla.org",
+    "description": "Joomla! is a free and open-source content management system (CMS) for publishing web content, developed by Open Source Matters, Inc. It is built on a model–view–controller web application framework that can be used independently of the CMS"
+  },
+  {
+    "name": "Shopify",
+    "website": "https://www.shopify.com",
+    "description": "Shopify is a CMS for building e-commerce solutions"
+  },
+  {
     "name": "Backbone.js",
     "website": "backbonejs.org",
     "description": "Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the Model–view–presenter (MVP) application design paradigm"
@@ -985,13 +995,102 @@
     "description": "Drupal is a free and open-source content management framework written in PHP and distributed under the GNU General Public License"
   },
   {
-    "name": "Webpack",
+    "name": "webpack",
     "website": "webpack.js.org",
-    "description": "Webpack is an open-source JavaScript module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset"
+    "description": "webpack is an open-source JavaScript module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset"
+  },
+  {
+    "name": "Next.js",
+    "website": "nextjs.org",
+    "description": "The React Framework"
   },
   {
     "name": "Nuxt.js",
     "website": "nuxtjs.org/",
-    "description": "Nuxt.js is a free and open source web application framework based on Vue.js, Node.js, Express.js, Webpack and Babel.js"
+    "description": "Nuxt.js is a free and open source web application framework based on Vue.js, Node.js, Express.js, webpack and Babel.js"
+  },
+  {
+    "name": "MooTools",
+    "website": "mootools.net",
+    "description": "MooTools (My Object-Oriented Tools) is a lightweight, object-oriented JavaScript framework. It is released under the free, open-source MIT License"
+  },{
+    "name": "Mobirise",
+    "website": "Mobirise.com",
+    "description": "Mobirise Website Builder is a freeware web design application, developed by Mobirise, that allows users to create and publish bootstrap websites, without coding. Mobirise is essentially a drag and drop website builder, featuring various website themes. The software's features can be extended by purchasing extensions"
+  },
+  {
+    "name": "Odoo",
+    "website": "odoo.com",
+    "description": "Odoo is an all-in-one business software including CRM, website/e-commerce, billing, accounting, manufacturing, warehouse - and project management, and inventory"
+  },
+  {
+    "name": "DreamWeaver",
+    "website": "www.adobe.com/products/dreamweaver",
+    "description": "Adobe Dreamweaver is a proprietary web development tool from Adobe Inc."
+  },
+  {
+    "name": "UiKit",
+    "website": "getuikit.com",
+    "description": "A lightweight and modular front-end framework for developing fast and powerful web interfaces"
+  },
+  {
+    "name": "Kentico CMS",
+    "website": "kentico.com",
+    "description": "Kentico CMS is a web content management system for building websites, online stores, intranets, and Web 2.0 community sites. Kentico CMS uses ASP.NET and Microsoft SQL Server for development via its portal engine, using Visual Studio, or through Microsoft MVC. Kentico is also compatible with Microsoft Azure"
+  },
+  {
+    "name": "nopCommerce",
+    "website": "nopcommerce.com",
+    "description": "nopCommerce is an open-source E-commerce solution based on Microsoft's ASP.NET MVC 4.0 and MS SQL Server 2008 (or higher) backend Database. It provides a catalog frontend and an administration tool backend, allowing shopping cart creation"
+  },
+  {
+    "name": "Umbraco",
+    "website": "umbraco.com",
+    "description": "Umbraco is an open-source content management system (CMS) platform for publishing content on the World Wide Web and intranets. It is written in C# and deployed on Microsoft based infrastructure"
+  },
+  {
+    "name": "Brightspot",
+    "website": "brightspot.com",
+    "description": "Brightspot™ by, Perfect Sense is the only enterprise CMS (content management software) you can launch in under 90 days"
+  },
+  {
+    "name": "Magento",
+    "website": "magento.com",
+    "description": "Magento is an open-source e-commerce platform written in PHP"
+  },
+  {
+    "name": "Grav",
+    "website": "getgrav.org",
+    "description": "Modern, Crazy Fast, Ridiculously Easy and Amazingly Powerful Flat-File CMS (PHP)"
+  },
+  {
+    "name": "Gatsby",
+    "website": "gatsbyjs.org",
+    "description": "Transform plain text into dynamic blogs and websites using React.js and JavaScript"
+  },
+  {
+    "name": "Weebly",
+    "website": "www.weebly.com",
+    "description": "Weebly's free website builder makes it easy to build a website, blog, or online store. Find customizable designs, domains, and eCommerce tools for any type of business using our website builder"
+  },
+  {
+    "name": "Materialize CSS",
+    "website": "materializecss.com",
+    "description": "Materialize is a modern responsive CSS framework based on Material Design by Google"
+  },
+  {
+    "name": "Craft CMS",
+    "website": "craftcms.com",
+    "description": "Craft is hands down the most user-friendly CMS on the market. Its secret weapons are extreme extensibility and ease of development. Craft is the engine to a connected, secure, API-driven platform, rather than just a vanilla CMS"
+  },
+  {
+    "name": "TYPO3 CMS",
+    "website": "typo3.org",
+    "description": "TYPO3 is a free and open-source Web content management system written in PHP. It is released under the GNU General Public License. It can run on several web servers, such as Apache or IIS, on top of many operating systems, among them Linux, Microsoft Windows, FreeBSD, macOS and OS/2"
+  },
+  {
+    "name": "Kooboo CMS",
+    "website": "kooboo.com",
+    "description": "Kooboo is a new kind of web development tool capable of developing static pages or complex websites. Content managers use inline editing tool. Developers use HTML/CSS for database driven websites and JavaScript for extensive development"
   }
 ]

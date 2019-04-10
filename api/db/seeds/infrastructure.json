@@ -20,6 +20,26 @@
     "description": "Ubuntu is a free and open-source Linux distribution based on Debian"
   },
   {
+    "name": "CentOS",
+    "website": "centos.org",
+    "description": "CentOS is a Linux distribution that provides a free, enterprise-class, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux"
+  },
+  {
+    "name": "Debian",
+    "website": "debian.org",
+    "description": "Debian is a Unix-like computer operating system that is composed entirely of free software, and packaged by a group of individuals participating in the Debian Project"
+  },
+  {
+    "name": "Gentoo",
+    "website": "gentoo.org",
+    "description": "Gentoo Linux is a Linux distribution built using the Portage package management system. Unlike a binary software distribution, the source code is compiled locally according to the user's preferences and is often optimized for the specific type of computer. Precompiled binaries are available for some larger packages or those with no available source code"
+  },
+  {
+    "name": "Fedora",
+    "website": "getfedora.org",
+    "description": "Fedora is a Linux distribution developed by the community-supported Fedora Project and sponsored by Red Hat. Fedora contains software distributed under various free and open-source licenses and aims to be on the leading edge of such technologies. Fedora is the upstream source of the commercial Red Hat Enterprise Linux distribution"
+  },
+  {
     "name": "Nginx",
     "website": "nginx.org",
     "description": "Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache"
@@ -45,6 +65,11 @@
     "description": "Windows Server is a brand name for a group of server operating systems released by Microsoft"
   },
   {
+    "name": "IIS",
+    "website": "iis.net",
+    "description": "Internet Information Services (IIS, formerly Internet Information Server) is an extensible web server created by Microsoft for use with the Windows NT family. IIS supports HTTP, HTTP/2, HTTPS, FTP, FTPS, SMTP and NNTP"
+  },
+  {
     "name": "Windows Server",
     "website": "windowsserver.com",
     "description": "Windows Server is a brand name for a group of server operating systems released by Microsoft"
@@ -57,6 +82,51 @@
   {
     "name": "OpenResty",
     "website": "https://openresty.org/en/",
-    "description": "Scalable Web Platform by Extending NGINX with Lua"
+    "description": "Scalable Web Platform by Extending Nginx with Lua"
+  },
+  {
+    "name": "Plesk",
+    "website": "plesk.com",
+    "description": "Plesk is a commercial web hosting platform with a control panel that allows a server administrator to set up new websites, reseller accounts, e-mail accounts and DNS entries through a web-based interface"
+  },
+  {
+    "name": "Akamai",
+    "website": "akamai.com",
+    "description": "Akamai Technologies, Inc. is an American content delivery network (CDN) and cloud service provider headquartered in Cambridge, Massachusetts, in the United States"
+  },
+  {
+    "name": "Incapsula",
+    "website": "incapsula.com",
+    "description": "Incapsula is a security CDN that makes any website safer, faster and more reliable"
+  },
+  {
+    "name": "Netlify",
+    "website": "netlify.com",
+    "description": "Netlify is a San Francisco-based cloud computing company that offers hosting and serverless backend services for static websites"
+  },
+  {
+    "name": "Caddy",
+    "website": "caddyserver.com",
+    "description": "Fast, cross-platform HTTP/2 web server with automatic HTTPS written in Go"
+  },
+  {
+    "name": "Google App Engine",
+    "website": "cloud.google.com/appengine",
+    "description": "Google App Engine (often referred to as GAE or simply App Engine) is a web framework and cloud computing platform for developing and hosting web applications in Google-managed data centers. Applications are sandboxed and run across multiple servers. App Engine offers automatic scaling for web applications—as the number of requests increases for an application, App Engine automatically allocates more resources for the web application to handle the additional demand"
+  },
+  {
+    "name": "Apache Tomcat",
+    "website": "tomcat.apache.org",
+    "description": "Apache Tomcat, often referred to as Tomcat Server, is an open-source Java Servlet Container developed by the Apache Software Foundation (ASF). Tomcat implements several Java EE specifications including Java Servlet, JavaServer Pages (JSP), Java EL, and WebSocket, and provides a \"pure Java\" HTTP web server environment in which Java code can run"
+  },
+  {
+    "name": "Phusion Passenger",
+    "website": "phusionpassenger.com",
+    "description": "Phusion Passenger is a free web server and application server with support for Ruby, Python and Node.js. It is designed to integrate into the Apache HTTP Server or the nginx web server, but also has a mode for running standalone without an external web server"
+  },
+  {
+    "name": "Firebase",
+    "website": "firebase.google.com",
+    "description": "Firebase is a mobile and web application development platform. It gives you functionality like analytics, databases, messaging and crash reporting so you can move quickly and focus on your users"
   }
 ]
