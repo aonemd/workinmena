@@ -96,13 +96,21 @@
   {
     "name": "Halan",
     "website": "halanapp.com",
-    "tools": []
+    "tools": [
+      "Bootstrap",
+      "jQuery",
+      "Font Awesome",
+      "Apache",
+      "Ubuntu"
+    ]
   },
   {
     "name": "FilKhedma",
     "website": "filkhedma.com",
     "tools": [
-      "Angular"
+      "Angular",
+      "webpack",
+      "Amazon Web Services"
     ]
   },
   {
@@ -138,7 +146,7 @@
     "tools": [
       "PHP",
       "MySQL",
-      "Wordpress",
+      "WordPress",
       "jQuery",
       "Nginx"
     ]
@@ -490,6 +498,7 @@
       "jQuery",
       "Laravel",
       "PHP",
+      "Node.js",
       "AddThis",
       "Bootstrap",
       "Chart.js"
@@ -585,15 +594,6 @@
       "Laravel",
       "PHP",
       "Google Tag Manager"
-    ]
-  },
-  {
-    "name": "Orcas",
-    "website": "orcas.io",
-    "tools": [
-      "Wix",
-      "Google Font API",
-      "RequireJS"
     ]
   },
   {
@@ -1081,7 +1081,7 @@
       "Varnish",
       "Envoy",
       "Squarespace",
-      "Webpack"
+      "webpack"
     ]
   },
   {
@@ -1179,8 +1179,11 @@
     "tools": [
       "C#",
       "ASP.NET",
+      "Windows Server",
+      "IIS",
       "jQuery",
       "React",
+      "webpack",
       "Google Tag Manager"
     ]
   },
@@ -1281,16 +1284,6 @@
     ]
   },
   {
-    "name": "AIESEC - MANSOURA",
-    "website": "https://www.aiesec.org",
-    "tools": [
-      "Nginx",
-      "Google Font API",
-      "Google Tag Manager",
-      "Hammer.js"
-    ]
-  },
-  {
     "name": "Misreya Medical",
     "website": "http://www.misreyamedical.com",
     "tools": [
@@ -1376,16 +1369,6 @@
     ]
   },
   {
-    "name": "GSK",
-    "website": "https://www.gsk.com",
-    "tools": [
-      "Google Tag Manager",
-      "Ensighten",
-      "Amazon Cloudfront",
-      "Amazon Web Services"
-    ]
-  },
-  {
     "name": "Infosysta",
     "website": "http://www.infosysta.com",
     "tools": [
@@ -1401,18 +1384,6 @@
       "PHP",
       "MySQL",
       "Font Awesome"
-    ]
-  },
-  {
-    "name": "Deals Catalyst",
-    "website": "http://www.dealscatalyst.com",
-    "tools": [
-      "Linkedin",
-      "Apache",
-      "Facebook",
-      "Varnish",
-      "Twitter",
-      "Google Plus"
     ]
   },
   {
@@ -1485,15 +1456,6 @@
       "IIS",
       "Windows Server",
       "Google AdSense"
-    ]
-  },
-  {
-    "name": "Elite Business Solutions EBS",
-    "website": "http://www.elite-bs.net",
-    "tools": [
-      "Google Font API",
-      "Wix",
-      "RequireJS"
     ]
   },
   {
@@ -1631,15 +1593,6 @@
     ]
   },
   {
-    "name": "Hassan Healthcare Egypt",
-    "website": "http://www.hassanhealth.com",
-    "tools": [
-      "Google Font API",
-      "Wix",
-      "RequireJS"
-    ]
-  },
-  {
     "name": "RoboVics",
     "website": "http://www.robovics.com",
     "tools": [
@@ -1744,13 +1697,6 @@
     ]
   },
   {
-    "name": "Cairoscan",
-    "website": "http://www.cairoscan.com",
-    "tools": [
-      "Nginx"
-    ]
-  },
-  {
     "name": "IT Pillars",
     "website": "http://www.it-pillars.com",
     "tools": [
@@ -1828,13 +1774,6 @@
       "PHP",
       "MySQL",
       "Google Font API"
-    ]
-  },
-  {
-    "name": "Sanofi",
-    "website": "http://www.sanofi.com",
-    "tools": [
-      "Google Tag Manager"
     ]
   },
   {
@@ -1924,7 +1863,11 @@
       "Google Font API",
       "Google Tag Manager",
       "Bootstrap",
-      "jQuery"
+      "webpack",
+      "jQuery",
+      "Node.js",
+      "Express",
+      "Vue.js"
     ]
   },
   {
@@ -1987,15 +1930,6 @@
       "Bootstrap",
       "Modernizr",
       "jQuery Migrate"
-    ]
-  },
-  {
-    "name": "Digisay",
-    "website": "http://digisay.com",
-    "tools": [
-      "Google Font API",
-      "Wix",
-      "RequireJS"
     ]
   },
   {
@@ -2080,14 +2014,12 @@
     "website": "http://www.git-eg.com",
     "tools": [
       "Python",
-      "Flask"
-    ]
-  },
-  {
-    "name": "Al Marasem International for Development",
-    "website": "https://www.linkedin.com",
-    "tools": [
-      "Java"
+      "Flask",
+      "PostgreSQL",
+      "Bootstrap",
+      "Font Awesome",
+      "jQuery",
+      "Apache"
     ]
   },
   {
@@ -2179,15 +2111,6 @@
       "Google Font API",
       "Bootstrap",
       "Modernizr"
-    ]
-  },
-  {
-    "name": "Go Plus",
-    "website": "https://www.goplus-eg.com",
-    "tools": [
-      "Wix",
-      "RequireJS",
-      "React"
     ]
   },
   {
@@ -2532,19 +2455,14 @@
     ]
   },
   {
-    "name": "ComRec Solutions",
-    "website": "http://www.comrec-solutions.com",
-    "tools": [
-      "Wix",
-      "RequireJS",
-      "Google Font API"
-    ]
-  },
-  {
     "name": "Fourteen",
     "website": "http://fourteen.com.eg",
     "tools": [
-      "Nginx"
+      "Nginx",
+      "MySQL",
+      "PHP",
+      "Bootstrap",
+      "jQuery"
     ]
   },
   {
@@ -2850,7 +2768,6 @@
       "mod_perl",
       "Apache",
       "UNIX",
-      "Word",
       "MooTools",
       "jQuery"
     ]
@@ -2909,7 +2826,8 @@
     "name": "Beyond Solution",
     "website": "http://beyond-solution.com",
     "tools": [
-      "Apache"
+      "Apache",
+      "PHP"
     ]
   },
   {
@@ -3213,15 +3131,6 @@
     ]
   },
   {
-    "name": "3Brothers",
-    "website": "https://www.3b-eg.com",
-    "tools": [
-      "Wix",
-      "RequireJS",
-      "React"
-    ]
-  },
-  {
     "name": "Dynamicslink",
     "website": "http://www.dynamicslink.com",
     "tools": [
@@ -3303,15 +3212,6 @@
       "jQuery Migrate",
       "EasyEngine",
       "Docker"
-    ]
-  },
-  {
-    "name": "MegaSoft",
-    "website": "http://www.megasoft.com.eg",
-    "tools": [
-      "Google Font API",
-      "Wix",
-      "RequireJS"
     ]
   },
   {
@@ -3530,7 +3430,8 @@
     "website": "http://www.talentsarena.net",
     "tools": [
       "Apache",
-      "Bootstrap"
+      "Bootstrap",
+      "React"
     ]
   },
   {
@@ -4344,16 +4245,8 @@
       "Font Awesome",
       "animate.css",
       "Bootstrap",
-      "Nginx"
-    ]
-  },
-  {
-    "name": "customizo.ca",
-    "website": "http://www.customizo.ca",
-    "tools": [
-      "Wix",
-      "RequireJS",
-      "Google Font API"
+      "Nginx",
+      "AngularJS"
     ]
   },
   {
@@ -4428,7 +4321,8 @@
     "tools": [
       "Apache",
       "Bootstrap",
-      "jQuery"
+      "jQuery",
+      "PHP"
     ]
   },
   {
@@ -4473,7 +4367,10 @@
     "tools": [
       "YouTube",
       "Google Plus",
-      "Google Font API"
+      "Google Font API",
+      "PHP",
+      "jQuery",
+      "Bootstrap"
     ]
   },
   {
@@ -4577,7 +4474,8 @@
       "Apache",
       "Google Tag Manager",
       "Bootstrap",
-      "jQuery"
+      "jQuery",
+      "webpack"
     ]
   },
   {
@@ -5028,6 +4926,7 @@
     "tools": [
       "three.js",
       "Apache",
+      "PHP",
       "RequireJS",
       "Bootstrap",
       "Windows Server",
@@ -5083,26 +4982,13 @@
     ]
   },
   {
-    "name": "Coral Technology",
-    "website": "https://www.coral.io",
-    "tools": [
-      "Google Font API",
-      "Wix",
-      "RequireJS"
-    ]
-  },
-  {
     "name": "ITSS",
     "website": "http://itss-c.com",
     "tools": [
-      "Nginx",
-      "Google Font API",
-      "Odoo",
-      "Python",
-      "PostgreSQL",
-      "Node.js",
-      "Less",
-      "Ubuntu"
+      "Apache",
+      "MySQL",
+      "PHP",
+      "jQuery"
     ]
   },
   {
@@ -5601,6 +5487,7 @@
       "Laravel",
       "PHP",
       "Apache",
+      "MySQL",
       "Ubuntu"
     ]
   },
@@ -6085,13 +5972,6 @@
       "PHP",
       "MySQL",
       "Font Awesome"
-    ]
-  },
-  {
-    "name": "Globaction",
-    "website": "http://www.globaction.com",
-    "tools": [
-      "Apache"
     ]
   },
   {
@@ -6734,7 +6614,8 @@
       "Font Awesome",
       "Laravel",
       "PHP",
-      "Apache"
+      "Apache",
+      "React"
     ]
   },
   {
@@ -6764,7 +6645,11 @@
     "website": "https://www.vapulus.com",
     "tools": [
       "Apache",
-      "Ubuntu"
+      "Ubuntu",
+      "MySQL",
+      "PHP",
+      "Font Awesome",
+      "jQuery"
     ]
   },
   {
@@ -6879,7 +6764,9 @@
       "Nginx",
       "OWL Carousel",
       "animate.css",
-      "Bootstrap"
+      "Bootstrap",
+      "webpack",
+      "Angular"
     ]
   },
   {
@@ -7079,13 +6966,6 @@
     ]
   },
   {
-    "name": "Vezeeta.com",
-    "website": "http://www.vezeeta.com",
-    "tools": [
-      "Google Tag Manager"
-    ]
-  },
-  {
     "name": "Enwan",
     "website": "http://enwan.sa",
     "tools": [
@@ -7129,9 +7009,11 @@
     "website": "http://www.linux-plus.com",
     "tools": [
       "Font Awesome",
-      "Apache",
       "jQuery UI",
-      "jQuery"
+      "jQuery",
+      "ASP.NET",
+      "Windows Server",
+      "IIS"
     ]
   },
   {
@@ -7191,7 +7073,8 @@
       "Google Font API",
       "Apache",
       "jQuery",
-      "Ubuntu"
+      "Ubuntu",
+      "React"
     ]
   },
   {
@@ -7214,6 +7097,10 @@
     "name": "IT Systems Corporation",
     "website": "http://www.it-syscorp.com",
     "tools": [
+      "ASP.NET",
+      "Windows Server",
+      "IIS",
+      "Bootstrap",
       "HTTPAPI"
     ]
   },
@@ -7332,7 +7219,9 @@
     "tools": [
       "jQuery",
       "Apache",
-      "Bootstrap"
+      "Bootstrap",
+      "PHP",
+      "WordPress"
     ]
   },
   {
@@ -7383,7 +7272,9 @@
       "jQuery",
       "Nginx",
       "Flickity",
-      "Google Font API"
+      "Google Font API",
+      "Angular",
+      "Node.js"
     ]
   },
   {
@@ -9025,7 +8916,11 @@
     "name": "Microsoft",
     "website": "http://www.microsoft.com",
     "tools": [
-      "jQuery"
+      "jQuery",
+      "C#",
+      "ASP.NET",
+      "Windows Server",
+      "IIS"
     ]
   },
   {
@@ -10323,15 +10218,6 @@
       "jQuery",
       "FancyBox",
       "jQuery Migrate"
-    ]
-  },
-  {
-    "name": "Ahram Security Group",
-    "website": "http://www.ahramsg.com",
-    "tools": [
-      "Google Font API",
-      "Wix",
-      "RequireJS"
     ]
   },
   {
