@@ -11758,5 +11758,17 @@
       "Font Awesome",
       "Apache"
     ]
+  },
+  {
+    "name": "Pinoffer",
+    "website": "pin-offer.com",
+    "tools": [
+      "Express",
+      "Node.js",
+      "CloudFlare",
+      "Font Awesome",
+      "Bootstrap",
+      "jQuery"
+    ]
   }
 ]
