@@ -13,8 +13,9 @@ def fetch_tools(url)
   JSON.parse(res.body)
 end
 
-file = File.open('./scrapers/companies.json', 'a+')
-data = JSON.parse(file.read)
+read_file = File.open('./scrapers/companies.json', 'a+')
+data      = JSON.parse(read_file.read)
+read_file.close
 
 companies = []
 data.each do |row|
@@ -23,7 +24,8 @@ data.each do |row|
   companies.append(company)
 end
 
-file.puts(JSON.pretty_generate(companies))
-file.close
+write_file = File.open('./scrapers/companies-tools.json', 'a+')
+write_file.puts(JSON.pretty_generate(companies))
+write_file.close
 
 puts "Processed #{companies.count}"
