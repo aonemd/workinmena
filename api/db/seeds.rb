@@ -53,6 +53,8 @@ end
 companies = ActiveSupport::JSON.decode(File.read('db/seeds/companies.json'))
 companies.each do |company|
   co = Company.create(name: company['name'], website: company['website'])
+  next unless co.save
+
   company['tools'].each do |tool_name|
     tool = Tool.find_by_name(tool_name)
     co.stack.create(tool: tool) if tool
