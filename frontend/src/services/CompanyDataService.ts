@@ -15,6 +15,13 @@ class CompanyDataService {
 
     return data;
   }
+
+  async getOne(id: number): Promise<{company: Company}> {
+    const response = await http.get(`/companies/${id}`);
+    const {data}   = response;
+
+    return data;
+  }
 }
 
 export default new CompanyDataService();
