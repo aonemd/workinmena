@@ -1,20 +1,38 @@
 <template>
-  <h2>This is a Vue 3 component!</h2>
-  <button @click="increase">Clicked {{ count }} times.</button>
+  <h1>hey</h1>
+  <table class="mail-table">
+    <tbody>
+      <tr>
+        <th>Name</th>
+      </tr>
+
+      <tr v-for="company in state.companies">
+        <td>{{company.name}}</td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, onMounted, reactive } from "vue";
+
+import CompanyDataService from "./services/CompanyDataService";
+import { Company } from './interfaces';
+
 export default defineComponent({
   setup() {
-    const count = ref(0)
-    const increase = () => {
-      count.value++
-    }
+    let state = reactive<{companies: Company[]}>({
+      companies: []
+    })
+
+    onMounted(() => {
+      CompanyDataService.getAll().then((data) => {
+        state.companies = data.companies
+      });
+    });
 
     return {
-      count,
-      increase,
+      state,
     }
   }
 });
