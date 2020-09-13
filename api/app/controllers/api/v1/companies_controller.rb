@@ -1,6 +1,6 @@
 class Api::V1::CompaniesController < ApplicationController
   def index
-    render json: { companies: CompanyDecorator.decorate_collection(Company.all) }
+    render json: { companies: CompanyDecorator.decorate_collection(Company.all.includes(:tools)) }
   end
 
   def create
