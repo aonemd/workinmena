@@ -1237,7 +1237,7 @@
     "website": "https://www.facegraph.com",
     "tools": [
       "YouTube",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Azure",
@@ -1293,7 +1293,7 @@
     "name": "Vision International",
     "website": "http://www.visionkuwait.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -1345,12 +1345,12 @@
       "jQuery",
       "animate.css",
       "Bootstrap",
-      "Microsoft SharePoint",
+      "SharePoint",
       "IIS",
       "Windows Server",
       "Google Font API",
       "Font Awesome",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -1452,7 +1452,7 @@
     "name": "GET Group- Egypt",
     "website": "http://www.getgroup.com",
     "tools": [
-      "Microsoft HTTPAPI"
+      "HTTPAPI"
     ]
   },
   {
@@ -1511,7 +1511,7 @@
       "Slick",
       "Bootstrap",
       "Google Font API",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "animate.css",
       "Font Awesome"
     ]
@@ -1535,7 +1535,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -1602,7 +1602,7 @@
       "Font Awesome",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "Google Font API"
     ]
@@ -1626,7 +1626,7 @@
     "name": "SilverKey Technologies, Egypt",
     "website": "http://egypt.silverkeytech.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -1657,7 +1657,7 @@
     "website": "http://www.gadtech-eg.com",
     "tools": [
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Bootstrap"
@@ -1801,7 +1801,7 @@
     "website": "http://www.compuroots.com",
     "tools": [
       "Bootstrap",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk",
       "Google Font API",
       "OWL Carousel",
@@ -1842,7 +1842,7 @@
     "name": "IDV Digital",
     "website": "http://www.idvdigital.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Cloudflare"
     ]
   },
@@ -1864,7 +1864,7 @@
     "name": "Smartpan",
     "website": "http://www.smartpan.com.sa",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Plesk"
@@ -2042,7 +2042,7 @@
     "name": "BDO Esnad",
     "website": "http://bdoesnad.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -2143,7 +2143,7 @@
       "Azure",
       "animate.css",
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "prettyPhoto",
       "jQuery",
       "Google Font API"
@@ -2161,7 +2161,7 @@
     "name": "SoftTrend",
     "website": "http://www.soft-trend.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -2173,7 +2173,7 @@
       "IIS",
       "Windows Server",
       "Plesk",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -2188,7 +2188,7 @@
     "name": "Nahdet Misr Publishing Group",
     "website": "http://www.nahdetmisr.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -2230,7 +2230,7 @@
     "website": "https://www.rehlat.com",
     "tools": [
       "Incapsula",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -2300,7 +2300,7 @@
     "name": "Decorama",
     "website": "http://www.decoramaegypt.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Google Font API",
       "IIS",
       "Windows Server"
@@ -2310,7 +2310,7 @@
     "name": "Comsys Software",
     "website": "http://www.comsyssoftware.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Google Font API",
@@ -2344,7 +2344,7 @@
       "Google Font API",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -2398,7 +2398,7 @@
     "name": "Mega Trust",
     "website": "http://mtrustsoft.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk",
       "IIS",
       "Windows Server"
@@ -2524,7 +2524,7 @@
     "tools": [
       "animate.css",
       "Plesk",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "Font Awesome"
     ]
@@ -2552,7 +2552,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -2596,8 +2596,8 @@
     "name": "Ejada (Cairo)",
     "website": "http://www.ejada.com",
     "tools": [
-      "Microsoft ASP.NET",
-      "Microsoft SharePoint",
+      "ASP.NET",
+      "SharePoint",
       "IIS",
       "Windows Server"
     ]
@@ -2659,7 +2659,7 @@
       "IIS",
       "Windows Server",
       "Google Font API",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -2673,7 +2673,7 @@
     "name": "Pioneers Solutions",
     "website": "https://www.pioneers-solutions.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -2908,7 +2908,7 @@
     "name": "Microtech",
     "website": "http://www.microtech.com.eg",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -3073,7 +3073,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome"
     ]
   },
@@ -3089,7 +3089,7 @@
     "name": "LeenaTech",
     "website": "http://www.leenatech.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -3138,7 +3138,7 @@
       "OWL Carousel",
       "jQuery",
       "Bootstrap",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Font Awesome",
@@ -3181,7 +3181,7 @@
       "IIS",
       "Windows Server",
       "Plesk",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -3209,7 +3209,7 @@
     "name": "Trinity Solution",
     "website": "http://www.trinityidea.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Nginx"
     ]
   },
@@ -3228,7 +3228,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -3244,7 +3244,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -3277,7 +3277,7 @@
       "jQuery",
       "animate.css",
       "Bootstrap",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome",
       "Google Font API",
       "Google Tag Manager"
@@ -3288,7 +3288,7 @@
     "website": "http://www.techtouch4it.com",
     "tools": [
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "IIS",
       "Windows Server"
@@ -3352,7 +3352,7 @@
       "Google Font API",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -3364,7 +3364,7 @@
       "Windows Server",
       "WooCommerce",
       "WordPress",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome",
       "PHP",
       "MySQL"
@@ -3382,7 +3382,7 @@
     "name": "Altair Software Egypt",
     "website": "http://www.altair-group.eu",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Azure"
@@ -3430,7 +3430,7 @@
       "jQuery",
       "Google Font API",
       "Bootstrap",
-      "Microsoft Word",
+      "Word",
       "Apache"
     ]
   },
@@ -3445,7 +3445,7 @@
       "IIS",
       "Windows Server",
       "Plesk",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome",
       "Slick",
       "jQuery",
@@ -3661,7 +3661,7 @@
       "Bootstrap",
       "prettyPhoto",
       "jQuery",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Font Awesome"
@@ -3721,7 +3721,7 @@
     "name": "Madar Soft",
     "website": "http://www.madarsoft.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Slick",
       "jQuery",
       "Bootstrap",
@@ -3738,7 +3738,7 @@
       "IIS",
       "Windows Server",
       "Bootstrap",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk",
       "YouTube",
       "Font Awesome"
@@ -3817,7 +3817,7 @@
     "name": "Spark Systems",
     "website": "http://www.spark-sys.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Plesk"
@@ -3877,7 +3877,7 @@
       "Google Font API",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -3927,7 +3927,7 @@
       "Font Awesome",
       "Bootstrap",
       "animate.css",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -4289,7 +4289,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -4521,7 +4521,7 @@
     "website": "http://www.binarywaves.com",
     "tools": [
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "OWL Carousel",
       "jQuery",
       "IIS",
@@ -4775,7 +4775,7 @@
     "name": "Medical On Hand",
     "website": "http://medicalonhand.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -4865,7 +4865,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -4898,7 +4898,7 @@
     "website": "http://www.it-syscorp.com",
     "tools": [
       "DNN",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -4950,7 +4950,7 @@
     "name": "Yat Learning Centers",
     "website": "http://www.yatlearning.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -5056,7 +5056,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -5102,7 +5102,7 @@
       "IIS",
       "Windows Server",
       "Plesk",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -5238,7 +5238,7 @@
       "prettyPhoto",
       "jQuery",
       "Google Font API",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Laravel",
       "PHP",
       "animate.css",
@@ -5430,7 +5430,7 @@
     "name": "Ghabbour Auto",
     "website": "http://www.ghabbourauto.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -5439,7 +5439,7 @@
     "name": "AMICO Group",
     "website": "http://www.amicogroup.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Plesk"
@@ -5523,7 +5523,7 @@
     "website": "http://www.CG-EG.com",
     "tools": [
       "Umbraco",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -5611,7 +5611,7 @@
     "name": "Aptec",
     "website": "http://eg.ingrammicro.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Kentico CMS"
@@ -5726,7 +5726,7 @@
       "Plesk",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -5792,7 +5792,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -5864,7 +5864,7 @@
     "website": "http://www.infodynamic.net",
     "tools": [
       "Plesk",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -6030,7 +6030,7 @@
       "Font Awesome",
       "Laravel",
       "PHP",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Google Font API",
       "OWL Carousel"
     ]
@@ -6039,7 +6039,7 @@
     "name": "Maridive Offshore Projects",
     "website": "http://www.maridivegroup.net",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "DreamWeaver",
       "IIS",
@@ -6081,7 +6081,7 @@
     "website": "http://www.ardic-developments.com",
     "tools": [
       "Google Font API",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "IIS",
       "Windows Server",
@@ -6114,7 +6114,7 @@
     "tools": [
       "Slick",
       "jQuery",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Bootstrap",
@@ -6204,7 +6204,7 @@
     "website": "http://www.diverseltd.com",
     "tools": [
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Bootstrap"
@@ -6214,7 +6214,7 @@
     "name": "Khatib & Alami",
     "website": "http://www.khatibalami.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -6228,7 +6228,7 @@
       "IIS",
       "Windows Server",
       "DNN",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -6237,7 +6237,7 @@
     "tools": [
       "Kentico CMS",
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Google Font API"
@@ -6291,7 +6291,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -6352,7 +6352,7 @@
     "website": "http://www.ecs-co.com",
     "tools": [
       "Plesk",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -6386,7 +6386,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -6439,7 +6439,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -6488,7 +6488,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -6538,7 +6538,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -6558,7 +6558,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -6779,7 +6779,7 @@
       "Google Font API",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -6924,7 +6924,7 @@
       "OWL Carousel",
       "Plesk",
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Google Font API"
     ]
   },
@@ -6984,7 +6984,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -7000,7 +7000,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -7008,7 +7008,7 @@
     "website": "http://www.kandeel.org",
     "tools": [
       "Plesk",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -7019,7 +7019,7 @@
     "tools": [
       "Font Awesome",
       "Azure",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "IIS",
       "Windows Server",
@@ -7062,7 +7062,7 @@
     "name": "Life Chemicals Group",
     "website": "http://www.lifecheme.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -7204,7 +7204,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Google Tag Manager",
       "Google Font API"
     ]
@@ -7265,7 +7265,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -7335,7 +7335,7 @@
       "Windows Server",
       "Google Font API",
       "Revslider",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "WordPress",
       "PHP",
       "MySQL"
@@ -7355,7 +7355,7 @@
       "IIS",
       "Windows Server",
       "Plesk",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -7421,7 +7421,7 @@
       "Plesk",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -7451,7 +7451,7 @@
     "name": "Promech Engineering",
     "website": "http://promech-eg.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -7493,7 +7493,7 @@
       "Plesk",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -7608,7 +7608,7 @@
     "website": "http://www.tiffanycargo.com",
     "tools": [
       "Plesk",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -7667,7 +7667,7 @@
     "name": "Proserv.",
     "website": "http://www.proservegyptgroup.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "animate.css",
       "Bootstrap",
       "jsDelivr",
@@ -7876,7 +7876,7 @@
     "website": "http://www.ebtkaraat.com",
     "tools": [
       "Google Font API",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "OWL Carousel",
       "jQuery",
       "animate.css",
@@ -7906,7 +7906,7 @@
     "name": "TransIT",
     "website": "http://www.transit.com.eg",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk",
       "IIS",
       "Windows Server"
@@ -7924,7 +7924,7 @@
     "name": "AMH Technology",
     "website": "http://amh-egypt.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "IIS",
       "Windows Server",
@@ -7967,7 +7967,7 @@
     "name": "Nagwa",
     "website": "https://www.nagwa.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Google Tag Manager"
@@ -8043,7 +8043,7 @@
       "Plesk",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -8110,7 +8110,7 @@
     "name": "ITIDA",
     "website": "http://www.itida.gov.eg",
     "tools": [
-      "Microsoft SharePoint"
+      "SharePoint"
     ]
   },
   {
@@ -8130,7 +8130,7 @@
     "tools": [
       "Plesk",
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Slick",
@@ -8192,7 +8192,7 @@
     "name": "Urban Estate",
     "website": "http://www.urban-dev.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -8244,7 +8244,7 @@
     "name": "Al-wefaq",
     "website": "http://alwefaq.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -8264,7 +8264,7 @@
       "Font Awesome",
       "Google Font API",
       "Azure",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -8337,7 +8337,7 @@
       "IIS",
       "Windows Server",
       "Plesk",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -8365,7 +8365,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -8466,7 +8466,7 @@
       "OWL Carousel",
       "jQuery",
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "YouTube",
       "animate.css",
       "Bootstrap",
@@ -8556,7 +8556,7 @@
     "name": "COLNN",
     "website": "http://www.colnn.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Cloudflare"
     ]
   },
@@ -8586,7 +8586,7 @@
       "OWL Carousel",
       "jQuery",
       "Google Font API",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -8612,7 +8612,7 @@
       "IIS",
       "Windows Server",
       "Bootstrap",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "animate.css",
       "Font Awesome",
       "Material Design Lite",
@@ -8641,7 +8641,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -8650,7 +8650,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -8702,7 +8702,7 @@
     "name": "Dexef",
     "website": "http://dexef.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -9038,7 +9038,7 @@
       "IIS",
       "Windows Server",
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "OWL Carousel",
       "jQuery",
@@ -9098,7 +9098,7 @@
     "name": "Itqan Information Services",
     "website": "http://itqanegypt.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -9139,7 +9139,7 @@
       "jQuery",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "animate.css",
       "YouTube",
       "Google Font API",
@@ -9175,7 +9175,7 @@
       "Bootstrap",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -9325,7 +9325,7 @@
     "name": "Aria Systems, Inc",
     "website": "http://ariasystems.biz",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Azure",
       "Google Font API",
       "DNN",
@@ -9404,7 +9404,7 @@
     "name": "DEVOPSolution",
     "website": "http://www.devopsolution.net",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk",
       "IIS",
       "Windows Server"
@@ -9446,7 +9446,7 @@
     "website": "http://www.innovatec.ae",
     "tools": [
       "Plesk",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -9461,7 +9461,7 @@
       "Bootstrap",
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome"
     ]
   },
@@ -9482,7 +9482,7 @@
       "particles.js",
       "Plesk",
       "SweetAlert",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome",
       "YouTube",
       "OWL Carousel",
@@ -9504,7 +9504,7 @@
     "website": "http://pl4tech.com",
     "tools": [
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap",
       "IIS",
       "Windows Server",
@@ -9532,7 +9532,7 @@
     "website": "http://newpcsa.net",
     "tools": [
       "Bootstrap",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome",
       "OWL Carousel",
       "jQuery",
@@ -9547,7 +9547,7 @@
       "IIS",
       "Windows Server",
       "Google Font API",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Bootstrap"
     ]
   },
@@ -9672,7 +9672,7 @@
     "name": "Genena Group",
     "website": "http://genena.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -9713,7 +9713,7 @@
       "IIS",
       "Windows Server",
       "Plesk",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -9740,7 +9740,7 @@
     "name": "Al Amin Technological Systems",
     "website": "http://alamintech.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome",
       "Bootstrap",
       "IIS",
@@ -9751,7 +9751,7 @@
     "name": "Techno Management",
     "website": "http://www.techno-management.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -9783,8 +9783,8 @@
     "name": "URANIUM",
     "website": "http://www.uranium-corp.com",
     "tools": [
-      "Microsoft ASP.NET",
-      "Microsoft SharePoint",
+      "ASP.NET",
+      "SharePoint",
       "IIS",
       "Windows Server"
     ]
@@ -9839,7 +9839,7 @@
     "name": "Automated Systems",
     "website": "https://www.asc-me.net",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -9854,7 +9854,7 @@
       "WordPress",
       "PHP",
       "MySQL",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Font Awesome"
     ]
   },
@@ -9946,7 +9946,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -10050,7 +10050,7 @@
     "website": "http://www.elrashidielmizan.net",
     "tools": [
       "Google Font API",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "animate.css",
       "IIS",
       "Windows Server",
@@ -10257,14 +10257,14 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
     "name": "Zocer",
     "website": "http://www.zocer.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -10299,7 +10299,7 @@
     "name": "db Group",
     "website": "http://dbgroupintl.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Plesk"
@@ -10385,7 +10385,7 @@
     "website": "http://www.seegypt.com",
     "tools": [
       "DreamWeaver",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -10396,7 +10396,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -10882,7 +10882,7 @@
     "name": "Talaat Moustafa Group",
     "website": "http://www.talaatmoustafagroup.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -10907,7 +10907,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -10937,7 +10937,7 @@
     "name": "PowerHealth Solutions",
     "website": "https://www.powerhealthsolutions.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "reCAPTCHA",
       "IIS",
       "Windows Server"
@@ -11088,7 +11088,7 @@
     "name": "Global Napi Pharmaceuticals",
     "website": "http://www.globalnapi.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -11275,7 +11275,7 @@
     "name": "Parkville Pharmaceuticals",
     "website": "http://www.parkvillepharma.com",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk",
       "WordPress",
       "PHP",
@@ -11387,7 +11387,7 @@
     "name": "Mersal",
     "website": "http://mersal-ngo.org",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "Google Tag Manager",
@@ -11524,7 +11524,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -11608,7 +11608,7 @@
       "Windows Server",
       "Font Awesome",
       "Plesk",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -11655,7 +11655,7 @@
     "website": "http://www.augpharma.com",
     "tools": [
       "Apache",
-      "Microsoft Word"
+      "Word"
     ]
   },
   {
@@ -11702,7 +11702,7 @@
       "Bootstrap",
       "Plesk",
       "Google Font API",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server"
     ]
@@ -11842,7 +11842,7 @@
       "IIS",
       "Windows Server",
       "Plesk",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -11871,7 +11871,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -11903,7 +11903,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -11967,7 +11967,7 @@
       "Windows Server",
       "Bootstrap",
       "Font Awesome",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "YouTube"
     ]
   },
@@ -11988,7 +11988,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "OWL Carousel",
       "jQuery",
       "animate.css",
@@ -12097,7 +12097,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -12231,7 +12231,7 @@
       "IIS",
       "Windows Server",
       "Google Font API",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
@@ -12240,7 +12240,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -12367,7 +12367,7 @@
     "website": "http://www.msmeda.org.eg",
     "tools": [
       "Bootstrap",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "animate.css",
       "IIS",
       "Windows Server"
@@ -12399,7 +12399,7 @@
     "name": "Expert Solutions",
     "website": "http://www.expertsolutions-eg.net",
     "tools": [
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "IIS",
       "Windows Server",
       "PHP"
@@ -12418,7 +12418,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET",
+      "ASP.NET",
       "Plesk"
     ]
   },
@@ -12428,7 +12428,7 @@
     "tools": [
       "IIS",
       "Windows Server",
-      "Microsoft ASP.NET"
+      "ASP.NET"
     ]
   },
   {
