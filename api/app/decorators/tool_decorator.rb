@@ -1,7 +1,7 @@
 class ToolDecorator < Geckorate::Decorator
-  def decorate
+  def decorate(options = {})
     {
       name: name
-    }.as_json
+    }
   end
 end

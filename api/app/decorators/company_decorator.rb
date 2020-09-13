@@ -1,8 +1,8 @@
 class CompanyDecorator < Geckorate::Decorator
-  def decorate
+  def decorate(options = {})
     {
       name: name,
       tools: ToolDecorator.decorate_collection(tools)
-    }.as_json
+    }
   end
 end
