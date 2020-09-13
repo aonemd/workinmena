@@ -1,9 +1,10 @@
+puts "Seeding tool categories..."
 tool_categories = ActiveSupport::JSON.decode(File.read('db/seeds/tool_categories.json'))
 tool_categories.each do |tool_category|
   Tool::Category.create(name: tool_category['name'])
 end
 
-# Seeding tools
+puts "Seeding tools..."
 programming_language_tools = ActiveSupport::JSON.decode(File.read('db/seeds/programming_languages.json'))
 language_category          = Tool::Category.first
 programming_language_tools.each do |programming_language|
@@ -49,7 +50,7 @@ service_tools.each do |service|
               category: service_category)
 end
 
-# seeding companies
+puts "Seeding companies..."
 companies = ActiveSupport::JSON.decode(File.read('db/seeds/companies.json'))
 companies.each do |company|
   co = Company.create(name: company['name'], website: company['website'])
