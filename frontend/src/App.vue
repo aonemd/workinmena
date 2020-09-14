@@ -1,4 +1,6 @@
 <template>
+  <h1><router-link to="/">WorkInMENA.tech</router-link></h1>
+
   <router-view />
 </template>
 
