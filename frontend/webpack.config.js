@@ -1,5 +1,5 @@
-const path                = require('path')
-const { VueLoaderPlugin } = require('vue-loader')
+const path                = require('path');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = (env = {}) => ({
   mode: env.prod ? 'production' : 'development',
@@ -22,6 +22,21 @@ module.exports = (env = {}) => ({
         options: {
           appendTsSuffixTo: [/\.vue$/],
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 }
+          },
+          {
+            loader: 'postcss-loader',
+          },
+        ]
       },
     ]
   },
