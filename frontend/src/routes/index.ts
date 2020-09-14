@@ -15,6 +15,11 @@ const router = createRouter({
       path: '/company/:id',
       name: 'Company',
       component: Company,
+      props: (route) => {
+        return {
+          id: Number(route.params.id),
+        }
+      },
     }
   ],
 });

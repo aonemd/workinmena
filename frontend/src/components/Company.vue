@@ -6,24 +6,23 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, computed, reactive } from "vue";
-import { useRoute, useRouter } from 'vue-router';
+import { defineComponent, onMounted, reactive } from "vue";
 
 import CompanyDataService from "../services/CompanyDataService";
 import { Company } from '../interfaces';
 
 export default defineComponent({
-  setup() {
-    const route  = useRoute();
-    const userId = Number(route.params.id);
-
+  props: {
+    id: Number,
+  },
+  setup(props) {
     let state = reactive<{company: Company, tools: String}>({
       company: <Company>{},
       tools: '',
     });
 
     onMounted(() => {
-      CompanyDataService.getOne(userId).then((data) => {
+      CompanyDataService.getOne(props.id!).then((data) => {
         state.company = data.company;
         state.tools   = data.company.tools.map((tool) => {
           return tool.name;
