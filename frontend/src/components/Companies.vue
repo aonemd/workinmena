@@ -7,8 +7,11 @@
           <span class="company-details">
             {{company.website}}
             <span>&bull;</span>
-            <span>
+            <span v-if="company.tools[0]">
               Popular Technology: <b>{{ company.tools[0].name }}</b>
+            </span>
+            <span v-else>
+              NO Technologies Yet
             </span>
           </span>
         </div>
