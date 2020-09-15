@@ -8,7 +8,7 @@
             {{company.website}}
             <span>&bull;</span>
             <span>
-              {{ company.tools.slice(0, 5).map((tool) => { return tool.name; }).join(', ') }}
+              Popular Technology: <b>{{ company.tools[0].name }}</b>
             </span>
           </span>
         </div>
