@@ -19,19 +19,7 @@ export default defineComponent({
 </script>
 
 <style>
-:root {
-  --white:       #ffffff;
-  --main:        #34314c;
-  --secondary:   #9592ad;
-  --border:      #d9dee9;
-  --high-blue:   #45aaf2;
-  --highlight-1: #fd7473;  /* red */
-  --highlight-2: #fec951;  /* yellow */
-  --highlight-3: #47b8e0;  /* blue */
-  --highlight-4: #9f68d0;  /* purple */
-
-  --latin-font: 'Open Sans', sans-serif;
-}
+@import "assets/stylesheets/variables.css";
 
 body {
   padding-bottom: 5em;
@@ -40,6 +28,10 @@ body {
   background-color: var(--white);
 
   font-family: var(--latin-font);
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {

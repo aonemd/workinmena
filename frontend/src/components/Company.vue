@@ -45,7 +45,7 @@ export default defineComponent({
   }
 });
 </script>
-<style>
+<style scoped>
 #company-box {
   width: 100%;
   position: relative;
@@ -59,10 +59,6 @@ export default defineComponent({
   z-index: 1;
   display: table; /* so the elements inside act like table cells so that they can be vertically aligned in the middle */
   width: 96%;
-
-  & a {
-    text-decoration: none;
-  }
 
   & .company-info {
     line-height: 1.25em;

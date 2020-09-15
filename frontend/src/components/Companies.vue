@@ -45,16 +45,12 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
 #company-list {
   width: 100%;
   position: relative;
   list-style: none;
   padding: 0;
-
-  & a {
-    text-decoration: none;
-  }
 
   & li {
     background: var(--white);
