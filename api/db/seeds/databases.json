@@ -27,7 +27,7 @@
   {
     "name": "PostgreSQL",
     "website": "postgresql.org",
-    "description": "PostgreSQL LicenseDFSG compatibleYesFSF approvedYesOSI approvedYesGPL compatibleYesCopyleftNoLinking from code with a different licenseYesWebsitepostgresql.org/about/licence"
+    "description": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance"
   },
   {
     "name": "MongoDB",
