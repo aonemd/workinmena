@@ -7,8 +7,10 @@
         {{state.company.website}}
       </a>
 
-      <ul v-for="tool in state.company.tools">
-        <li>{{tool.name}}</li>
+      <ul>
+        <li v-for="(tool, index) in state.company.tools" :key="index">
+          <tool :tool="tool"></tool>
+        </li>
       </ul>
     </div>
   </div>
@@ -19,10 +21,14 @@ import { defineComponent, onMounted, reactive } from "vue";
 
 import CompanyDataService from "../services/CompanyDataService";
 import { Company } from '../interfaces';
+import Tool from './Tool.vue';
 
 export default defineComponent({
   props: {
     id: Number,
+  },
+  components: {
+    'tool': Tool,
   },
   setup(props) {
     let state = reactive<{company: Company, tools: String}>({
@@ -33,9 +39,6 @@ export default defineComponent({
     onMounted(() => {
       CompanyDataService.getOne(props.id!).then((data) => {
         state.company = data.company;
-        state.tools   = data.company.tools.map((tool) => {
-          return tool.name;
-        }).join(', ');
       });
     });
 
@@ -49,7 +52,6 @@ export default defineComponent({
 #company-box {
   width: 100%;
   position: relative;
-  padding: 0;
 
   background: var(--white);
   border: 1px solid var(--border);
@@ -75,6 +77,11 @@ export default defineComponent({
       float: right;
       padding-top: 0.4em;
       color: var(--secondary);
+    }
+
+    & ul {
+      list-style: none;
+      padding: 0;
     }
   }
 }
