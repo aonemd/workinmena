@@ -31,7 +31,7 @@ export default defineComponent({
     'tool': Tool,
   },
   setup(props) {
-    let state = reactive<{company: Company, tools: String}>({
+    let state = reactive<{company: Company, tools: string}>({
       company: <Company>{},
       tools: '',
     });
