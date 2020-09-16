@@ -31,9 +31,8 @@ export default defineComponent({
     'tool': Tool,
   },
   setup(props) {
-    let state = reactive<{company: Company, tools: string}>({
+    let state = reactive<{company: Company}>({
       company: <Company>{},
-      tools: '',
     });
 
     onMounted(() => {
