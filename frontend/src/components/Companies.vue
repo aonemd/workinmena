@@ -1,6 +1,6 @@
 <template>
-  <ul v-for="company in state.companies" id="company-list">
-    <li>
+  <ul id="company-list">
+    <li v-for="company in state.companies">
       <router-link :to="{ name: 'Company', params: { id: company.id } }">
         <div class="company-info">
           <span class="company-title">{{company.name}}</span>
