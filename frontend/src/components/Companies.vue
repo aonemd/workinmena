@@ -6,12 +6,9 @@
           <span class="company-title">{{company.name}}</span>
           <span class="company-details">
             {{company.website}}
-            <span>&bull;</span>
-            <span v-if="company.tools[0]">
-              Popular Technology: <b>{{ company.tools[0].name }}</b>
-            </span>
-            <span v-else>
-              NO Technologies Yet
+            <span class="separator">&bull;</span>
+            <span v-if="company.popular_tool">
+              Popular for: <b>{{ company.popular_tool.name }}</b>
             </span>
           </span>
         </div>
@@ -91,7 +88,7 @@ export default defineComponent({
         padding-top: 0.4em;
 
         /* the dot between company-details */
-        & span {
+        & span.separator {
           margin: 0 0.75em;
         }
       }
