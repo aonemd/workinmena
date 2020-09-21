@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import Companies from '../components/Companies.vue';
-import Company from '../components/Company';
+import Company from '../components/Company.vue';
 
 const router = createRouter({
   history: createWebHistory(),

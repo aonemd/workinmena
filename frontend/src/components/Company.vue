@@ -32,7 +32,7 @@ export default defineComponent({
   },
   setup(props) {
     let state = reactive<{company: Company}>({
-      company: <Company>{},
+      company: {} as Company,
     });
 
     onMounted(() => {
