@@ -1,5 +1,6 @@
-const path                = require('path');
-const { VueLoaderPlugin } = require('vue-loader');
+const path                        = require('path');
+const { VueLoaderPlugin }         = require('vue-loader');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 module.exports = (env = {}) => ({
   mode: env.prod ? 'production' : 'development',
@@ -48,6 +49,7 @@ module.exports = (env = {}) => ({
   },
   plugins: [
     new VueLoaderPlugin(),
+    new FriendlyErrorsWebpackPlugin(),
   ],
   devServer: {
     inline: true,
