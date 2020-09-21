@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_14_184535) do
+ActiveRecord::Schema.define(version: 2020_09_21_161246) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,4 +54,13 @@ ActiveRecord::Schema.define(version: 2019_03_14_184535) do
   add_foreign_key "stacks", "companies"
   add_foreign_key "stacks", "tools"
   add_foreign_key "tools", "tool_categories"
+
+  create_view "popular_tools", materialized: true, sql_definition: <<-SQL
+      SELECT count(tools.id) AS popularity,
+      tools.id
+     FROM (stacks
+       JOIN tools ON ((tools.id = stacks.tool_id)))
+    GROUP BY tools.id
+    ORDER BY (count(tools.id)) DESC;
+  SQL
 end
