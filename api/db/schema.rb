@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_21_161246) do
+ActiveRecord::Schema.define(version: 2020_09_21_194837) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,11 +56,32 @@ ActiveRecord::Schema.define(version: 2020_09_21_161246) do
   add_foreign_key "tools", "tool_categories"
 
   create_view "popular_tools", materialized: true, sql_definition: <<-SQL
-      SELECT count(tools.id) AS popularity,
-      tools.id
+      SELECT tools.id AS tool_id,
+      count(tools.id) AS popularity,
+      tools.tool_category_id
      FROM (stacks
        JOIN tools ON ((tools.id = stacks.tool_id)))
     GROUP BY tools.id
     ORDER BY (count(tools.id)) DESC;
   SQL
+  add_index "popular_tools", ["tool_id"], name: "index_popular_tools_on_tool_id"
+
+  create_view "company_popular_tools", materialized: true, sql_definition: <<-SQL
+      SELECT company_popular_tools.company_id,
+      company_popular_tools.tool_id,
+      company_popular_tools.popularity,
+      company_popular_tools.rank
+     FROM ( SELECT companies.id AS company_id,
+              popular_tools.tool_id,
+              popular_tools.popularity,
+              rank() OVER (PARTITION BY companies.id ORDER BY popular_tools.popularity DESC) AS rank
+             FROM (((companies
+               JOIN stacks ON ((stacks.company_id = companies.id)))
+               JOIN popular_tools ON ((stacks.tool_id = popular_tools.tool_id)))
+               JOIN tool_categories ON ((tool_categories.id = popular_tools.tool_category_id)))
+            WHERE (((tool_categories.name)::text = 'Language'::text) OR ((tool_categories.name)::text = 'Framework'::text))) company_popular_tools
+    WHERE (company_popular_tools.rank = 1);
+  SQL
+  add_index "company_popular_tools", ["company_id"], name: "index_company_popular_tools_on_company_id"
+
 end
