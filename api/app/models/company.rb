@@ -8,6 +8,8 @@ class Company < ApplicationRecord
   validates_format_of :name, without: /@/
 
   def popular_tool
+    return nil unless company_popular_tool
+
     Tool.find(company_popular_tool.tool_id)
   end
 end
