@@ -1,38 +1,55 @@
 <template>
-  <ul id="company-list">
-    <li v-for="company in state.companies" v-bind:key="company.name">
-      <router-link :to="{ name: 'Company', params: { id: company.id } }">
-        <div class="company-info">
-          <span class="company-title">{{company.name}}</span>
-          <span class="company-details">
-            {{company.website}}
-            <span class="separator">&bull;</span>
-            <span v-if="company.popular_tool">
-              Popular for: <b>{{ company.popular_tool.name }}</b>
+  <div>
+    <ul id="company-list">
+      <li v-for="company in state.paginatedCompanies" v-bind:key="company.name">
+        <router-link :to="{ name: 'Company', params: { id: company.id } }">
+          <div class="company-info">
+            <span class="company-title">{{company.name}}</span>
+            <span class="company-details">
+              {{company.website}}
+              <span class="separator">&bull;</span>
+              <span v-if="company.popular_tool">
+                Popular for: <b>{{ company.popular_tool.name }}</b>
+              </span>
             </span>
-          </span>
-        </div>
-      </router-link>
-    </li>
-  </ul>
+          </div>
+        </router-link>
+      </li>
+    </ul>
+
+    <button @click="state.page--" :disabled="state.page-1 <= 0">Prev</button>
+    {{state.page}}
+    <button @click="state.page++">Next</button>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, reactive } from "vue";
+import { defineComponent, onMounted, reactive, watch, watchEffect } from "vue";
 
 import CompanyDataService from "../services/CompanyDataService";
 import { Company } from '../interfaces';
 
 export default defineComponent({
   setup() {
-    let state = reactive<{companies: Company[]}>({
-      companies: []
+    let state = reactive<{companies: Company[], paginatedCompanies: Company[], page: number, perPage: number}>({
+      companies: [],
+      paginatedCompanies: [],
+      page: 1,
+      perPage: 20,
     });
 
     onMounted(() => {
       CompanyDataService.getAll().then((data) => {
-        state.companies = data.companies
+        state.companies = data.companies;
       });
+    });
+
+    watchEffect(() => {
+        // paginate companies
+        let from: number = (state.page * state.perPage) - state.perPage;
+        let to: number   = state.page * state.perPage;
+
+        state.paginatedCompanies = state.companies.slice(from, to);
     });
 
     return {
