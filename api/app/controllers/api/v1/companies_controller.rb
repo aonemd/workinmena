@@ -1,6 +1,12 @@
 class Api::V1::CompaniesController < ApplicationController
   def index
-    companies           = Company.all.includes(:tools)
+    companies = if params[:limit]
+                  _limit = Integer(params[:limit])
+                  Company.includes(:tools).first(_limit)
+                else
+                  Company.all.includes(:tools)
+                end
+
     decorated_companies = CompanyDecorator.decorate_collection(companies, method: :decorate_all)
 
     render json: { companies: decorated_companies }
