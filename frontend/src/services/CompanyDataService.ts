@@ -16,6 +16,13 @@ class CompanyDataService {
     return data;
   }
 
+  async getLimited(limit: number): Promise<{companies: Company[]}> {
+    const response = await http.get(`/companies?limit=${limit}`);
+    const {data}   = response;
+
+    return data;
+  }
+
   async getOne(id: number): Promise<{company: Company}> {
     const response = await http.get(`/companies/${id}`);
     const {data}   = response;

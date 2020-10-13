@@ -39,6 +39,10 @@ export default defineComponent({
     });
 
     onMounted(() => {
+      CompanyDataService.getLimited(state.perPage).then((data) => {
+        state.paginatedCompanies = data.companies;
+      });
+
       CompanyDataService.getAll().then((data) => {
         state.companies = data.companies;
       });
