@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div v-if="state.loading" id="loader">Loading...</div>
+  <div v-else>
     <ul id="company-list">
       <li v-for="company in state.paginatedCompanies" v-bind:key="company.name">
         <router-link :to="{ name: 'Company', params: { id: company.id } }">
@@ -31,7 +32,8 @@ import { Company } from '../interfaces';
 
 export default defineComponent({
   setup() {
-    let state = reactive<{companies: Company[], paginatedCompanies: Company[], page: number, perPage: number}>({
+    let state = reactive<{loading: Boolean, companies: Company[], paginatedCompanies: Company[], page: number, perPage: number}>({
+      loading: true,
       companies: [],
       paginatedCompanies: [],
       page: 1,
@@ -41,6 +43,7 @@ export default defineComponent({
     onMounted(() => {
       CompanyDataService.getLimited(state.perPage).then((data) => {
         state.paginatedCompanies = data.companies;
+        state.loading = false;
       });
 
       CompanyDataService.getAll().then((data) => {
@@ -115,5 +118,9 @@ export default defineComponent({
       }
     }
   }
+}
+
+#loader {
+  text-align: center;
 }
 </style>
