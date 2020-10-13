@@ -52,11 +52,11 @@ export default defineComponent({
     });
 
     watchEffect(() => {
-        // paginate companies
-        let from: number = (state.page * state.perPage) - state.perPage;
-        let to: number   = state.page * state.perPage;
+      // paginate companies
+      let from: number = (state.page * state.perPage) - state.perPage;
+      let to: number   = state.page * state.perPage;
 
-        state.paginatedCompanies = state.companies.slice(from, to);
+      state.paginatedCompanies = state.companies.slice(from, to);
     });
 
     return {
