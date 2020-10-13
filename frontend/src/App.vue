@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <router-link to="/">
+    <router-link to="/" class="clearfix">
       <div class="logo">
         <h1><span>WorkIn</span>MENA<span>.tech</span></h1>
       </div>
@@ -53,5 +53,14 @@ a {
       font-weight: 400;
     }
   }
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
 </style>
