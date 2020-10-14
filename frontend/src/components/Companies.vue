@@ -23,23 +23,25 @@
       </li>
     </ul>
 
-    <button @click="state.page--" :disabled="state.page-1 <= 0">Prev</button>
-    {{state.page}}
-    <button @click="state.page++">Next</button>
+    <paginator :companies="state.companies"
+               @updatePaginatedByPaginator="state.listedCompanies = state.paginatedCompanies = $event">
+    </paginator>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, reactive, watchEffect } from "vue";
+import { defineComponent, onMounted, reactive } from "vue";
 
 import CompanyDataService from "../services/CompanyDataService";
 import { Company } from '../interfaces';
 
 import Search from './Companies/Search.vue';
+import Paginator from "./Companies/Paginator.vue";
 
 export default defineComponent({
   components: {
     'search': Search,
+    'paginator': Paginator,
   },
   setup() {
     let state = reactive<{
@@ -47,34 +49,23 @@ export default defineComponent({
       companies: Company[],
       paginatedCompanies: Company[],
       listedCompanies: Company[],
-      page: number,
-      perPage: number,
     }>({
       loading: true,
       companies: [],
       paginatedCompanies: [],
       listedCompanies: [],
-      page: 1,
-      perPage: 20,
     });
 
     onMounted(() => {
-      CompanyDataService.getLimited(state.perPage).then((data) => {
-        state.paginatedCompanies = state.listedCompanies = data.companies;
+      CompanyDataService.getLimited(20).then((data) => {
+        state.listedCompanies    = data.companies;
+        state.paginatedCompanies = data.companies;
         state.loading            = false;
       });
 
       CompanyDataService.getAll().then((data) => {
         state.companies = data.companies;
       });
-    });
-
-    watchEffect(() => {
-      // paginate companies
-      let from: number = (state.page * state.perPage) - state.perPage;
-      let to: number   = state.page * state.perPage;
-
-      state.paginatedCompanies = state.companies.slice(from, to);
     });
 
     return {
