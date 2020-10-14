@@ -1,7 +1,11 @@
 <template>
+  <search :companies="state.companies"
+          :paginatedCompanies="state.paginatedCompanies"
+          @updateListedBySearch="state.listedCompanies = $event">
+  </search>
+
   <div v-if="state.loading" id="loader">Loading...</div>
   <div v-else>
-    <input type="text" placeholder="Search" v-model="state.searchQuery">
     <ul id="company-list">
       <li v-for="company in state.listedCompanies" v-bind:key="company.name">
         <router-link :to="{ name: 'Company', params: { id: company.id } }">
@@ -26,12 +30,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, reactive, watch, watchEffect } from "vue";
+import { defineComponent, onMounted, reactive, watchEffect } from "vue";
 
 import CompanyDataService from "../services/CompanyDataService";
 import { Company } from '../interfaces';
 
+import Search from './Companies/Search.vue';
+
 export default defineComponent({
+  components: {
+    'search': Search,
+  },
   setup() {
     let state = reactive<{
       loading: Boolean,
@@ -40,7 +49,6 @@ export default defineComponent({
       listedCompanies: Company[],
       page: number,
       perPage: number,
-      searchQuery: string,
     }>({
       loading: true,
       companies: [],
@@ -48,7 +56,6 @@ export default defineComponent({
       listedCompanies: [],
       page: 1,
       perPage: 20,
-      searchQuery: '',
     });
 
     onMounted(() => {
@@ -60,17 +67,6 @@ export default defineComponent({
       CompanyDataService.getAll().then((data) => {
         state.companies = data.companies;
       });
-    });
-
-    watch(() => state.searchQuery, (_newValue, _oldValue) => {
-      let query: string = state.searchQuery.toLowerCase();
-      if (query != '') {
-        state.listedCompanies = state.companies.filter((company: Company) => {
-          return company.name.toLowerCase().startsWith(query);
-        });
-      } else {
-        state.listedCompanies = state.paginatedCompanies;
-      }
     });
 
     watchEffect(() => {
