@@ -1,8 +1,9 @@
 <template>
   <div v-if="state.loading" id="loader">Loading...</div>
   <div v-else>
+    <input type="text" placeholder="Search" v-model="state.searchQuery">
     <ul id="company-list">
-      <li v-for="company in state.paginatedCompanies" v-bind:key="company.name">
+      <li v-for="company in state.listedCompanies" v-bind:key="company.name">
         <router-link :to="{ name: 'Company', params: { id: company.id } }">
           <div class="company-info">
             <span class="company-title">{{company.name}}</span>
@@ -32,23 +33,44 @@ import { Company } from '../interfaces';
 
 export default defineComponent({
   setup() {
-    let state = reactive<{loading: Boolean, companies: Company[], paginatedCompanies: Company[], page: number, perPage: number}>({
+    let state = reactive<{
+      loading: Boolean,
+      companies: Company[],
+      paginatedCompanies: Company[],
+      listedCompanies: Company[],
+      page: number,
+      perPage: number,
+      searchQuery: string,
+    }>({
       loading: true,
       companies: [],
       paginatedCompanies: [],
+      listedCompanies: [],
       page: 1,
       perPage: 20,
+      searchQuery: '',
     });
 
     onMounted(() => {
       CompanyDataService.getLimited(state.perPage).then((data) => {
-        state.paginatedCompanies = data.companies;
-        state.loading = false;
+        state.paginatedCompanies = state.listedCompanies = data.companies;
+        state.loading            = false;
       });
 
       CompanyDataService.getAll().then((data) => {
         state.companies = data.companies;
       });
+    });
+
+    watch(() => state.searchQuery, (_newValue, _oldValue) => {
+      let query: string = state.searchQuery.toLowerCase();
+      if (query != '') {
+        state.listedCompanies = state.companies.filter((company: Company) => {
+          return company.name.toLowerCase().startsWith(query);
+        });
+      } else {
+        state.listedCompanies = state.paginatedCompanies;
+      }
     });
 
     watchEffect(() => {
