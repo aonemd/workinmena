@@ -1,11 +1,11 @@
 <template>
     <button @click="state.page--" :disabled="state.page-1 <= 0">Prev</button>
     {{state.page}}
-    <button @click="state.page++">Next</button>
+    <button @click="state.page++" :disabled="state.page >= state.numberOfPages">Next</button>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, reactive, watch } from "vue";
+import { defineComponent, PropType, reactive, computed, ComputedRef, watch } from "vue";
 
 import { Company } from '../../interfaces';
 
@@ -17,9 +17,12 @@ export default defineComponent({
   },
   emits: ['updatePaginatedByPaginator'],
   setup(props, { emit }) {
-    let state = reactive<{ page: number, perPage: number }>({
+    let state = reactive<{ page: number, perPage: number, numberOfPages: ComputedRef<number> }>({
       page: 1,
       perPage: 20,
+      numberOfPages: computed((): number => {
+        return Math.ceil(props.companies!.length / 20);
+      }),
     });
 
     watch(() => state.page, (_newValue, _oldValue) => {
