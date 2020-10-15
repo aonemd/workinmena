@@ -6,13 +6,13 @@
       <a :href="'//' + state.company.website" target="_blank" class="company-website">
         {{state.company.website}}
       </a>
-
-      <ul>
-        <li v-for="(tool, index) in state.company.tools" :key="index">
-          <tool :tool="tool"></tool>
-        </li>
-      </ul>
     </div>
+
+    <ul class="tools">
+      <li v-for="(tool, index) in state.company.tools" :key="index">
+        <tool :tool="tool"></tool>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -53,18 +53,17 @@ export default defineComponent({
   position: relative;
 
   background: var(--white);
-  border: 1px solid var(--border);
   border-radius: 0.3em;
   padding: 1em;
   margin-bottom: 1em;
   z-index: 1;
   display: table; /* so the elements inside act like table cells so that they can be vertically aligned in the middle */
-  width: 96%;
 
   & .company-info {
     line-height: 1.25em;
     padding: 0 25px;
     vertical-align: middle;
+    margin-bottom: 10px;
 
     & .company-title {
       font-weight: 700;
@@ -77,11 +76,11 @@ export default defineComponent({
       padding-top: 0.4em;
       color: var(--secondary);
     }
+  }
 
-    & ul {
-      list-style: none;
-      padding: 0;
-    }
+  & ul.tools {
+    list-style: none;
+    padding: 0;
   }
 }
 </style>

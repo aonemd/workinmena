@@ -91,7 +91,7 @@ export default defineComponent({
     position: relative;
     z-index: 1;
     display: table; /* so the elements inside act like table cells so that they can be vertically aligned in the middle */
-    width: 96%;
+    width: 100%;
 
     transition: all 0.3s ease-in-out;
     &:hover {

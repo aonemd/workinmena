@@ -1,12 +1,12 @@
 <template>
   <div id="tool-box">
-    <div class="tool-info">
-      <span class="tool-title">
-        {{tool.name}}
-      </span>
-
-      <div class="tool-description" v-html="excerpt(tool.description)"></div>
-    </div>
+    <a :href="'//' + tool.website" target="_blank" class="tool-title">
+      {{tool.name}}
+    </a>
+    &nbsp;
+    <span class="tool-category">
+      {{tool.category}}
+    </span>
   </div>
 </template>
 
@@ -34,8 +34,8 @@ export default defineComponent({
 </script>
 <style scoped>
 #tool-box {
-  width: 41%;
-  height: 200px;
+  width: 40%;
+  height: 30px;
   float: left;
 
   background: var(--white);
@@ -44,18 +44,14 @@ export default defineComponent({
   padding: 1em;
   margin: 0 0.5em 1em 0.5em;
 
-  & .tool-info {
-    vertical-align: middle;
-    height: 100%;
+  & .tool-title {
+    color: var(--main);
+  }
+
+  & .tool-category {
     color: var(--secondary);
-
-    & .tool-title {
-      color: var(--main);
-    }
-
-    & .tool-description {
-      height: 50%;
-    }
+    font-size: 8px;
+    float: right;
   }
 }
 </style>

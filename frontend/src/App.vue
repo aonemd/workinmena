@@ -21,9 +21,12 @@ export default defineComponent({
 <style>
 @import "assets/stylesheets/variables.css";
 
-body {
-  padding-bottom: 5em;
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
   background-image: none;
   background-color: var(--white);
 
@@ -35,9 +38,8 @@ a {
 }
 
 .wrapper {
-  width: 800px;
-  max-width: 90%;
   margin: 0 auto;
+  max-width: 40%;
 }
 
 .logo {
