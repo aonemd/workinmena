@@ -1,7 +1,9 @@
 <template>
+  <div id="paginator">
     <button @click="state.page--" :disabled="state.page-1 <= 0">Prev</button>
     {{state.page}}
     <button @click="state.page++" :disabled="state.page >= state.numberOfPages">Next</button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -40,3 +42,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style scoped>
+#paginator {
+  text-align: center;
+}
+</style>
