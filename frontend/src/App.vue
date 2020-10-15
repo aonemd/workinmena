@@ -33,6 +33,10 @@ body {
   font-family: var(--latin-font);
 }
 
+footer {
+  padding-bottom: 5em;
+}
+
 a {
   text-decoration: none;
 }
