@@ -1,5 +1,7 @@
 <template>
-  <input type="text" placeholder="Search" v-model="searchQuery">
+  <div id="search">
+    <input type="text" placeholder="Search" v-model="searchQuery">
+  </div>
 </template>
 
 <script lang="ts">
@@ -40,3 +42,15 @@ export default defineComponent({
   }
 });
 </script>
+
+<style scoped>
+#search {
+  float: right;
+  clear: both;
+  margin-bottom: 10px;
+
+  & input {
+    width: 250px;
+  }
+}
+</style>
