@@ -5,6 +5,7 @@ class ToolDecorator < Geckorate::Decorator
     {
       name: name,
       description: description,
+      website: website,
       category: Tool::CategoryDecorator.new(category).name
     }
   end
@@ -13,6 +14,7 @@ class ToolDecorator < Geckorate::Decorator
     {
       name: '-',
       description: '-',
+      website: '-',
       category: '-'
     }
   end
