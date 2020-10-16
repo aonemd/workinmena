@@ -1,11 +1,11 @@
 <template>
-  <search :companies="state.companies"
-          :paginatedCompanies="state.paginatedCompanies"
-          @updateListedBySearch="state.listedCompanies = $event">
-  </search>
-
   <div v-if="state.loading" id="loader">Loading...</div>
   <div v-else>
+    <search :companies="state.companies"
+       :paginatedCompanies="state.paginatedCompanies"
+       @updateListedBySearch="state.listedCompanies = $event">
+    </search>
+
     <ul id="company-list">
       <li v-for="company in state.listedCompanies" v-bind:key="company.name">
         <router-link :to="{ name: 'Company', params: { id: company.id } }">
