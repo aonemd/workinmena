@@ -14,7 +14,7 @@ class CompanyDecorator < Geckorate::Decorator
       name: name,
       website: website,
       popular_tool: ToolDecorator.new(popular_tool).decorate,
-      tool_names: ToolDecorator.decorate_collection(tools, method: :decorate_search_name)
+      tool_search_pattern: ToolDecorator.decorate_collection(tools, method: :decorate_search_name).join(' ')
     }
   end
 end

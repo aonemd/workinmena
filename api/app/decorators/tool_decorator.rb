@@ -20,6 +20,6 @@ class ToolDecorator < Geckorate::Decorator
   end
 
   def decorate_search_name(options = {})
-    __getobj__.name.downcase
+    __getobj__.name.gsub(/\.|-/, ' ').downcase
   end
 end
