@@ -1,2 +1,2 @@
-export { default as Company } from './Company';
-export { default as Tool } from './Tool';
+export { default as Company } from './Company.types';
+export { default as Tool } from './Tool.types';
