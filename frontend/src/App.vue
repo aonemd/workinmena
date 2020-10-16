@@ -6,7 +6,9 @@
       </router-link>
 
       <div class="menu">
-        <a href="">Add Your Company</a>
+        <router-link :to="{ name: 'AddCompanyForm' }">
+          Add Your Company
+        </router-link>
       </div>
     </nav>
 
