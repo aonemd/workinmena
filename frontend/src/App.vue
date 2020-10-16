@@ -4,6 +4,10 @@
       <router-link to="/" class="logo">
         <h1><span>WorkIn</span>MENA<span>.tech</span></h1>
       </router-link>
+
+      <div class="menu">
+        <a href="">Add Your Company</a>
+      </div>
     </nav>
 
     <router-view />
@@ -54,19 +58,31 @@ a {
 
 nav {
   margin-bottom: 35px;
+  padding-top: 1.1em;
 
   & .logo {
+    float: left;
+
     & h1 {
-      float: left;
       margin: 0 0 0 1em;
       text-transform: uppercase;
       font-size: 1.35em;
-      padding-top: 1.1em;
       color: var(--main);
 
       & span {
         font-weight: 400;
       }
+    }
+  }
+
+  & .menu {
+    float: right;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    & a {
+      color: var(--main);
+      font-size: 18px;
     }
   }
 }
