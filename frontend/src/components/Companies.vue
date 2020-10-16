@@ -80,7 +80,9 @@ export default defineComponent({
   width: 100%;
   position: relative;
   list-style: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+
 
   & li {
     background: var(--white);
@@ -91,7 +93,7 @@ export default defineComponent({
     position: relative;
     z-index: 1;
     display: table; /* so the elements inside act like table cells so that they can be vertically aligned in the middle */
-    width: 95%;
+    flex: 1;
 
     transition: all 0.3s ease-in-out;
     &:hover {

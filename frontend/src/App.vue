@@ -42,8 +42,14 @@ a {
 }
 
 .wrapper {
-  margin: 0 auto;
-  max-width: 40%;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 640px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 40%;
+  }
 }
 
 .logo {
