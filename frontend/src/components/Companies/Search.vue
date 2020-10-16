@@ -1,6 +1,6 @@
 <template>
   <div id="search">
-    <input type="text" placeholder="Search" v-model="searchQuery">
+    <input type="text" placeholder="Search by company or tool..." v-model="searchQuery">
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default defineComponent({
 
       if (query != '') {
         filteredCompanies = props.companies!.filter((company: Company) => {
-          return company.name.toLowerCase().startsWith(query);
+          return company.name.toLowerCase().startsWith(query) || company.tool_names.includes(query);
         });
       } else {
         filteredCompanies = props.paginatedCompanies!;
