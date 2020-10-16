@@ -59,6 +59,9 @@ export default defineComponent({
 
   & input {
     width: 250px;
+    border: 1px solid var(--border);
+    border-radius: 0.3em;
+    padding: 0.7em;
   }
 }
 </style>
