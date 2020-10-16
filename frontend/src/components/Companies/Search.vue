@@ -1,6 +1,6 @@
 <template>
   <div id="search">
-    <input type="text" placeholder="Search by company or tool..." v-model="searchQuery" :disabled="disabled">
+    <input type="search" placeholder="Search by company or tool..." v-model="searchQuery" :disabled="disabled">
   </div>
 </template>
 
