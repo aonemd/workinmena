@@ -2,8 +2,9 @@
   <div v-if="state.loading" id="loader">Loading...</div>
   <div v-else>
     <search :companies="state.companies"
-       :paginatedCompanies="state.paginatedCompanies"
-       @updateListedBySearch="state.listedCompanies = $event">
+            :paginatedCompanies="state.paginatedCompanies"
+            @updateListedBySearch="state.listedCompanies = $event"
+            :disabled="!state.fullyLoaded">
     </search>
 
     <ul id="company-list">
@@ -46,11 +47,13 @@ export default defineComponent({
   setup() {
     let state = reactive<{
       loading: Boolean,
+      fullyLoaded: Boolean,
       companies: Company[],
       paginatedCompanies: Company[],
       listedCompanies: Company[],
     }>({
       loading: true,
+      fullyLoaded: false,
       companies: [],
       paginatedCompanies: [],
       listedCompanies: [],
@@ -64,7 +67,8 @@ export default defineComponent({
       });
 
       CompanyDataService.getAll().then((data) => {
-        state.companies = data.companies;
+        state.companies   = data.companies;
+        state.fullyLoaded = true;
       });
     });
 

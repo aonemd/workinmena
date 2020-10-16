@@ -1,11 +1,11 @@
 <template>
   <div id="search">
-    <input type="text" placeholder="Search by company or tool..." v-model="searchQuery">
+    <input type="text" placeholder="Search by company or tool..." v-model="searchQuery" :disabled="disabled">
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref, watch } from "vue";
+import { defineComponent, PropType, ref, Ref, computed, ComputedRef, watch } from "vue";
 
 import { Company } from '../../interfaces';
 
@@ -17,9 +17,16 @@ export default defineComponent({
     paginatedCompanies: {
       type: Array as PropType<Array<Company>>,
     },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props, { emit }) {
-    let searchQuery = ref('');
+    let searchQuery: Ref<string>       = ref('');
+    let disabled: ComputedRef<Boolean> = computed((): boolean => {
+      return props.disabled
+    })
 
     watch(searchQuery, (_newValue, _oldValue) => {
       let query: string                = searchQuery.value.toLowerCase();
@@ -38,6 +45,7 @@ export default defineComponent({
 
     return {
       searchQuery,
+      disabled,
     }
   }
 });
