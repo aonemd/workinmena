@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
-    <router-link to="/" class="clearfix">
-      <div class="logo">
+    <nav class="clearfix">
+      <router-link to="/" class="logo">
         <h1><span>WorkIn</span>MENA<span>.tech</span></h1>
-      </div>
-    </router-link>
+      </router-link>
+    </nav>
 
     <router-view />
   </div>
@@ -52,17 +52,21 @@ a {
   }
 }
 
-.logo {
-  & h1 {
-    float: left;
-    margin: 0 0 0 1em;
-    text-transform: uppercase;
-    font-size: 1.35em;
-    padding-top: 1.1em;
-    color: var(--main);
+nav {
+  margin-bottom: 35px;
 
-    & span {
-      font-weight: 400;
+  & .logo {
+    & h1 {
+      float: left;
+      margin: 0 0 0 1em;
+      text-transform: uppercase;
+      font-size: 1.35em;
+      padding-top: 1.1em;
+      color: var(--main);
+
+      & span {
+        font-weight: 400;
+      }
     }
   }
 }
