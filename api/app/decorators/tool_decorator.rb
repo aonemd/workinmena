@@ -18,4 +18,8 @@ class ToolDecorator < Geckorate::Decorator
       category: '-'
     }
   end
+
+  def decorate_search_name(options = {})
+    __getobj__.name.downcase
+  end
 end

@@ -13,7 +13,8 @@ class CompanyDecorator < Geckorate::Decorator
       id: id,
       name: name,
       website: website,
-      popular_tool: ToolDecorator.new(popular_tool).decorate
+      popular_tool: ToolDecorator.new(popular_tool).decorate,
+      tool_names: ToolDecorator.decorate_collection(tools, method: :decorate_search_name)
     }
   end
 end
