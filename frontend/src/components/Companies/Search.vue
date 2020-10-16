@@ -27,7 +27,7 @@ export default defineComponent({
 
       if (query != '') {
         filteredCompanies = props.companies!.filter((company: Company) => {
-          return company.name.toLowerCase().startsWith(query) || company.tool_names.includes(query);
+          return company.name.toLowerCase().startsWith(query) || company.tool_search_pattern.includes(query);
         });
       } else {
         filteredCompanies = props.paginatedCompanies!;

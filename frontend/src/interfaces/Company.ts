@@ -5,5 +5,5 @@ export default interface Company {
   name: string,
   website: string,
   tools: Tool[],
-  tool_names: string[],
+  tool_search_pattern: string,
 }
