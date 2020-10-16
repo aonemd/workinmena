@@ -34,15 +34,12 @@ export default defineComponent({
 </script>
 <style scoped>
 #tool-box {
-  width: 40%;
   height: 30px;
-  float: left;
 
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 0.3em;
   padding: 1em;
-  margin: 0 0.5em 1em 0.5em;
 
   & .tool-title {
     color: var(--main);

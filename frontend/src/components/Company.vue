@@ -54,7 +54,6 @@ export default defineComponent({
 
   background: var(--white);
   border-radius: 0.3em;
-  padding: 1em;
   margin-bottom: 1em;
   z-index: 1;
   display: table; /* so the elements inside act like table cells so that they can be vertically aligned in the middle */
@@ -81,6 +80,10 @@ export default defineComponent({
   & ul.tools {
     list-style: none;
     padding: 0;
+
+    & li {
+      margin-bottom: 1em;
+    }
   }
 }
 </style>
