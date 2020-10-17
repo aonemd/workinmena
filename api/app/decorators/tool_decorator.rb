@@ -10,6 +10,13 @@ class ToolDecorator < Geckorate::Decorator
     }
   end
 
+  def decorate_list(options = {})
+    {
+      id: id,
+      name: name
+    }
+  end
+
   def decorate_null(options = {})
     {
       name: '-',

@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       namespace :companies do
         resources :submissions, only: [:create]
       end
+
+      resources :tools, only: [:index]
     end
   end
 end
