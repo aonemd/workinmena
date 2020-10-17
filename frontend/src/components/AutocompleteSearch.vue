@@ -142,6 +142,7 @@ export default defineComponent({
       padding: 0.4em;
       background-color: #34314c;
       color: #ffffff;
+      font-size: 16px;
 
       & .autocomplete-search__selected-item__remove {
         cursor: pointer;
