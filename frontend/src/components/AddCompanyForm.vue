@@ -1,19 +1,24 @@
 <template>
-  <form action="">
+  <form v-on:submit.prevent>
     <div class="row">
-      <input v-model="state.company.name" placeholder="Company Name">
+      <input v-model="state.companySubmission.name" placeholder="Company Name">
     </div>
 
     <div class="row">
-      <input v-model="state.company.website" placeholder="Company Website">
+      <input v-model="state.companySubmission.website" placeholder="Company Website">
     </div>
 
     <div class="row">
-      <input v-model="state.company.tools" placeholder="Company Technology Tools">
+      <autocomplete-search
+        :placeholder="'Company Technology Tools'"
+        :clear="state.clearForm"
+        :searchList="state.searchTools"
+        @updateSelectedList="state.companySubmission.tools = $event">
+      </autocomplete-search>
     </div>
 
     <div class="row">
-      <button type="submit">Submit</button>
+      <button type="submit" @click="submitCompany">Submit</button>
     </div>
   </form>
 </template>
@@ -21,16 +26,43 @@
 <script lang="ts">
 import { defineComponent, onMounted, reactive } from "vue";
 
-import { Company } from '../interfaces';
+import { CompanySubmission, Tool } from '../interfaces';
+import ToolDataService from '../services/tool-data.service';
+import CompanySubmissionDataService from '../services/company-submission-data.service';
+
+import AutocompleteSearch from './AutocompleteSearch.vue';
 
 export default defineComponent({
+  components: {
+    'autocomplete-search': AutocompleteSearch,
+  },
   setup() {
-    let state = reactive<{ company: Company }> ({
-      company: {} as Company,
+    let state = reactive<{
+      companySubmission: CompanySubmission,
+      searchTools: Tool[],
+      clearForm: boolean,
+    }>({
+      companySubmission: {} as CompanySubmission,
+      searchTools: [],
+      clearForm: false,
     })
+
+    onMounted(() => {
+      ToolDataService.getAll().then((data) => {
+        state.searchTools = data.tools;
+      });
+    });
+
+    function submitCompany() {
+      CompanySubmissionDataService.create(state.companySubmission).then((data) => {
+        state.clearForm         = true;
+        state.companySubmission = {} as CompanySubmission;
+      });
+    }
 
     return {
       state,
+      submitCompany,
     }
   }
 })
