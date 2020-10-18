@@ -34,7 +34,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, reactive } from "vue";
+import { defineComponent, PropType, reactive, watch } from "vue";
 
 import { SearchItem } from '../interfaces';
 
@@ -43,6 +43,10 @@ export default defineComponent({
     placeholder: {
       type: String,
       default: 'Search',
+    },
+    clear: {
+      type: Boolean,
+      default: false,
     },
     searchList: {
       type: Array as PropType<Array<SearchItem>>,
@@ -65,6 +69,13 @@ export default defineComponent({
       placeholder: props.placeholder,
       filteredList: [],
       selectedList: props.suggestedList,
+    });
+
+    watch(() => props.clear, (_newValue, _oldValue) => {
+      if (props.clear) {
+        state.query        = '';
+        state.selectedList = [];
+      }
     });
 
     function handleOnChange() {
