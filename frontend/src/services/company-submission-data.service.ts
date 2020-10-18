@@ -9,7 +9,7 @@ const http = axios.create({
 });
 
 class CompanySubmissionDataService {
-  async create(companySubmission: CompanySubmission): Promise<{}> {
+  async create(companySubmission: CompanySubmission): Promise<{message: string}> {
     const response = await http.post(
       '/companies/submissions',
       { company_submission: companySubmission }

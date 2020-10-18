@@ -21,6 +21,8 @@
       <button type="submit" @click="submitCompany">Submit</button>
     </div>
   </form>
+
+  {{ state.apiMessage }}
 </template>
 
 <script lang="ts">
@@ -41,10 +43,12 @@ export default defineComponent({
       companySubmission: CompanySubmission,
       searchTools: Tool[],
       clearForm: boolean,
+      apiMessage: string,
     }>({
       companySubmission: {} as CompanySubmission,
       searchTools: [],
       clearForm: false,
+      apiMessage: '',
     })
 
     onMounted(() => {
@@ -57,6 +61,8 @@ export default defineComponent({
       CompanySubmissionDataService.create(state.companySubmission).then((data) => {
         state.clearForm         = true;
         state.companySubmission = {} as CompanySubmission;
+
+        state.apiMessage = data.message;
       });
     }
 
