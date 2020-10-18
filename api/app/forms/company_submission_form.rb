@@ -12,16 +12,16 @@ class CompanySubmissionForm
 
   def create_params
     {
-      name: @params.fetch(:name),
-      website: @params.fetch(:website),
+      name: @params.fetch(:name, ''),
+      website: @params.fetch(:website, ''),
       tool_ids: @tool_ids,
       unknown_tools: @unknown_tools
     }
   end
 
   def separate_tools
-    known_tools   = @params[:tools].filter { |item| !item[:id].nil? }
-    unknown_tools = @params[:tools].filter { |item| item[:id].nil? }
+    known_tools   = @params.fetch(:tools, []).filter { |item| !item[:id].nil? }
+    unknown_tools = @params.fetch(:tools, []).filter { |item| item[:id].nil? }
 
     @tool_ids      = known_tools.map { |item| item[:id] }
     @unknown_tools = unknown_tools.map { |item| item[:name] }
