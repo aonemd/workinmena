@@ -5,7 +5,10 @@ module Api::V1::Companies
 
       company_submission.save!
 
-      render json: { company_submission: company_submission }
+      render json: {
+        company_submission: company_submission,
+        message: 'Company has been submitted and will be reviewed soon.'
+      }
     end
 
     private
