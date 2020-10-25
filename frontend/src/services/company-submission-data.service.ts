@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { CompanySubmission } from '../interfaces';
+import { CompanySubmission } from '../types';
 
 const http = axios.create({
   baseURL: 'http://localhost:3000/api/v1',

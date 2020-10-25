@@ -20,7 +20,7 @@
 import { defineComponent, onMounted, reactive } from "vue";
 
 import CompanyDataService from "../services/CompanyDataService";
-import { Company } from '../interfaces';
+import { Company } from '../types';
 import Tool from './Tool.vue';
 
 export default defineComponent({

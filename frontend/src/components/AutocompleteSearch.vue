@@ -36,7 +36,7 @@
 <script lang="ts">
 import { defineComponent, PropType, reactive, watch } from "vue";
 
-import { SearchItem } from '../interfaces';
+import { SearchItem } from '../types';
 
 export default defineComponent({
   props: {

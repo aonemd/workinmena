@@ -13,7 +13,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 
-import { Tool } from '../interfaces';
+import { Tool } from '../types';
 
 export default defineComponent({
   props: {

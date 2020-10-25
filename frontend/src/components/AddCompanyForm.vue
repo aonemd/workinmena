@@ -28,7 +28,7 @@
 <script lang="ts">
 import { defineComponent, onMounted, reactive } from "vue";
 
-import { CompanySubmission, Tool } from '../interfaces';
+import { CompanySubmission, Tool } from '../types';
 import ToolDataService from '../services/tool-data.service';
 import CompanySubmissionDataService from '../services/company-submission-data.service';
 

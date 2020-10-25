@@ -34,7 +34,7 @@
 import { defineComponent, onMounted, reactive } from "vue";
 
 import CompanyDataService from "../services/CompanyDataService";
-import { Company } from '../interfaces';
+import { Company } from '../types';
 
 import Search from './Companies/Search.vue';
 import Paginator from "./Companies/Paginator.vue";

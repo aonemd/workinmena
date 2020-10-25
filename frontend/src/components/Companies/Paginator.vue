@@ -9,7 +9,7 @@
 <script lang="ts">
 import { defineComponent, PropType, reactive, computed, ComputedRef, watch } from "vue";
 
-import { Company } from '../../interfaces';
+import { Company } from '../../types';
 
 export default defineComponent({
   props: {
