@@ -68,7 +68,7 @@ export default defineComponent({
       isOpen: false,
       placeholder: props.placeholder,
       filteredList: [],
-      selectedList: props.suggestedList,
+      selectedList: props.suggestedList.slice(),
     });
 
     watch(() => props.clear, (_newValue, _oldValue) => {
