@@ -1,4 +1,4 @@
 export default interface SearchItem {
-  id: number,
+  id: number | null,
   name: string,
 }

@@ -75,6 +75,8 @@ export default defineComponent({
       if (props.clear) {
         state.query        = '';
         state.selectedList = [];
+
+        emit('updateSelectedList', state.selectedList);
       }
     });
 
@@ -88,6 +90,10 @@ export default defineComponent({
       state.filteredList = props.searchList!.filter((item: SearchItem): boolean =>  {
         return item.name.toLowerCase().indexOf(state.query.toLowerCase()) > - 1
       });
+
+      if (state.filteredList.length == 0) {
+        state.filteredList = [{ id: null, name: state.query }];
+      }
     }
 
     function confirmSelection(result: SearchItem) {
