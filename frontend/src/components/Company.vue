@@ -19,7 +19,7 @@
 <script lang="ts">
 import { defineComponent, onMounted, reactive } from "vue";
 
-import CompanyDataService from "../services/CompanyDataService";
+import CompanyDataService from "../services/company-data.service";
 import { Company } from '../types';
 import Tool from './Tool.vue';
 
