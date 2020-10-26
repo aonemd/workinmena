@@ -1,4 +1,4 @@
-import Tool from './Tool.types';
+import Tool from './tool.type';
 
 export default interface Company {
   id: number,
