@@ -103,15 +103,17 @@ export default defineComponent({
       }
     }
 
-    function confirmSelection(result: SearchItem) {
-      state.selectedList.push(result);
+    function confirmSelection(selectedItem: SearchItem) {
+      if (state.selectedList.indexOf(selectedItem) === -1) {
+        state.selectedList.push(selectedItem);
+
+        emit('updateSelectedList', state.selectedList);
+      }
 
       state.query  = '';
       state.isOpen = false;
 
       inputElementRef.value.focus();
-
-      emit('updateSelectedList', state.selectedList);
     }
 
     function removeSelection(index: number) {
