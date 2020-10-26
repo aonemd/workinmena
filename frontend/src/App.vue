@@ -97,4 +97,10 @@ nav {
 .clearfix:after {
   clear: both;
 }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>

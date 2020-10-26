@@ -75,12 +75,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 input {
   box-sizing: border-box; /* prevent padding from affecting width */
   width: 100%;
