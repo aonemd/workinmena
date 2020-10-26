@@ -108,6 +108,8 @@ export default defineComponent({
       state.query  = '';
       state.isOpen = false;
 
+      inputElementRef.value.focus();
+
       emit('updateSelectedList', state.selectedList);
     }
 
