@@ -3,6 +3,18 @@ class ToolDecorator < Geckorate::Decorator
     return decorate_null(options) if __getobj__.nil?
 
     {
+      id: id,
+      name: name,
+      website: website,
+      category: Tool::CategoryDecorator.new(category).name
+    }
+  end
+
+  def decorate_full(options = {})
+    return decorate_null(options) if __getobj__.nil?
+
+    {
+      id: id,
       name: name,
       description: description,
       website: website,
@@ -10,15 +22,9 @@ class ToolDecorator < Geckorate::Decorator
     }
   end
 
-  def decorate_list(options = {})
-    {
-      id: id,
-      name: name
-    }
-  end
-
   def decorate_null(options = {})
     {
+      id: '-',
       name: '-',
       description: '-',
       website: '-',
