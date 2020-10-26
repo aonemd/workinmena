@@ -1,9 +1,10 @@
 <template>
   <div class="autocomplete-search">
     <input
-       v-model="state.query"
-       @input="handleOnChange"
-       :placeholder="state.placeholder">
+      ref="inputElementRef"
+      v-model="state.query"
+      @input="handleOnChange"
+      :placeholder="state.placeholder">
 
     <ul v-show="state.isOpen" class="autocomplete-search__filtered-list">
       <li
@@ -34,7 +35,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, reactive, watch } from "vue";
+import { defineComponent, PropType, reactive, ref, watch, onMounted, } from "vue";
 
 import { SearchItem } from '../types';
 
@@ -69,6 +70,11 @@ export default defineComponent({
       placeholder: props.placeholder,
       filteredList: [],
       selectedList: props.suggestedList.slice(),
+    });
+
+    let inputElementRef = ref();
+    onMounted(() => {
+      inputElementRef.value.focus();
     });
 
     watch(() => props.clear, (_newValue, _oldValue) => {
@@ -113,6 +119,7 @@ export default defineComponent({
 
     return {
       state,
+      inputElementRef,
       handleOnChange,
       confirmSelection,
       removeSelection,
