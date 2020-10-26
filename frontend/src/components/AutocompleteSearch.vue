@@ -10,9 +10,10 @@
       <li
         v-for="(filteredItem, i) in state.filteredList"
         :key="i"
-        @click="confirmSelection(filteredItem)"
         class="autocomplete-search__filtered-item">
-        {{ filteredItem.name }}
+        <a href="#" @click="confirmSelection(filteredItem)">
+          {{ filteredItem.name }}
+        </a>
       </li>
     </ul>
 
@@ -148,6 +149,23 @@ export default defineComponent({
   text-align: left;
   padding: 4px 2px;
   cursor: pointer;
+
+  & a {
+    text-decoration: none;
+    display: block;
+    color: var(--main);
+
+  }
+
+  & a:hover {
+    background-color: #34314c;
+    color: #ffffff;
+  }
+
+  & a:focus {
+    background-color: #34314c;
+    color: #ffffff;
+  }
 }
 
 .autocomplete-search__filtered-item:hover {
