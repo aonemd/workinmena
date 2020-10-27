@@ -1,12 +1,6 @@
-import axios from "axios";
+import http from './http-client';
 
 import { CompanySubmission } from '../types';
-
-const http = axios.create({
-  baseURL: 'http://localhost:3000/api/v1',
-  responseType: 'json',
-  headers: { 'Content-Type': 'application/json' }
-});
 
 class CompanySubmissionDataService {
   async create(companySubmission: CompanySubmission): Promise<{message: string}> {

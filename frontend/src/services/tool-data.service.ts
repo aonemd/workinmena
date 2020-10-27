@@ -1,12 +1,6 @@
-import axios from "axios";
+import http from './http-client';
 
 import { Tool } from '../types';
-
-const http = axios.create({
-  baseURL: 'http://localhost:3000/api/v1',
-  responseType: 'json',
-  headers: { 'Content-Type': 'application/json' }
-});
 
 class ToolDataService {
   async getAll(): Promise<{tools: Tool[]}> {
