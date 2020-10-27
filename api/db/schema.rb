@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_17_100527) do
+ActiveRecord::Schema.define(version: 2020_10_27_191421) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2020_10_17_100527) do
     t.bigint "tool_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "community", default: false
     t.index ["company_id", "tool_id"], name: "index_stacks_on_company_and_tool", unique: true
     t.index ["company_id"], name: "index_stacks_on_company_id"
     t.index ["tool_id"], name: "index_stacks_on_tool_id"
