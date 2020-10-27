@@ -173,6 +173,10 @@ export default defineComponent({
 .autocomplete-search__filtered-item:hover {
   background-color: #34314c;
   color: #ffffff;
+
+  & a {
+    color: #ffffff;
+  }
 }
 
 .autocomplete-search__selected-list {
