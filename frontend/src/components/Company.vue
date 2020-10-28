@@ -8,29 +8,7 @@
       </a>
     </div>
 
-    <div class="company-add-tools">
-      <a
-        href="#"
-        class="company-add-tools-btn"
-        @click="state.expandAddToolsForm = !state.expandAddToolsForm">
-        Add technologies &oplus;
-      </a>
-
-      <div v-if="state.expandAddToolsForm">
-        <div class="row">
-          <autocomplete-search
-            :placeholder="'Search Tools'"
-            :clear="false"
-            :searchList="state.searchTools"
-            @updateSelectedList="state.communityAddedTools = $event">
-          </autocomplete-search>
-        </div>
-
-        <div class="row">
-          <button>Save</button>
-        </div>
-      </div>
-    </div>
+    <add-stack-form @updateStackTools="addCommunityTools($event)" />
 
     <ul class="tools">
       <li v-for="(tool, index) in state.company.tools" :key="index">
@@ -45,10 +23,9 @@ import { defineComponent, onMounted, reactive } from "vue";
 
 import { Company, Tool } from '../types';
 import CompanyDataService from "../services/company-data.service";
-import ToolDataService from '../services/tool-data.service';
 
 import ToolVue from './Tool.vue';
-import AutocompleteSearch from "./AutocompleteSearch";
+import AddStackForm from "./Company/AddStackForm.vue";
 
 export default defineComponent({
   props: {
@@ -56,33 +33,29 @@ export default defineComponent({
   },
   components: {
     'tool': ToolVue,
-    'autocomplete-search': AutocompleteSearch,
+    'add-stack-form': AddStackForm,
   },
   setup(props) {
     let state = reactive<{
       company: Company,
-      expandAddToolsForm: boolean,
-      searchTools: Tool[],
-      communityAddedTools: Tool[],
     }>({
       company: {} as Company,
-      expandAddToolsForm: false,
-      searchTools: [],
-      communityAddedTools: [],
     });
 
     onMounted(() => {
       CompanyDataService.getOne(props.id!).then((data) => {
         state.company = data.company;
       });
-
-      ToolDataService.getAll().then((data) => {
-        state.searchTools = data.tools;
-      });
     });
+
+    function addCommunityTools(communityTools: Tool[]) {
+      state.company.tools.unshift(...communityTools);
+      console.log(state.company.tools);
+    }
 
     return {
       state,
+      addCommunityTools,
     }
   }
 });
@@ -123,22 +96,6 @@ export default defineComponent({
 
     & li {
       margin-bottom: 1em;
-    }
-  }
-
-  & .company-add-tools {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 18px;
-
-    & a {
-      color: var(--main);
-    }
-
-    & button {
-      float: right;
-      padding: 1em;
-      text-transform: uppercase;
     }
   }
 }
