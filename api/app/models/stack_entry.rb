@@ -1,4 +1,4 @@
-class Stack < ApplicationRecord
+class StackEntry < ApplicationRecord
   belongs_to :company
   belongs_to :tool
 

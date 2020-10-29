@@ -1,5 +1,5 @@
 class Company < ApplicationRecord
-  has_many :stack, foreign_key: :company_id, class_name: 'Stack', dependent: :destroy
+  has_many :stack, foreign_key: :company_id, class_name: 'StackEntry', dependent: :destroy
   has_many :tools, through: :stack
   has_one :company_popular_tool, foreign_key: :company_id, class_name: 'CompanyPopularTool', dependent: :destroy
 

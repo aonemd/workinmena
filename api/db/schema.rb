@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_27_191421) do
+ActiveRecord::Schema.define(version: 2020_10_29_202706) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,15 +32,15 @@ ActiveRecord::Schema.define(version: 2020_10_27_191421) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "stacks", force: :cascade do |t|
+  create_table "stack_entries", force: :cascade do |t|
     t.bigint "company_id"
     t.bigint "tool_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "community", default: false
     t.index ["company_id", "tool_id"], name: "index_stacks_on_company_and_tool", unique: true
-    t.index ["company_id"], name: "index_stacks_on_company_id"
-    t.index ["tool_id"], name: "index_stacks_on_tool_id"
+    t.index ["company_id"], name: "index_stack_entries_on_company_id"
+    t.index ["tool_id"], name: "index_stack_entries_on_tool_id"
   end
 
   create_table "tool_categories", force: :cascade do |t|
@@ -61,16 +61,16 @@ ActiveRecord::Schema.define(version: 2020_10_27_191421) do
     t.index ["tool_category_id"], name: "index_tools_on_tool_category_id"
   end
 
-  add_foreign_key "stacks", "companies"
-  add_foreign_key "stacks", "tools"
+  add_foreign_key "stack_entries", "companies"
+  add_foreign_key "stack_entries", "tools"
   add_foreign_key "tools", "tool_categories"
 
   create_view "popular_tools", materialized: true, sql_definition: <<-SQL
       SELECT tools.id AS tool_id,
       count(tools.id) AS popularity,
       tools.tool_category_id
-     FROM (stacks
-       JOIN tools ON ((tools.id = stacks.tool_id)))
+     FROM (stack_entries
+       JOIN tools ON ((tools.id = stack_entries.tool_id)))
     GROUP BY tools.id
     ORDER BY (count(tools.id)) DESC;
   SQL
@@ -86,8 +86,8 @@ ActiveRecord::Schema.define(version: 2020_10_27_191421) do
               popular_tools.popularity,
               rank() OVER (PARTITION BY companies.id ORDER BY popular_tools.popularity DESC) AS rank
              FROM (((companies
-               JOIN stacks ON ((stacks.company_id = companies.id)))
-               JOIN popular_tools ON ((stacks.tool_id = popular_tools.tool_id)))
+               JOIN stack_entries ON ((stack_entries.company_id = companies.id)))
+               JOIN popular_tools ON ((stack_entries.tool_id = popular_tools.tool_id)))
                JOIN tool_categories ON ((tool_categories.id = popular_tools.tool_category_id)))
             WHERE (((tool_categories.name)::text = 'Language'::text) OR ((tool_categories.name)::text = 'Framework'::text))) company_popular_tools
     WHERE (company_popular_tools.rank = 1);

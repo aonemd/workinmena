@@ -13,7 +13,7 @@ class Api::V1::StacksController < ApplicationController
   end
 
   def single_stack_params(p = nil)
-    (p || params.require(:stack)).permit(
+    (p || params.require(:stack_entry)).permit(
       :tool_id,
       :community,
     )
