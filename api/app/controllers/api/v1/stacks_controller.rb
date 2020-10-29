@@ -1,15 +1,19 @@
 class Api::V1::StacksController < ApplicationController
   def create
     company = Company.find(params[:company_id])
-    stack   = company.stack.new(stack_params)
+    company.stack.create(stack_params)
 
-    stack.save!
-
-    render json: { stack: stack }
+    head :ok
   end
 
   def stack_params
-    params.require(:stack).permit(
+    params.require(:stack).map do |p|
+      single_stack_params(p)
+    end
+  end
+
+  def single_stack_params(p = nil)
+    (p || params.require(:stack)).permit(
       :tool_id,
       :community,
     )
