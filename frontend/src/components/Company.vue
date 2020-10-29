@@ -54,6 +54,17 @@ export default defineComponent({
 
     function addCommunityTools(communityTools: Tool[]) {
       state.company.tools.unshift(...communityTools);
+
+      let map: Map<number, boolean> = new Map();
+      let stack: Tool[] = [];
+      for (const tool of state.company.tools) {
+        if (!map.has(tool.id)) {
+          map.set(tool.id, true);
+          stack.push(tool);
+        }
+      }
+      state.company.tools = stack;
+
       console.log(state.company.tools);
     }
 
