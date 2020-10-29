@@ -8,7 +8,9 @@
       </a>
     </div>
 
-    <add-stack-form @updateStackTools="addCommunityTools($event)" />
+    <add-stack-form
+      :companyId="state.id"
+      @updateStackTools="addCommunityTools($event)" />
 
     <ul class="tools">
       <li v-for="(tool, index) in state.company.tools" :key="index">
@@ -37,8 +39,10 @@ export default defineComponent({
   },
   setup(props) {
     let state = reactive<{
+      id: number,
       company: Company,
     }>({
+      id: props.id!,
       company: {} as Company,
     });
 

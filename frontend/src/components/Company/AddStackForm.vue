@@ -29,12 +29,16 @@ import { defineComponent, onMounted, reactive } from "vue";
 
 import { Tool } from '../../types';
 import ToolDataService from '../../services/tool-data.service';
+import CompanyStackDataService from '../../services/company-stack-data.service';
 
 import AutocompleteSearch from "../AutocompleteSearch.vue";
 
 export default defineComponent({
   components: {
     'autocomplete-search': AutocompleteSearch,
+  },
+  props: {
+    companyId: Number,
   },
   setup(props, { emit }) {
     let state = reactive<{
@@ -54,6 +58,11 @@ export default defineComponent({
     });
 
     function handleOnSave() {
+      let stackEntries = state.stackTools.map((tool) => {
+        return { tool_id: tool.id, community: true }
+      });
+
+      CompanyStackDataService.create(props.companyId!, stackEntries);
       emit('updateStackTools', state.stackTools);
       state.expandForm = false;
     }

@@ -1,12 +1,12 @@
 import http from './http-client';
 
-import { Stack } from '../types';
+import { StackEntry } from '../types';
 
 class CompanyStackDataService {
-  async create(companyId: number, stack: Stack[]): Promise<any> {
+  async create(companyId: number, stackEntries: StackEntry[]): Promise<any> {
     const response = await http.post(
       `/companies/${companyId}/stacks`,
-      { stack: stack }
+      { stack: stackEntries }
     );
 
     return response;
