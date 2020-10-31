@@ -143,5 +143,30 @@
     "name": "Lua",
     "website": "lua.org",
     "description": "Lua is a lightweight, multi-paradigm programming language designed primarily for embedded use in applications"
+  },
+  {
+    "name": "HTML",
+    "website": "https://html.spec.whatwg.org/",
+    "description": "Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser"
+  },
+  {
+    "name": "CSS",
+    "website": "https://www.w3.org/Style/CSS/",
+    "description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML"
+  },
+  {
+    "name": "Sass",
+    "website": "https://sass-lang.com/",
+    "description": "Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)"
+  },
+  {
+    "name": "Less",
+    "website": "http://lesscss.org/",
+    "description": "Less (Leaner Style Sheets; sometimes stylized as LESS) is a dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side"
+  },
+  {
+    "name": "PostCSS",
+    "website": "https://postcss.org/",
+    "description": "PostCSS is a software development tool that uses JavaScript-based plugins to automate routine CSS operations"
   }
 ]
