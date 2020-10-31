@@ -1,6 +1,7 @@
 class Company < ApplicationRecord
   has_many :stack, foreign_key: :company_id, class_name: 'StackEntry', dependent: :destroy
   has_many :tools, through: :stack
+  has_many :categories, through: :tools, foreign_key: :tool_category_id, class_name: 'Tool::Category'
   has_one :company_popular_tool, foreign_key: :company_id, class_name: 'CompanyPopularTool', dependent: :destroy
 
   validates_presence_of :name

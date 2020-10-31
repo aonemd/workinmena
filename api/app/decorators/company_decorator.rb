@@ -4,7 +4,7 @@ class CompanyDecorator < Geckorate::Decorator
       id: id,
       name: name,
       website: website,
-      tools: ToolDecorator.decorate_collection(tools)
+      stack: StackEntryDecorator.decorate_collection(stack),
     }
   end
 

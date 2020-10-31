@@ -13,7 +13,10 @@ class Api::V1::CompaniesController < ApplicationController
   end
 
   def show
-    render json: { company: CompanyDecorator.new(Company.find(params[:id])).decorate }
+    company           = Company.includes(:stack, :tools, :categories).find(params[:id])
+    decorated_company = CompanyDecorator.new(company).decorate
+
+    render json: { company: decorated_company }
   end
 
   def create
