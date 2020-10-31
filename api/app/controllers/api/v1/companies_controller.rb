@@ -1,10 +1,11 @@
 class Api::V1::CompaniesController < ApplicationController
   def index
+    scope = Company.includes(:tools, :company_popular_tool)
     companies = if params[:limit]
                   _limit = Integer(params[:limit])
-                  Company.includes(:tools).first(_limit)
+                  scope.first(_limit)
                 else
-                  Company.all.includes(:tools)
+                  scope.all
                 end
 
     decorated_companies = CompanyDecorator.decorate_collection(companies, method: :decorate_all)

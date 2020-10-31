@@ -22,6 +22,14 @@ class ToolDecorator < Geckorate::Decorator
     }
   end
 
+  def decorate_name(options = {})
+    return { name: '-' } if __getobj__.nil?
+
+    {
+      name: name
+    }
+  end
+
   def decorate_null(options = {})
     {
       id: '-',
