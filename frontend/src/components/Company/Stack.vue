@@ -2,13 +2,13 @@
   <div id="tool__box">
     <div class="tool__info">
       <div class="tool__title">
-        <a :href="'//' + props.stackEntry.tool.website" target="_blank">
-          {{props.stackEntry.tool.name}}
+        <a :href="'//' + state.tool.website" target="_blank">
+          {{state.tool.name}}
         </a>
       </div>
 
       <span class="tool__category">
-        {{props.stackEntry.tool.category}}
+        {{state.tool.category}}
       </span>
     </div>
 
@@ -18,30 +18,37 @@
       </span>
 
       <span class="tool__endorsement-number">
-        {{props.stackEntry.endorsements}}
+        {{state.endorsements}}
       </span>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, PropType, reactive, } from "vue";
 
-import { StackEntry } from '../../types';
+import { StackEntry, Tool } from '../../types';
 
 export default defineComponent({
   props: {
     stackEntry: {
       type: Object as PropType<StackEntry>,
+      default: {} as StackEntry,
     },
   },
   setup(props) {
+    let state = reactive<{ id: number, endorsements: number, tool: Tool, }>({
+      id: props.stackEntry.id,
+      endorsements: props.stackEntry.endorsements,
+      tool: props.stackEntry.tool,
+    });
+
     function excerpt(str: string, n: number = 170): string {
       return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
     }
 
     return {
-      props,
+      state,
     }
   }
 });
