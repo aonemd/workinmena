@@ -64,8 +64,6 @@ export default defineComponent({
         }
       }
       state.company.stack = stack;
-
-      console.log(state.company.stack);
     }
 
     return {
