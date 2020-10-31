@@ -1,16 +1,16 @@
 <template>
   <form v-on:submit.prevent>
     <div class="row">
-      <input v-model="state.companySubmission.name" placeholder="Company Name">
+      <input v-model="state.companySubmission.name" placeholder="Name">
     </div>
 
     <div class="row">
-      <input v-model="state.companySubmission.website" placeholder="Company Website">
+      <input v-model="state.companySubmission.website" placeholder="Website">
     </div>
 
     <div class="row">
       <autocomplete-search
-        :placeholder="'Company Technology Tools'"
+        :placeholder="'Stack Tools'"
         :clear="state.clearForm"
         :searchList="state.searchTools"
         @updateSelectedList="state.companySubmission.tools = $event">
