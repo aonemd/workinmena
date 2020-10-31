@@ -2,7 +2,7 @@ class Api::V1::StacksController < ApplicationController
   def create
     stack_entries = find_company.stack.create(stack_params)
 
-    render json: { stack_entries: stack_entries }
+    render json: { stack_entries: StackEntryDecorator.decorate_collection(stack_entries) }
   end
 
   def endorse
