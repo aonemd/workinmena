@@ -10,7 +10,7 @@
 
     <add-stack-form
       :companyId="state.id"
-      @updateStackTools="addCommunityTools($event)" />
+      @updateStackTools="addToStack($event)" />
 
     <ul class="company__stack">
       <li v-for="(stackEntry, index) in state.company.stack" :key="index">
@@ -52,8 +52,8 @@ export default defineComponent({
       });
     });
 
-    function addCommunityTools(communityTools: StackEntry[]) {
-      state.company.stack.unshift(...communityTools);
+    function addToStack(stackEntries: StackEntry[]) {
+      state.company.stack.unshift(...stackEntries);
 
       let map: Map<number, boolean> = new Map();
       let stack: StackEntry[] = [];
@@ -68,7 +68,7 @@ export default defineComponent({
 
     return {
       state,
-      addCommunityTools,
+      addToStack,
     }
   }
 });
