@@ -140,7 +140,7 @@
     "description": "Bitbucket is a web-based version control repository hosting service owned by Atlassian, for source code and development projects that use either Mercurial (since launch) or Git (since October 2011) revision control systems"
   },
   {
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "website": "aws.amazon.com",
     "description": "Amazon Web Services (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms to individuals, companies and governments, on a paid subscription basis. The technology allows subscribers to have at their disposal a virtual cluster of computers, available all the time, through the Internet"
   },
