@@ -13,8 +13,10 @@
     </div>
 
     <div class="tool__endorsement">
-      <span class="tool__endorsement-arrow">
-        &uarr;
+      <span class="tool__endorsement-button">
+        <a href="#" @click="endorse()">
+          &uarr;
+        </a>
       </span>
 
       <span class="tool__endorsement-number">
@@ -28,9 +30,13 @@
 import { defineComponent, PropType, reactive, } from "vue";
 
 import { StackEntry, Tool } from '../../types';
+import CompanyDataService from '../../services/company-stack-data.service';
 
 export default defineComponent({
   props: {
+    companyId: {
+      type: Number,
+    },
     stackEntry: {
       type: Object as PropType<StackEntry>,
       default: {} as StackEntry,
@@ -43,12 +49,27 @@ export default defineComponent({
       tool: props.stackEntry.tool,
     });
 
+    function endorse() {
+      let stackEndorsements: { [key: string]: boolean; } = JSON.parse(localStorage.getItem('stackEndorsements') || "{}");
+      let stackEntryEndorsementKey: string               = `${state.id}/endorsed`;
+
+      if (!stackEndorsements.hasOwnProperty(stackEntryEndorsementKey)) {
+        CompanyDataService.endorse(props.companyId!, state.id).then(() => {
+          state.endorsements++;
+
+          stackEndorsements[stackEntryEndorsementKey] = true;
+          localStorage.setItem('stackEndorsements', JSON.stringify(stackEndorsements));
+        });
+      }
+    }
+
     function excerpt(str: string, n: number = 170): string {
       return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
     }
 
     return {
       state,
+      endorse,
     }
   }
 });
@@ -91,8 +112,14 @@ export default defineComponent({
     text-align: center;
     border: 1px solid var(--border);
 
-    & span.tool__endorsement-arrow {
+    & span.tool__endorsement-button {
       font-size: 26px;
+      cursor: pointer;
+
+      & a {
+        color: var(--main);
+        text-decoration: none;
+      }
     }
 
     & span.tool__endorsement-number {

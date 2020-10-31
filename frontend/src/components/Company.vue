@@ -14,7 +14,7 @@
 
     <ul class="company__stack">
       <li v-for="(stackEntry, index) in state.company.stack" :key="index">
-        <stack :stackEntry="stackEntry" />
+        <stack :stackEntry="stackEntry" :companyId="state.id" />
       </li>
     </ul>
   </div>
