@@ -41,15 +41,6 @@ infrastructure_tools.each do |infrastructure|
               category: infrastructure_category)
 end
 
-service_tools    = ActiveSupport::JSON.decode(File.read('db/seeds/services.json'))
-service_category = Tool::Category.where(name: 'Service').first
-service_tools.each do |service|
-  Tool.create(name: service['name'],
-              website: service['website'],
-              description: service['description'],
-              category: service_category)
-end
-
 puts "Seeding companies..."
 companies = ActiveSupport::JSON.decode(File.read('db/seeds/companies.json'))
 companies.each do |company|
