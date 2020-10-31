@@ -27,7 +27,7 @@
 <script lang="ts">
 import { defineComponent, onMounted, reactive } from "vue";
 
-import { Tool, StackEntry } from '../../types';
+import { Tool, StackEntrySubmission, } from '../../types';
 import ToolDataService from '../../services/tool-data.service';
 import CompanyStackDataService from '../../services/company-stack-data.service';
 
@@ -58,13 +58,17 @@ export default defineComponent({
     });
 
     function handleOnSave() {
-      let stackEntries: StackEntry[] = state.stackTools.map((tool) => {
-        return { tool_id: tool.id, community: true }
+      let stackEntries: StackEntrySubmission[] = state.stackTools.map((tool) => {
+        return {
+          tool_id: tool.id,
+          community: true,
+        }
       });
 
-      CompanyStackDataService.create(props.companyId!, stackEntries);
-      emit('updateStackTools', state.stackTools);
-      state.expandForm = false;
+      CompanyStackDataService.create(props.companyId!, stackEntries).then((data) => {
+        emit('updateStackTools', data.stack_entries);
+        state.expandForm = false;
+      });
     }
 
     return {

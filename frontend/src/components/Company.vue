@@ -12,9 +12,9 @@
       :companyId="state.id"
       @updateStackTools="addCommunityTools($event)" />
 
-    <ul class="tools">
-      <li v-for="(tool, index) in state.company.tools" :key="index">
-        <tool :tool="tool"></tool>
+    <ul class="company__stack">
+      <li v-for="(stackEntry, index) in state.company.stack" :key="index">
+        <stack :stackEntry="stackEntry" />
       </li>
     </ul>
   </div>
@@ -23,10 +23,10 @@
 <script lang="ts">
 import { defineComponent, onMounted, reactive } from "vue";
 
-import { Company, Tool } from '../types';
+import { Company, StackEntry } from '../types';
 import CompanyDataService from "../services/company-data.service";
 
-import ToolVue from './Tool.vue';
+import StackVue from './Company/Stack.vue'
 import AddStackForm from "./Company/AddStackForm.vue";
 
 export default defineComponent({
@@ -34,7 +34,7 @@ export default defineComponent({
     id: Number,
   },
   components: {
-    'tool': ToolVue,
+    'stack': StackVue,
     'add-stack-form': AddStackForm,
   },
   setup(props) {
@@ -52,20 +52,20 @@ export default defineComponent({
       });
     });
 
-    function addCommunityTools(communityTools: Tool[]) {
-      state.company.tools.unshift(...communityTools);
+    function addCommunityTools(communityTools: StackEntry[]) {
+      state.company.stack.unshift(...communityTools);
 
       let map: Map<number, boolean> = new Map();
-      let stack: Tool[] = [];
-      for (const tool of state.company.tools) {
-        if (!map.has(tool.id)) {
-          map.set(tool.id, true);
-          stack.push(tool);
+      let stack: StackEntry[] = [];
+      for (const stack_entry of state.company.stack) {
+        if (!map.has(stack_entry.tool.id)) {
+          map.set(stack_entry.tool.id, true);
+          stack.push(stack_entry);
         }
       }
-      state.company.tools = stack;
+      state.company.stack = stack;
 
-      console.log(state.company.tools);
+      console.log(state.company.stack);
     }
 
     return {
@@ -105,7 +105,7 @@ export default defineComponent({
     }
   }
 
-  & ul.tools {
+  & ul.company__stack {
     list-style: none;
     padding: 0;
 

@@ -1,4 +1,8 @@
+import Tool from './tool.type';
+
 export default interface StackEntry {
-  tool_id: number;
+  id: number;
   community: boolean;
+  endorsements: number;
+  tool: Tool;
 }

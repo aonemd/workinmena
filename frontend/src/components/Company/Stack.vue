@@ -1,14 +1,14 @@
 <template>
-  <div id="tool-box">
+  <div id="tool__box">
     <div class="tool__info">
       <div class="tool__title">
-        <a :href="'//' + tool.website" target="_blank">
-          {{tool.name}}
+        <a :href="'//' + props.stackEntry.tool.website" target="_blank">
+          {{props.stackEntry.tool.name}}
         </a>
       </div>
 
-      <span class="tool-category">
-        {{tool.category}}
+      <span class="tool__category">
+        {{props.stackEntry.tool.category}}
       </span>
     </div>
 
@@ -18,7 +18,7 @@
       </span>
 
       <span class="tool__endorsement-number">
-        123
+        {{props.stackEntry.endorsements}}
       </span>
     </div>
   </div>
@@ -27,12 +27,12 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 
-import { Tool } from '../types';
+import { StackEntry } from '../../types';
 
 export default defineComponent({
   props: {
-    tool: {
-      type: Object as PropType<Tool>,
+    stackEntry: {
+      type: Object as PropType<StackEntry>,
     },
   },
   setup(props) {
@@ -41,13 +41,13 @@ export default defineComponent({
     }
 
     return {
-      excerpt,
+      props,
     }
   }
 });
 </script>
 <style scoped>
-#tool-box {
+#tool__box {
   display: table;
   height: 70px;
   width: 100%;
@@ -69,7 +69,7 @@ export default defineComponent({
       }
     }
 
-    & .tool-category {
+    & .tool__category {
       color: var(--secondary);
       font-size: 8px;
       float: right;

@@ -1,9 +1,11 @@
+import StackEntry from './stack-entry.type';
 import Tool from './tool.type';
 
 export default interface Company {
   id: number;
   name: string;
   website: string;
-  tools: Tool[];
+  stack: StackEntry[];
+  popular_tool: Tool,
   tool_search_pattern: string;
 }
