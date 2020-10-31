@@ -1,11 +1,24 @@
 <template>
   <div id="search">
-    <input type="search" placeholder="Search by company or tool..." v-model="searchQuery" :disabled="disabled">
+    <input
+      ref="inputElementRef"
+      type="search"
+      placeholder="Search by company or tool..."
+      v-model="searchQuery"
+      :disabled="disabled">
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref, Ref, computed, ComputedRef, watch } from "vue";
+import {
+  defineComponent,
+  PropType,
+  ref,
+  Ref,
+  computed,
+  ComputedRef,
+  watch,
+} from "vue";
 
 import { Company } from '../../types';
 
@@ -23,10 +36,16 @@ export default defineComponent({
     },
   },
   setup(props, { emit }) {
+    let inputElementRef                = ref();
     let searchQuery: Ref<string>       = ref('');
     let disabled: ComputedRef<Boolean> = computed((): boolean => {
-      return props.disabled
-    })
+      return props.disabled;
+    });
+
+    watch(disabled, (newValue, _oldValue) => {
+      inputElementRef.value.disabled = newValue;
+      inputElementRef.value.focus();
+    });
 
     watch(searchQuery, (_newValue, _oldValue) => {
       let query: string                = searchQuery.value.toLowerCase();
@@ -44,8 +63,9 @@ export default defineComponent({
     });
 
     return {
-      searchQuery,
+      inputElementRef,
       disabled,
+      searchQuery,
     }
   }
 });
