@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   namespace :api, default: { format: :json } do
     namespace :v1 do
       resources :companies, only: [:index, :show, :create] do
-        resources :stacks, only: [:create]
+        resources :stacks, only: [:create] do
+          member do
+            put :endorse
+          end
+        end
       end
 
       namespace :companies do

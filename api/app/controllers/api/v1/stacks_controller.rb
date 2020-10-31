@@ -1,7 +1,12 @@
 class Api::V1::StacksController < ApplicationController
   def create
-    company = Company.find(params[:company_id])
-    company.stack.create(stack_params)
+    find_company.stack.create(stack_params)
+
+    head :ok
+  end
+
+  def endorse
+    find_stack_entry.increment!(:community_endorsements)
 
     head :ok
   end
@@ -17,5 +22,13 @@ class Api::V1::StacksController < ApplicationController
       :tool_id,
       :community,
     )
+  end
+
+  def find_stack_entry
+    find_company.stack.find(params[:id])
+  end
+
+  def find_company
+    Company.find(params[:company_id])
   end
 end
