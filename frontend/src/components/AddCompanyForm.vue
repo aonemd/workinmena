@@ -5,7 +5,10 @@
     </div>
 
     <div class="row">
-      <input v-model="state.companySubmission.website" placeholder="Website">
+      <input
+         v-model="state.companySubmission.website"
+         placeholder="Website"
+         @blur="analyzeCompanyWebsite">
     </div>
 
     <div class="row">
@@ -13,6 +16,7 @@
         :placeholder="'Stack Tools'"
         :clear="state.clearForm"
         :searchList="state.searchTools"
+        :suggestedList="state.analyzedTools"
         @updateSelectedList="state.companySubmission.tools = $event">
       </autocomplete-search>
     </div>
@@ -31,6 +35,7 @@ import { defineComponent, onMounted, reactive } from "vue";
 import { CompanySubmission, Tool } from '../types';
 import ToolDataService from '../services/tool-data.service';
 import CompanySubmissionDataService from '../services/company-submission-data.service';
+import CompanyAnalyzerDataService from '../services/company-analyzer-data.service';
 
 import AutocompleteSearch from './AutocompleteSearch.vue';
 
@@ -42,11 +47,13 @@ export default defineComponent({
     let state = reactive<{
       companySubmission: CompanySubmission,
       searchTools: Tool[],
+      analyzedTools: Tool[],
       clearForm: boolean,
       apiMessage: string,
     }>({
       companySubmission: {} as CompanySubmission,
       searchTools: [],
+      analyzedTools: [],
       clearForm: false,
       apiMessage: '',
     })
@@ -56,6 +63,12 @@ export default defineComponent({
         state.searchTools = data.tools;
       });
     });
+
+    function analyzeCompanyWebsite() {
+      CompanyAnalyzerDataService.create(state.companySubmission.website).then((data) => {
+        state.analyzedTools = data.tools;
+      });
+    }
 
     function submitCompany() {
       CompanySubmissionDataService.create(state.companySubmission).then((data) => {
@@ -68,6 +81,7 @@ export default defineComponent({
 
     return {
       state,
+      analyzeCompanyWebsite,
       submitCompany,
     }
   }

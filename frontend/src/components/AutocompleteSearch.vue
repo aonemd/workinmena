@@ -78,6 +78,10 @@ export default defineComponent({
       inputElementRef.value.focus();
     });
 
+    watch(() => props.suggestedList, (_newValue, _oldValue) => {
+      state.selectedList.push(..._newValue);
+    });
+
     watch(() => props.clear, (_newValue, _oldValue) => {
       if (props.clear) {
         state.query        = '';
@@ -105,7 +109,7 @@ export default defineComponent({
 
     function confirmSelection(selectedItem: SearchItem) {
       if (state.selectedList.indexOf(selectedItem) === -1) {
-        state.selectedList.push(selectedItem);
+        state.selectedList.unshift(selectedItem);
 
         emit('updateSelectedList', state.selectedList);
       }
