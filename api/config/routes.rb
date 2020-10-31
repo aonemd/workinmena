@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
       namespace :companies do
         resources :submissions, only: [:create]
+        resource :analyzer, controller: :analyzer, only: [:create]
       end
 
       resources :tools, only: [:index]
