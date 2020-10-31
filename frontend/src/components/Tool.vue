@@ -1,12 +1,26 @@
 <template>
   <div id="tool-box">
-    <a :href="'//' + tool.website" target="_blank" class="tool-title">
-      {{tool.name}}
-    </a>
-    &nbsp;
-    <span class="tool-category">
-      {{tool.category}}
-    </span>
+    <div class="tool__info">
+      <div class="tool__title">
+        <a :href="'//' + tool.website" target="_blank">
+          {{tool.name}}
+        </a>
+      </div>
+
+      <span class="tool-category">
+        {{tool.category}}
+      </span>
+    </div>
+
+    <div class="tool__endorsement">
+      <span class="tool__endorsement-arrow">
+        &uarr;
+      </span>
+
+      <span class="tool__endorsement-number">
+        123
+      </span>
+    </div>
   </div>
 </template>
 
@@ -34,21 +48,49 @@ export default defineComponent({
 </script>
 <style scoped>
 #tool-box {
-  height: 30px;
+  display: table;
+  height: 70px;
+  width: 100%;
 
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 0.3em;
-  padding: 1em;
 
-  & .tool-title {
-    color: var(--main);
+  & .tool__info {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    padding: 1em;
+
+    & .tool__title {
+      float: left;
+      & a {
+        color: var(--main);
+      }
+    }
+
+    & .tool-category {
+      color: var(--secondary);
+      font-size: 8px;
+      float: right;
+    }
   }
 
-  & .tool-category {
-    color: var(--secondary);
-    font-size: 8px;
+  & .tool__endorsement {
     float: right;
+    display: grid;
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    border: 1px solid var(--border);
+
+    & span.tool__endorsement-arrow {
+      font-size: 26px;
+    }
+
+    & span.tool__endorsement-number {
+      font-size: 8px;
+    }
   }
 }
 </style>
