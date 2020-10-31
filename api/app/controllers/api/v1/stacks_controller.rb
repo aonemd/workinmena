@@ -1,8 +1,8 @@
 class Api::V1::StacksController < ApplicationController
   def create
-    find_company.stack.create(stack_params)
+    stack_entries = find_company.stack.create(stack_params)
 
-    head :ok
+    render json: { stack_entries: stack_entries }
   end
 
   def endorse
