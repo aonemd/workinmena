@@ -4,7 +4,19 @@ class UrlAnalyzerConsumerService
   end
 
   def call(url)
-    resp = @analyzer.call(url)
-    Tool.where(name: resp.fetch("tools"))
+    resp  = @analyzer.call(url)
+    tools = resp.fetch("tools").map do |tool|
+      conversions_table.fetch(tool, tool)
+    end
+
+    Tool.where(name: tools)
+  end
+
+  private
+
+  def conversions_table
+    {
+      'Amazon Web Services' => 'AWS',
+    }
   end
 end
