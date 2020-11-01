@@ -1,9 +1,11 @@
 const amplitude = require('amplitude-js');
 
+import { AMPLITUDE_API_KEY } from '../constants';
+
 amplitude
   .getInstance()
   .init(
-    "7c92416d3c8102b79c6b0a54ebad48bf",
+    AMPLITUDE_API_KEY,
     null,
     {includeReferrer: true, includeUtm: true, includeGclid: true}
   );
