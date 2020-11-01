@@ -1,3 +1,5 @@
+require 'url_analyzer_client'
+
 class UrlAnalyzerConsumerService
   def initialize()
     @analyzer = UrlAnalyzerClient.new(Rails.application.credentials.url_analyzer_service_url)

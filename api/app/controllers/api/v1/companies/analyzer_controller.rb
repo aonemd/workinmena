@@ -1,5 +1,3 @@
-# require 'url_analyzer_client'
-
 module Api::V1::Companies
   class AnalyzerController < ApplicationController
     def create
