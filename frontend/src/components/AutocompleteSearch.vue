@@ -46,6 +46,10 @@ export default defineComponent({
       type: String,
       default: 'Search',
     },
+    autofocus: {
+      type: Boolean,
+      default: false,
+    },
     clear: {
       type: Boolean,
       default: false,
@@ -75,7 +79,8 @@ export default defineComponent({
 
     let inputElementRef = ref();
     onMounted(() => {
-      inputElementRef.value.focus();
+      if (props.autofocus)
+        inputElementRef.value.focus();
     });
 
     watch(() => props.suggestedList, (_newValue, _oldValue) => {

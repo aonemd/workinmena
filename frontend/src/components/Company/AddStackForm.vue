@@ -11,6 +11,7 @@
       <div class="row">
         <autocomplete-search
           :placeholder="'Search Tools'"
+          :autofocus="true"
           :clear="!state.expandForm"
           :searchList="state.searchTools"
           @updateSelectedList="state.stackTools = $event">
