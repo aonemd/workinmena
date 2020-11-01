@@ -1,7 +1,7 @@
 <template>
   <form v-on:submit.prevent>
     <div class="row">
-      <input v-model="state.companySubmission.name" placeholder="Name">
+      <input v-model="state.companySubmission.name" placeholder="Name" autofocus>
     </div>
 
     <div class="row">
