@@ -1,6 +1,7 @@
 const path                        = require('path');
 const webpack                     = require('webpack');
 const { VueLoaderPlugin }         = require('vue-loader');
+const HtmlWebpackPlugin           = require('html-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 let environment = process.env.NODE_ENV === 'production' ? 'production' : 'development';
@@ -22,7 +23,6 @@ module.exports = (env = {}) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: "index.js",
-    publicPath: 'dist/'
   },
   module: {
     rules: [
@@ -62,6 +62,9 @@ module.exports = (env = {}) => ({
   },
   plugins: [
     new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'index.html'),
+    }),
     new FriendlyErrorsWebpackPlugin(),
     new webpack.DefinePlugin({
       API_URL: JSON.stringify(EnvConfig[environment].api_url),
