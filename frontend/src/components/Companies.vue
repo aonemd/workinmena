@@ -35,6 +35,7 @@ import { defineComponent, onMounted, reactive } from "vue";
 
 import CompanyDataService from "../services/company-data.service";
 import { Company } from '../types';
+import AmplitudeWrapper from '../services/amplitude-analytics-wrapper.service';
 
 import Search from './Companies/Search.vue';
 import Paginator from "./Companies/Paginator.vue";
@@ -70,6 +71,8 @@ export default defineComponent({
         state.companies   = data.companies;
         state.fullyLoaded = true;
       });
+
+      AmplitudeWrapper.logEvent('homepage_companies_visit');
     });
 
     return {

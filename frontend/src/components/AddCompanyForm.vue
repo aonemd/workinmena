@@ -71,6 +71,8 @@ export default defineComponent({
       ToolDataService.getAll().then((data) => {
         state.searchTools = data.tools;
       });
+
+      AmplitudeWrapper.logEvent('add_company_visit');
     });
 
     function analyzeCompanyWebsite() {
