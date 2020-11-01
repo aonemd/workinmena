@@ -14,6 +14,7 @@
           :autofocus="true"
           :clear="!state.expandForm"
           :searchList="state.searchTools"
+          @updateSearchQuery="updateAnalyticsWithSearchQuery($event)"
           @updateSelectedList="state.stackTools = $event">
         </autocomplete-search>
       </div>
@@ -31,6 +32,7 @@ import { defineComponent, onMounted, reactive } from "vue";
 import { Tool, StackEntrySubmission, } from '../../types';
 import ToolDataService from '../../services/tool-data.service';
 import CompanyStackDataService from '../../services/company-stack-data.service';
+import AmplitudeWrapper from '../../services/amplitude-analytics-wrapper.service';
 
 import AutocompleteSearch from "../AutocompleteSearch.vue";
 
@@ -58,6 +60,10 @@ export default defineComponent({
       });
     });
 
+    function updateAnalyticsWithSearchQuery(query: string) {
+      AmplitudeWrapper.logEvent('add_stack_tool_search_query', { query: query });
+    }
+
     function handleOnSave() {
       let stackEntries: StackEntrySubmission[] = state.stackTools.map((tool) => {
         return {
@@ -74,6 +80,7 @@ export default defineComponent({
 
     return {
       state,
+      updateAnalyticsWithSearchQuery,
       handleOnSave,
     }
   }

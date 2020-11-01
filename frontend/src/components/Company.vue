@@ -25,6 +25,7 @@ import { defineComponent, onMounted, reactive } from "vue";
 
 import { Company, StackEntry } from '../types';
 import CompanyDataService from "../services/company-data.service";
+import AmplitudeWrapper from '../services/amplitude-analytics-wrapper.service';
 
 import StackVue from './Company/Stack.vue'
 import AddStackForm from "./Company/AddStackForm.vue";
@@ -49,6 +50,11 @@ export default defineComponent({
     onMounted(() => {
       CompanyDataService.getOne(props.id!).then((data) => {
         state.company = data.company;
+
+        AmplitudeWrapper.logEvent(
+          'company_visit',
+          { id: state.company.id, name: state.company.name }
+        );
       });
     });
 

@@ -21,6 +21,7 @@ import {
 } from "vue";
 
 import { Company } from '../../types';
+import AmplitudeWrapper from '../../services/amplitude-analytics-wrapper.service';
 
 export default defineComponent({
   props: {
@@ -55,6 +56,8 @@ export default defineComponent({
         filteredCompanies = props.companies!.filter((company: Company) => {
           return company.name.toLowerCase().startsWith(query) || company.tool_search_pattern.includes(query);
         });
+
+        AmplitudeWrapper.logEvent('company_filter', { query: searchQuery.value });
       } else {
         filteredCompanies = props.paginatedCompanies!;
       }

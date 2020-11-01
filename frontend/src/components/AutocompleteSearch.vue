@@ -100,6 +100,8 @@ export default defineComponent({
       state.isOpen = true;
 
       filterSearchList();
+
+      emit('updateSearchQuery', state.query);
     }
 
     function filterSearchList() {

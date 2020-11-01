@@ -17,6 +17,7 @@
         :clear="state.clearForm"
         :searchList="state.searchTools"
         :suggestedList="state.analyzedTools"
+        @updateSearchQuery="updateAnalyticsWithSearchQuery($event)"
         @updateSelectedList="state.companySubmission.tools = $event">
       </autocomplete-search>
     </div>
@@ -36,6 +37,7 @@ import { CompanySubmission, Tool } from '../types';
 import ToolDataService from '../services/tool-data.service';
 import CompanySubmissionDataService from '../services/company-submission-data.service';
 import CompanyAnalyzerDataService from '../services/company-analyzer-data.service';
+import AmplitudeWrapper from '../services/amplitude-analytics-wrapper.service';
 
 import AutocompleteSearch from './AutocompleteSearch.vue';
 
@@ -70,6 +72,10 @@ export default defineComponent({
       });
     }
 
+    function updateAnalyticsWithSearchQuery(query: string) {
+      AmplitudeWrapper.logEvent('add_company_tool_search_query', { query: query });
+    }
+
     function submitCompany() {
       CompanySubmissionDataService.create(state.companySubmission).then((data) => {
         state.clearForm         = true;
@@ -82,6 +88,7 @@ export default defineComponent({
     return {
       state,
       analyzeCompanyWebsite,
+      updateAnalyticsWithSearchQuery,
       submitCompany,
     }
   }
