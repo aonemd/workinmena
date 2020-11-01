@@ -1,7 +1,11 @@
 <template>
   <form v-on:submit.prevent>
     <div class="row">
-      <input v-model="state.companySubmission.name" placeholder="Name" autofocus>
+      <input
+         ref="nameInputElementRef"
+         v-model="state.companySubmission.name"
+         placeholder="Name"
+         autofocus>
     </div>
 
     <div class="row">
@@ -31,7 +35,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, reactive } from "vue";
+import { defineComponent, onMounted, reactive, ref } from "vue";
 
 import { CompanySubmission, Tool } from '../types';
 import ToolDataService from '../services/tool-data.service';
@@ -58,9 +62,12 @@ export default defineComponent({
       analyzedTools: [],
       clearForm: false,
       apiMessage: '',
-    })
+    });
+    let nameInputElementRef = ref();
 
     onMounted(() => {
+      nameInputElementRef.value.focus();
+
       ToolDataService.getAll().then((data) => {
         state.searchTools = data.tools;
       });
@@ -87,6 +94,7 @@ export default defineComponent({
 
     return {
       state,
+      nameInputElementRef,
       analyzeCompanyWebsite,
       updateAnalyticsWithSearchQuery,
       submitCompany,
