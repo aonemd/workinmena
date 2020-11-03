@@ -16,5 +16,6 @@ RUN bundle install --jobs `expr $(cat /proc/cpuinfo | grep -c "cpu cores") - 1` 
 
 COPY . .
 COPY ./config/database.yml.docker ./config/database.yml
+RUN mkdir -p puma/sockets puma/logs puma/pids
 
 EXPOSE 3000
