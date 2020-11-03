@@ -16,6 +16,8 @@ services:
     build: .
     image: workinmena-api
     container_name: workinmena-api
+    env_file:
+      - .env.production.db
     command: ./docker-entrypoint.sh
     volumes:
       - .:/app
