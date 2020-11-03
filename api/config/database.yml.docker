@@ -6,6 +6,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   host: db
+  port: 5432
   username: postgres
 
 development:
@@ -18,6 +19,6 @@ test:
 
 production:
   <<: *default
-  database: workinmena_production
-  username: workinmena
-  password: <%= ENV['WORKINMENA_DATABASE_PASSWORD'] %>
+  database: <%= ENV['POSTGRES_DB'] %>
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
