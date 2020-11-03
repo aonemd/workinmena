@@ -1,0 +1,11 @@
+.git
+
+log
+tmp
+.bundle
+.byebug_history
+
+config/database.yml
+
+puma*
+.env.*
