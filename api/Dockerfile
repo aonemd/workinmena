@@ -8,7 +8,8 @@ RUN apk add --update --no-cache build-base \
 
 WORKDIR /app
 
-COPY Gemfile* /app/
+ENV RAILS_ENV='production'
+ENV RACK_ENV='production'
 
 RUN bundle install --jobs `expr $(cat /proc/cpuinfo | grep -c "cpu cores") - 1` --retry 3
 
