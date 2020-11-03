@@ -1,7 +1,17 @@
 version: '3'
+volumes:
+  postgres-data: {}
+
 services:
   db:
-    image: postgres:11.2
+    image: postgres:13.0-alpine
+    env_file:
+      - .env.production.db
+    hostname: db
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
   api:
     build: .
     image: workinmena-api
