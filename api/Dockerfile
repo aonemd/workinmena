@@ -13,7 +13,8 @@ ENV RACK_ENV='production'
 ENV RAILS_LOG_TO_STDOUT=1
 
 COPY Gemfile* /app/
-RUN bundle install --jobs `expr $(cat /proc/cpuinfo | grep -c "cpu cores") - 1` --retry 3
+RUN bundle config set without 'development test' && \
+      bundle install --jobs `expr $(cat /proc/cpuinfo | grep -c "cpu cores") - 1` --retry 3
 
 COPY . .
 COPY ./config/database.yml.docker ./config/database.yml
