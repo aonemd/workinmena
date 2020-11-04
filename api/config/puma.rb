@@ -34,9 +34,6 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 root     = File.expand_path("../..", __FILE__)
 puma_dir = "#{root}/puma"
 
-# socket
-bind "unix://#{puma_dir}/sockets/puma.sock"
-
 # logs
 stdout_redirect "#{puma_dir}/logs/puma.stdout.log", "#{puma_dir}/logs/puma.stderr.log", true
 
@@ -44,6 +41,9 @@ stdout_redirect "#{puma_dir}/logs/puma.stdout.log", "#{puma_dir}/logs/puma.stder
 pidfile "#{puma_dir}/pids/puma.pid"
 state_path "#{puma_dir}/pids/puma.state"
 activate_control_app
+
+# socket
+bind "unix://#{puma_dir}/sockets/puma.sock"
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
