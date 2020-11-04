@@ -10,6 +10,7 @@ WORKDIR /app
 
 ENV RAILS_ENV='production'
 ENV RACK_ENV='production'
+ENV RAILS_LOG_TO_STDOUT=1
 
 COPY Gemfile* /app/
 RUN bundle install --jobs `expr $(cat /proc/cpuinfo | grep -c "cpu cores") - 1` --retry 3
