@@ -21,5 +21,7 @@ services:
     command: ./docker-entrypoint.sh
     ports:
       - 3000:3000
+    volumes:
+      - ./puma:/app/puma
     depends_on:
       - db
