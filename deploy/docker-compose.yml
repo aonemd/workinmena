@@ -5,6 +5,7 @@ volumes:
 services:
   db:
     image: postgres:13.0-alpine
+    container_name: workinmena-db
     env_file:
       - ./workinmena-api/.env.production.db
     hostname: db
