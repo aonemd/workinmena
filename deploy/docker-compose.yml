@@ -12,6 +12,13 @@ services:
       - 5432:5432
     volumes:
       - postgres-data:/var/lib/postgresql/data
+  analyzer:
+    build:
+      context: ./workinmena-analyzer/
+    image: workinmena-analyzer
+    container_name: workinmena-analyzer
+    ports:
+      - 3001:3001
   api:
     build:
       context: ./workinmena-api/
@@ -26,6 +33,7 @@ services:
       - ./workinmena-api/puma:/app/puma
     depends_on:
       - db
+      - analyzer
   app:
     build:
       context: ./workinmena-app/
