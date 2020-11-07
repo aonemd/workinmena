@@ -1,3 +1,6 @@
 #!/bin/sh
 
-docker-compose down
+docker-compose \
+  -f workinmena-deploy/docker-compose.yml \
+  --project-directory . \
+  down
