@@ -27,3 +27,5 @@
 puma/
 
 .env.*
+
+/config/credentials/production.key
