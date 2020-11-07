@@ -4,7 +4,6 @@ const { VueLoaderPlugin }         = require('vue-loader');
 const HtmlWebpackPlugin           = require('html-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
-let environment = process.env.NODE_ENV === 'production' ? 'production' : 'development';
 const EnvConfig = {
   development: {
     api_url: 'http://localhost:3000',
@@ -17,7 +16,7 @@ const EnvConfig = {
 };
 
 module.exports = (env = {}) => ({
-  mode: env.prod ? 'production' : 'development',
+  mode: env.NODE_ENV === 'production' ? 'production' : 'development',
   devtool: env.prod ? 'source-map' : 'cheap-module-eval-source-map',
   entry: path.resolve(__dirname, 'src/index.ts'),
   output: {
@@ -67,8 +66,8 @@ module.exports = (env = {}) => ({
     }),
     new FriendlyErrorsWebpackPlugin(),
     new webpack.DefinePlugin({
-      API_URL: JSON.stringify(EnvConfig[environment].api_url),
-      AMPLITUDE_API_KEY: JSON.stringify(EnvConfig[environment].amplitude_api_key),
+      API_URL: JSON.stringify(EnvConfig[env.NODE_ENV].api_url),
+      AMPLITUDE_API_KEY: JSON.stringify(EnvConfig[env.NODE_ENV].amplitude_api_key),
     }),
   ],
   devServer: {

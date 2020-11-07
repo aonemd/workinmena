@@ -27,7 +27,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "serve": "webpack-dev-server",
-    "build": "$(yarn bin)/webpack --mode production"
+    "serve": "webpack-dev-server --env.NODE_ENV=development",
+    "build": "$(yarn bin)/webpack --mode production --env.NODE_ENV=production"
   }
 }
