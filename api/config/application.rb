@@ -41,7 +41,15 @@ module Workinmena
 
     Rails.application.config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins ['http://localhost:8080', 'http://localhost', 'http://167.99.130.51']
+        origins [
+          'http://localhost:8080',
+          'http://localhost',
+          'http://167.99.130.51',
+          'http://workinmena.tech',
+          'http://www.workinmena.tech',
+          'https://workinmena.tech',
+          'https://www.workinmena.tech'
+        ]
         resource '*', headers: :any, methods: [:get, :post, :patch, :put]
       end
     end
