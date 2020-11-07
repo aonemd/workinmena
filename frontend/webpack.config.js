@@ -11,7 +11,7 @@ const EnvConfig = {
     amplitude_api_key: '7c92416d3c8102b79c6b0a54ebad48bf',
   },
   production: {
-    api_url: 'http://localhost:3000',
+    api_url: 'http://167.99.130.51:3000',
     amplitude_api_key: '7c92416d3c8102b79c6b0a54ebad48bf',
   }
 };
