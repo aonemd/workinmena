@@ -35,6 +35,16 @@ services:
     depends_on:
       - db
       - analyzer
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    restart: unless-stopped
+    # entrypoint: /bin/sh -c "trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;"
+    command: certonly --webroot --webroot-path=/var/www/certbot --email aonemdsaleh@gmail.com --agree-tos --no-eff-email -d workinmena.tech -d www.workinmena.tech
+    volumes:
+      - ./workinmena-app/nginx/certbot/conf:/etc/letsencrypt
+      - ./workinmena-app/nginx/certbot/www:/var/www/certbot
+      - ./workinmena-app/nginx/certbot/logs:/var/log/letsencrypt
   app:
     build:
       context: ./workinmena-app/
@@ -42,7 +52,13 @@ services:
     container_name: workinmena-app
     ports:
       - 80:80
+      - 443:443
+    restart: unless-stopped
+    # command: /bin/sh -c "while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g 'daemon off;'"
     volumes:
+      - ./workinmena-app/nginx/certbot/conf:/etc/nginx/ssl
+      - ./workinmena-app/nginx/certbot/www:/var/www/certbot
       - ./workinmena-api/puma:/app/puma
     depends_on:
+      - certbot
       - api
