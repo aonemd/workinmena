@@ -45,6 +45,8 @@ services:
       - ./workinmena-app/nginx/certbot/conf:/etc/letsencrypt
       - ./workinmena-app/nginx/certbot/www:/var/www/certbot
       - ./workinmena-app/nginx/certbot/logs:/var/log/letsencrypt
+    depends_on:
+      - app
   app:
     build:
       context: ./workinmena-app/
@@ -60,5 +62,4 @@ services:
       - ./workinmena-app/nginx/certbot/www:/var/www/certbot
       - ./workinmena-api/puma:/app/puma
     depends_on:
-      - certbot
       - api
