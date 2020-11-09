@@ -45,7 +45,7 @@ activate_control_app
 # socket
 # bind "unix://#{puma_dir}/sockets/puma.sock"
 bind 'ssl://127.0.0.1:9292?key=/etc/letsencrypt/live/workinmena.tech/privkey.pem&cert=/etc/letsencrypt/live/workinmena.tech/fullchain.pem'
-port 9292
+# port 9292
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
