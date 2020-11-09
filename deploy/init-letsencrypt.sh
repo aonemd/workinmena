@@ -9,7 +9,7 @@ domains=(workinmena.tech www.workinmena.tech)
 rsa_key_size=4096
 data_path="./workinmena-app/nginx/certbot"
 email="aonemdsaleh@gmail.com" # Adding a valid address is strongly recommended
-staging=1 # Set to 1 if you're testing your setup to avoid hitting request limits
+staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 nginx_service="app"
 
 if [ -d "$data_path" ]; then
