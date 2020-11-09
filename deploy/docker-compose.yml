@@ -37,6 +37,8 @@ services:
       - 3000:3000
     volumes:
       - ./workinmena-api/puma:/app/puma
+      - ./workinmena-app/nginx/certbot/conf:/etc/letsencrypt
+      - ./workinmena-app/nginx/certbot/www:/var/www/certbot
     depends_on:
       - db
       - analyzer
