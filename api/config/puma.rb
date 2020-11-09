@@ -10,7 +10,7 @@ threads min_threads_count, max_threads_count
 
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 #
-port        ENV.fetch("PORT") { 3000 }
+# port        ENV.fetch("PORT") { 3000 }
 
 # Specifies the `environment` that Puma will run in.
 #
@@ -44,7 +44,8 @@ activate_control_app
 
 # socket
 # bind "unix://#{puma_dir}/sockets/puma.sock"
-bind 'ssl://127.0.0.1:3000?key=/etc/letsencrypt/live/workinmena.tech/privkey.pem&cert=/etc/letsencrypt/live/workinmena.tech/fullchain.pem'
+bind 'ssl://127.0.0.1:9292?key=/etc/letsencrypt/live/workinmena.tech/privkey.pem&cert=/etc/letsencrypt/live/workinmena.tech/fullchain.pem'
+port 9292
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
