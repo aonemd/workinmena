@@ -34,7 +34,7 @@ services:
       - ./workinmena-api/.env.production.db
     command: ./docker-entrypoint.sh
     ports:
-      - 9292:9292
+      - 3000:3000
     volumes:
       - ./workinmena-api/puma:/app/puma
       - ./workinmena-app/nginx/certbot/conf:/etc/letsencrypt
