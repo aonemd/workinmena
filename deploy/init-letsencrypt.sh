@@ -90,4 +90,7 @@ docker-compose \
 echo
 
 echo "### Reloading nginx ..."
-docker-compose exec $nginx_service nginx -s reload
+docker-compose \
+  -f workinmena-deploy/docker-compose.yml \
+  --project-directory . \
+  exec $nginx_service nginx -s reload
