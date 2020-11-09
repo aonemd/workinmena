@@ -44,9 +44,6 @@ module Workinmena
         origins [
           'http://localhost:8080',
           'http://localhost',
-          'http://167.99.130.51',
-          'http://workinmena.tech',
-          'http://www.workinmena.tech',
           'https://workinmena.tech',
           'https://www.workinmena.tech'
         ]
