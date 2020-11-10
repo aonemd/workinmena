@@ -35,6 +35,7 @@ services:
     command: ./docker-entrypoint.sh
     ports:
       - 3000:3000
+      - 3002:3002
     volumes:
       - ./workinmena-api/puma:/app/puma
       - ./workinmena-app/nginx/certbot/conf:/etc/letsencrypt
